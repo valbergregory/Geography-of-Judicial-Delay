@@ -1,0 +1,19 @@
+# Tribunais avaliados na sondagem de 2026-09-04 (API Pública do DataJud).
+# Campos verificados por amostra aleatória de 500 docs por classe (7 e 436),
+# exceto TJPR classe 7 (HTTP 504 na amostra; a agregação funcionou).
+# ibge_ok = proporção de documentos com orgaoJulgador.codigoMunicipioIBGE preenchido (>0).
+# data_fmt = formatos encontrados em dataAjuizamento.
+# mov_sem_codigo = movimentos com codigo NULL na amostra de 500 docs.
+tribunais:
+  tjsp:  {nome: TJ São Paulo,        sistema: [SAJ, Projudi],       ibge_ok: 0.15, data_fmt: [compact14, iso], mov_sem_codigo: 1,    latencia_s: 12-32, papel: excluído da fase 1 (sem município da unidade; latência)}
+  tjmg:  {nome: TJ Minas Gerais,     sistema: [PJe, "Inválido", Eproc], ibge_ok: 1.00, data_fmt: [compact14, epoch], mov_sem_codigo: 0, mov_sem_data: 50, latencia_s: 5-26, papel: candidato (verificar movimentos sem data)}
+  tjrs:  {nome: TJ Rio Grande do Sul, sistema: [Projudi, Themis, EPROC], ibge_ok: 1.00, data_fmt: [compact14, iso], mov_sem_codigo: 0, latencia_s: 4-20, papel: candidato}
+  tjpr:  {nome: TJ Paraná,           sistema: [Eproc, Projudi],     ibge_ok: 1.00, data_fmt: [compact14], mov_sem_codigo: 0, latencia_s: 5-80, papel: candidato (latência alta)}
+  tjba:  {nome: TJ Bahia,            sistema: [PJe, Eproc],         ibge_ok: 1.00, data_fmt: [compact14], mov_sem_codigo: 14, latencia_s: 16-44, papel: candidato}
+  tjdft: {nome: TJ Distrito Federal, sistema: [PJe],                ibge_ok: 1.00, data_fmt: [compact14], mov_sem_codigo: 0, latencia_s: 2-30, papel: excluído (território único, sem variação espacial)}
+  tjgo:  {nome: TJ Goiás,            sistema: [Eproc, Projudi],     ibge_ok: 1.00, data_fmt: [compact14], mov_sem_codigo: 0, latencia_s: 9-27, papel: candidato}
+  tjpe:  {nome: TJ Pernambuco,       sistema: [PJe, Outros],        ibge_ok: 1.00, data_fmt: [compact14, iso], mov_sem_codigo: 0, latencia_s: 6-19, papel: candidato forte (PJe; contestação tipada)}
+  tjsc:  {nome: TJ Santa Catarina,   sistema: [Projudi, SAJ],       ibge_ok: 0.99, data_fmt: [compact14], mov_sem_codigo: 6, latencia_s: 5-38, papel: candidato}
+  tjrj:  {nome: TJ Rio de Janeiro,   sistema: [PJe, "Inválido", Projudi, Outros], ibge_ok: 0.99, data_fmt: [compact14, iso], mov_sem_codigo: 0, latencia_s: 7-34, papel: candidato (sistema heterogêneo)}
+  tjal:  {nome: TJ Alagoas,          sistema: [SAJ, Projudi],       ibge_ok: 0.20-0.35, data_fmt: [compact14], mov_sem_codigo: 693-2783, latencia_s: 3-29, papel: excluído da fase 1 (movimentos sem código; IBGE ausente)}
+  tjce:  {nome: TJ Ceará,            sistema: [PJe, SAJ],           ibge_ok: 0.92-0.99, data_fmt: [compact14], mov_sem_codigo: 0, latencia_s: 1-13, papel: candidato forte (PJe; contestação tipada; baixa latência)}

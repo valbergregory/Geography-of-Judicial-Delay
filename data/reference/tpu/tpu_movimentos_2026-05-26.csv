@@ -1,0 +1,965 @@
+codigo,codigo_pai,nome,situacao,nivel,tem_filhos,caminho
+1,0,Magistrado,A,1,True,Magistrado
+3,1,Decisão,A,2,True,Magistrado > Decisão
+7,3,Conversão,A,3,True,Magistrado > Decisão > Conversão
+11,3,Declaração,A,3,True,Magistrado > Decisão > Declaração
+14,0,Serventuário,A,1,True,Serventuário
+15,14,Contador,A,2,True,Serventuário > Contador
+16,15,Cálculo,A,3,True,Serventuário > Contador > Cálculo
+18,14,Distribuidor,A,2,True,Serventuário > Distribuidor
+22,18,Baixa Definitiva,A,3,False,Serventuário > Distribuidor > Baixa Definitiva
+25,3,Suspensão ou Sobrestamento,A,3,True,Magistrado > Decisão > Suspensão ou Sobrestamento
+26,18,Distribuição,A,3,False,Serventuário > Distribuidor > Distribuição
+36,18,Redistribuição,A,3,False,Serventuário > Distribuidor > Redistribuição
+48,14,Escrivão/Diretor de Secretaria/Secretário Jurídico,A,2,True,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico
+51,48,Conclusão,A,3,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Conclusão
+56,3,Requisição de informações,I,3,False,Magistrado > Decisão > Requisição de informações
+60,48,Expedição de documento,A,3,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Expedição de documento
+63,3,Ordenação de entrega de autos,I,3,False,Magistrado > Decisão > Ordenação de entrega de autos
+67,48,Juntada,A,3,True,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Juntada
+83,3,Cancelamento da distribuição,A,3,False,Magistrado > Decisão > Cancelamento da distribuição
+85,67,Petição,A,4,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Juntada > Petição
+92,48,Publicação,A,3,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Publicação
+104,14,Oficial de Justiça,A,2,True,Serventuário > Oficial de Justiça
+105,104,Devolução,A,3,True,Serventuário > Oficial de Justiça > Devolução
+106,105,Mandado,A,4,False,Serventuário > Oficial de Justiça > Devolução > Mandado
+108,3,Decretação de Prisão Criminal,A,3,True,Magistrado > Decisão > Decretação de Prisão Criminal
+112,105,Ofício,A,4,False,Serventuário > Oficial de Justiça > Devolução > Ofício
+113,3,Decretação de Prisão Civil,A,3,True,Magistrado > Decisão > Decretação de Prisão Civil
+115,104,Recebimento,A,3,True,Serventuário > Oficial de Justiça > Recebimento
+117,3,Decretação de Internação,A,3,True,Magistrado > Decisão > Decretação de Internação
+118,48,Protocolo de Petição,A,3,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Protocolo de Petição
+122,3,Desacolhimento de Prisão,A,3,True,Magistrado > Decisão > Desacolhimento de Prisão
+123,48,Remessa,A,3,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Remessa
+128,157,Prisão,A,4,False,Magistrado > Decisão > Revogação > Prisão
+132,48,Recebimento,A,3,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Recebimento
+133,3,Acolhimento de exceção,A,3,True,Magistrado > Decisão > Acolhimento de exceção
+135,48,Apensamento,A,3,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Apensamento
+137,48,Desapensamento,A,3,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Desapensamento
+138,3,Rejeição,A,3,True,Magistrado > Decisão > Rejeição
+146,3,Não-Homologação de prisão em flagrante,I,3,False,Magistrado > Decisão > Não-Homologação de prisão em flagrante
+151,3,Concessão de efeito suspensivo,A,3,True,Magistrado > Decisão > Concessão de efeito suspensivo
+157,3,Revogação,A,3,True,Magistrado > Decisão > Revogação
+160,3,Recebimento,A,3,True,Magistrado > Decisão > Recebimento
+163,3,Não-Recebimento,A,3,True,Magistrado > Decisão > Não-Recebimento
+172,3,Deliberação da partilha,A,3,False,Magistrado > Decisão > Deliberação da partilha
+175,378,Prisão em flagrante,I,4,False,Magistrado > Decisão > Homologação > Prisão em flagrante
+190,3,Reforma de decisão anterior,A,3,False,Magistrado > Decisão > Reforma de decisão anterior
+193,1,Julgamento,A,2,True,Magistrado > Julgamento
+196,385,Extinção da execução ou do cumprimento da sentença,A,4,False,Magistrado > Julgamento > Com Resolução do Mérito > Extinção da execução ou do cumprimento da sentença
+198,385,Acolhimento de Embargos de Declaração,A,4,False,Magistrado > Julgamento > Com Resolução do Mérito > Acolhimento de Embargos de Declaração
+200,385,Não-Acolhimento de Embargos de Declaração,A,4,False,Magistrado > Julgamento > Com Resolução do Mérito > Não-Acolhimento de Embargos de Declaração
+202,385,Decretação de falência,A,4,False,Magistrado > Julgamento > Com Resolução do Mérito > Decretação de falência
+206,3,Admissão,A,3,True,Magistrado > Decisão > Admissão
+207,3,Não-Admissão,A,3,True,Magistrado > Decisão > Não-Admissão
+208,385,Não-Decretação de Falência,A,4,False,Magistrado > Julgamento > Com Resolução do Mérito > Não-Decretação de Falência
+210,385,Concessão,A,4,True,Magistrado > Julgamento > Com Resolução do Mérito > Concessão
+212,385,Denegação,A,4,True,Magistrado > Julgamento > Com Resolução do Mérito > Denegação
+214,385,Concessão em Parte,A,4,True,Magistrado > Julgamento > Com Resolução do Mérito > Concessão em Parte
+218,193,Sem Resolução de Mérito,A,3,True,Magistrado > Julgamento > Sem Resolução de Mérito
+219,385,Procedência,A,4,False,Magistrado > Julgamento > Com Resolução do Mérito > Procedência
+220,385,Improcedência,A,4,False,Magistrado > Julgamento > Com Resolução do Mérito > Improcedência
+221,385,Procedência em Parte,A,4,False,Magistrado > Julgamento > Com Resolução do Mérito > Procedência em Parte
+228,218,Arquivamento,A,4,True,Magistrado > Julgamento > Sem Resolução de Mérito > Arquivamento
+230,218,Recurso prejudicado,A,4,False,Magistrado > Julgamento > Sem Resolução de Mérito > Recurso prejudicado
+235,218,Não Conhecimento de recurso,A,4,False,Magistrado > Julgamento > Sem Resolução de Mérito > Não Conhecimento de recurso
+236,218,Negação de Seguimento,A,4,False,Magistrado > Julgamento > Sem Resolução de Mérito > Negação de Seguimento
+237,385,Provimento,A,4,False,Magistrado > Julgamento > Com Resolução do Mérito > Provimento
+238,385,Provimento em Parte,A,4,False,Magistrado > Julgamento > Com Resolução do Mérito > Provimento em Parte
+239,385,Não-Provimento,A,4,False,Magistrado > Julgamento > Com Resolução do Mérito > Não-Provimento
+240,385,Conhecimento em Parte e Provimento ou Concessão,A,4,False,Magistrado > Julgamento > Com Resolução do Mérito > Conhecimento em Parte e Provimento ou Concessão
+241,385,Conhecimento em Parte e Provimento em Parte ou Concessão em Parte,A,4,False,Magistrado > Julgamento > Com Resolução do Mérito > Conhecimento em Parte e Provimento em Parte ou Concessão em Parte
+242,385,Conhecimento em Parte e Não-Provimento ou Denegação,A,4,False,Magistrado > Julgamento > Com Resolução do Mérito > Conhecimento em Parte e Não-Provimento ou Denegação
+244,218,Conversão de Agravo de Instrumento em Agravo Retido,I,4,False,Magistrado > Julgamento > Sem Resolução de Mérito > Conversão de Agravo de Instrumento em Agravo Retido
+245,861,Provisório,A,4,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Arquivamento > Provisório
+246,861,Definitivo,A,4,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Arquivamento > Definitivo
+263,25,Réu revel citado por edital ,A,4,False,Magistrado > Decisão > Suspensão ou Sobrestamento > Réu revel citado por edital 
+264,25,Suspensão Condicional do Processo,A,4,False,Magistrado > Decisão > Suspensão ou Sobrestamento > Suspensão Condicional do Processo
+265,25,Recurso Extraordinário com repercussão geral,A,4,False,Magistrado > Decisão > Suspensão ou Sobrestamento > Recurso Extraordinário com repercussão geral
+266,7,Julgamento em Diligência,I,4,False,Magistrado > Decisão > Conversão > Julgamento em Diligência
+268,25,Morte ou perda da capacidade,A,4,False,Magistrado > Decisão > Suspensão ou Sobrestamento > Morte ou perda da capacidade
+269,11,Impedimento ou Suspeição,I,4,False,Magistrado > Decisão > Declaração > Impedimento ou Suspeição
+270,25,Convenção das Partes,I,4,False,Magistrado > Decisão > Suspensão ou Sobrestamento > Convenção das Partes
+271,25,"Exceção de Incompetência, suspeição ou Impedimento",I,4,False,"Magistrado > Decisão > Suspensão ou Sobrestamento > Exceção de Incompetência, suspeição ou Impedimento"
+272,25,"A depender do julgamento de outra causa, de outro juízo ou declaração incidente",A,4,False,"Magistrado > Decisão > Suspensão ou Sobrestamento > A depender do julgamento de outra causa, de outro juízo ou declaração incidente"
+275,25,Força maior,A,4,False,Magistrado > Decisão > Suspensão ou Sobrestamento > Força maior
+276,25,Execução frustrada,A,4,False,Magistrado > Decisão > Suspensão ou Sobrestamento > Execução frustrada
+277,25,Convenção das Partes para Satisfação Voluntária da Obrigação em Execução ou Cumprimento de Sentença,A,4,False,Magistrado > Decisão > Suspensão ou Sobrestamento > Convenção das Partes para Satisfação Voluntária da Obrigação em Execução ou Cumprimento de Sentença
+278,25,Recebimento de Embargos à Execução,I,4,False,Magistrado > Decisão > Suspensão ou Sobrestamento > Recebimento de Embargos à Execução
+279,25,Incidente de Insanidade Mental,I,4,False,Magistrado > Decisão > Suspensão ou Sobrestamento > Incidente de Insanidade Mental
+311,48,Leilão ou Praça,A,3,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Leilão ou Praça
+313,48,Sessão do Tribunal do Júri,A,3,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Sessão do Tribunal do Júri
+332,817,Tutela Provisória,A,4,False,Magistrado > Decisão > Concessão > Tutela Provisória
+334,968,Gratuidade da Justiça,A,4,False,Magistrado > Decisão > Não-Concessão > Gratuidade da Justiça
+335,133,de pré-executividade,A,4,False,Magistrado > Decisão > Acolhimento de exceção > de pré-executividade
+339,817,Liminar,A,4,False,Magistrado > Decisão > Concessão > Liminar
+347,157,Tutela Provisória,A,4,False,Magistrado > Decisão > Revogação > Tutela Provisória
+348,157,Liminar,A,4,False,Magistrado > Decisão > Revogação > Liminar
+349,157,Gratuidade de Justiça,A,4,False,Magistrado > Decisão > Revogação > Gratuidade de Justiça
+352,108,Temporária,A,4,False,Magistrado > Decisão > Decretação de Prisão Criminal > Temporária
+353,108,Preventiva,A,4,False,Magistrado > Decisão > Decretação de Prisão Criminal > Preventiva
+354,113,Alimentos,A,4,False,Magistrado > Decisão > Decretação de Prisão Civil > Alimentos
+355,113,Depositário infiel,I,4,False,Magistrado > Decisão > Decretação de Prisão Civil > Depositário infiel
+357,122,Temporária,A,4,False,Magistrado > Decisão > Desacolhimento de Prisão > Temporária
+358,122,Preventiva,A,4,False,Magistrado > Decisão > Desacolhimento de Prisão > Preventiva
+371,133,Incompetência,A,4,False,Magistrado > Decisão > Acolhimento de exceção > Incompetência
+373,138,Exceção de Impedimento ou Suspeição,A,4,False,Magistrado > Decisão > Rejeição > Exceção de Impedimento ou Suspeição
+374,138,Exceção de incompetência,A,4,False,Magistrado > Decisão > Rejeição > Exceção de incompetência
+377,378,Acordo em execução ou em cumprimento de sentença,I,4,False,Magistrado > Decisão > Homologação > Acordo em execução ou em cumprimento de sentença
+378,3,Homologação,A,3,True,Magistrado > Decisão > Homologação
+381,151,Recurso,A,4,False,Magistrado > Decisão > Concessão de efeito suspensivo > Recurso
+383,151,Impugnação ao cumprimento de sentença,A,4,False,Magistrado > Decisão > Concessão de efeito suspensivo > Impugnação ao cumprimento de sentença
+385,193,Com Resolução do Mérito,A,3,True,Magistrado > Julgamento > Com Resolução do Mérito
+388,160,Aditamento da denúncia,A,4,False,Magistrado > Decisão > Recebimento > Aditamento da denúncia
+389,160,Aditamento da queixa,A,4,False,Magistrado > Decisão > Recebimento > Aditamento da queixa
+390,160,Aditamento do libelo,I,4,False,Magistrado > Decisão > Recebimento > Aditamento do libelo
+391,160,Denúncia,A,4,False,Magistrado > Decisão > Recebimento > Denúncia
+392,160,Libelo,I,4,False,Magistrado > Decisão > Recebimento > Libelo
+393,160,Queixa,A,4,False,Magistrado > Decisão > Recebimento > Queixa
+394,1060,Com efeito suspensivo,A,5,False,Magistrado > Decisão > Recebimento > Recurso > Com efeito suspensivo
+399,138,Aditamento da denúncia,A,4,False,Magistrado > Decisão > Rejeição > Aditamento da denúncia
+400,138,Aditamento da queixa,A,4,False,Magistrado > Decisão > Rejeição > Aditamento da queixa
+402,138,Denúncia,A,4,False,Magistrado > Decisão > Rejeição > Denúncia
+404,138,Queixa,A,4,False,Magistrado > Decisão > Rejeição > Queixa
+417,48,Inclusão em pauta,I,3,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Inclusão em pauta
+429,206,Recurso extraordinário,A,4,False,Magistrado > Decisão > Admissão > Recurso extraordinário
+430,206,Recurso especial,A,4,False,Magistrado > Decisão > Admissão > Recurso especial
+431,206,Recurso de revista,A,4,False,Magistrado > Decisão > Admissão > Recurso de revista
+432,207,Recurso Extraordinário,A,4,False,Magistrado > Decisão > Não-Admissão > Recurso Extraordinário
+433,207,Recurso Especial,A,4,False,Magistrado > Decisão > Não-Admissão > Recurso Especial
+434,207,Recurso de Revista,A,4,False,Magistrado > Decisão > Não-Admissão > Recurso de Revista
+442,210,Segurança,A,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Concessão > Segurança
+443,210,Habeas corpus,A,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Concessão > Habeas corpus
+444,210,Habeas data,A,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Concessão > Habeas data
+445,210,Mandado de injunção,A,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Concessão > Mandado de injunção
+446,212,Segurança,A,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Denegação > Segurança
+447,212,Habeas corpus,A,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Denegação > Habeas corpus
+448,212,Habeas data,A,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Denegação > Habeas data
+449,212,Mandado de injunção,A,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Denegação > Mandado de injunção
+450,214,Segurança,A,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Concessão em Parte > Segurança
+451,214,Habeas corpus,A,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Concessão em Parte > Habeas corpus
+452,214,Habeas data,A,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Concessão em Parte > Habeas data
+453,214,Mandado de injunção,A,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Concessão em Parte > Mandado de injunção
+454,456,Indeferimento da petição inicial,A,5,False,Magistrado > Julgamento > Sem Resolução de Mérito > Extinção > Indeferimento da petição inicial
+455,385,Renúncia ao direito pelo autor,A,4,False,Magistrado > Julgamento > Com Resolução do Mérito > Renúncia ao direito pelo autor
+456,218,Extinção,A,4,True,Magistrado > Julgamento > Sem Resolução de Mérito > Extinção
+457,456,Paralisação por negligência das partes,A,5,False,Magistrado > Julgamento > Sem Resolução de Mérito > Extinção > Paralisação por negligência das partes
+458,456,Abandono da causa,A,5,False,Magistrado > Julgamento > Sem Resolução de Mérito > Extinção > Abandono da causa
+459,456,Ausência de pressupostos processuais,A,5,False,Magistrado > Julgamento > Sem Resolução de Mérito > Extinção > Ausência de pressupostos processuais
+460,456,"Perempção, litispendência ou coisa julgada",A,5,False,"Magistrado > Julgamento > Sem Resolução de Mérito > Extinção > Perempção, litispendência ou coisa julgada"
+461,456,Ausência das condições da ação,A,5,False,Magistrado > Julgamento > Sem Resolução de Mérito > Extinção > Ausência das condições da ação
+462,456,Convenção de arbitragem,A,5,False,Magistrado > Julgamento > Sem Resolução de Mérito > Extinção > Convenção de arbitragem
+463,456,Desistência,A,5,False,Magistrado > Julgamento > Sem Resolução de Mérito > Extinção > Desistência
+464,456,Ação intransmissível,A,5,False,Magistrado > Julgamento > Sem Resolução de Mérito > Extinção > Ação intransmissível
+465,456,Confusão entre autor e réu,I,5,False,Magistrado > Julgamento > Sem Resolução de Mérito > Extinção > Confusão entre autor e réu
+466,385,Homologação de Transação,A,4,False,Magistrado > Julgamento > Com Resolução do Mérito > Homologação de Transação
+471,385,Pronúncia de Decadência ou Prescrição,A,4,False,Magistrado > Julgamento > Com Resolução do Mérito > Pronúncia de Decadência ou Prescrição
+472,228,"Sumaríssimo (art. 852-B, § 1º/CLT)",A,5,False,"Magistrado > Julgamento > Sem Resolução de Mérito > Arquivamento > Sumaríssimo (art. 852-B, § 1º/CLT)"
+473,228,Ausência do Reclamante,A,5,False,Magistrado > Julgamento > Sem Resolução de Mérito > Arquivamento > Ausência do Reclamante
+478,16,Cálculo de Liquidação,A,4,False,Serventuário > Contador > Cálculo > Cálculo de Liquidação
+479,16,Custas,A,4,False,Serventuário > Contador > Cálculo > Custas
+480,16,Atualização de conta,A,4,False,Serventuário > Contador > Cálculo > Atualização de conta
+481,16,Tributos,A,4,False,Serventuário > Contador > Cálculo > Tributos
+488,18,Cancelamento de Distribuição,A,3,False,Serventuário > Distribuidor > Cancelamento de Distribuição
+493,48,Entrega em carga/vista,A,3,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Entrega em carga/vista
+581,67,Documento,A,4,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Juntada > Documento
+785,968,Tutela Provisória,A,4,False,Magistrado > Decisão > Não-Concessão > Tutela Provisória
+787,817,Gratuidade da Justiça,A,4,False,Magistrado > Decisão > Concessão > Gratuidade da Justiça
+788,138,Exceção de pré-executividade,A,4,False,Magistrado > Decisão > Rejeição > Exceção de pré-executividade
+792,968,Liminar,A,4,False,Magistrado > Decisão > Não-Concessão > Liminar
+799,163,Aditamento do libelo,I,4,False,Magistrado > Decisão > Não-Recebimento > Aditamento do libelo
+803,163,Libelo,I,4,False,Magistrado > Decisão > Não-Recebimento > Libelo
+804,163,Recurso,A,4,False,Magistrado > Decisão > Não-Recebimento > Recurso
+817,3,Concessão,A,3,True,Magistrado > Decisão > Concessão
+818,817,Liberdade provisória,A,4,False,Magistrado > Decisão > Concessão > Liberdade provisória
+819,817,Livramento Condicional,A,4,False,Magistrado > Decisão > Concessão > Livramento Condicional
+821,7,Pena / Medida,A,4,False,Magistrado > Decisão > Conversão > Pena / Medida
+823,117,Provisória,A,4,False,Magistrado > Decisão > Decretação de Internação > Provisória
+824,117,Definitiva,I,4,False,Magistrado > Decisão > Decretação de Internação > Definitiva
+848,48,Trânsito em julgado,A,3,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Trânsito em julgado
+849,48,Reativação,A,3,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Reativação
+853,218,Conversão de Agravo de Instrumento em Recurso Especial ou Extraordinário,A,4,False,Magistrado > Julgamento > Sem Resolução de Mérito > Conversão de Agravo de Instrumento em Recurso Especial ou Extraordinário
+861,48,Arquivamento,A,3,True,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Arquivamento
+865,14,Arquivista,A,2,True,Serventuário > Arquivista
+866,865,Guarda Intermediária,A,3,False,Serventuário > Arquivista > Guarda Intermediária
+867,865,Guarda Permanente,A,3,False,Serventuário > Arquivista > Guarda Permanente
+869,865,Entrega definitiva dos autos,A,3,False,Serventuário > Arquivista > Entrega definitiva dos autos
+870,865,Autos Eliminados,A,3,False,Serventuário > Arquivista > Autos Eliminados
+871,385,Acolhimento em parte de Embargos de Declaração,A,4,False,Magistrado > Julgamento > Com Resolução do Mérito > Acolhimento em parte de Embargos de Declaração
+873,48,Deliberação em Sessão,I,3,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Deliberação em Sessão
+884,385,Transação Penal,I,4,False,Magistrado > Julgamento > Com Resolução do Mérito > Transação Penal
+888,3,Concessão em parte,A,3,True,Magistrado > Decisão > Concessão em parte
+889,888,Tutela Provisória,A,4,False,Magistrado > Decisão > Concessão em parte > Tutela Provisória
+892,888,Liminar,A,4,False,Magistrado > Decisão > Concessão em parte > Liminar
+893,48,Desarquivamento,A,3,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Desarquivamento
+897,48,Retirada de pauta,I,3,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Retirada de pauta
+898,25,Por decisão judicial,A,4,False,Magistrado > Decisão > Suspensão ou Sobrestamento > Por decisão judicial
+900,385,Declaração de competência em conflito,I,4,False,Magistrado > Julgamento > Com Resolução do Mérito > Declaração de competência em conflito
+901,385,Negação Monocrática de Provimento,A,4,False,Magistrado > Julgamento > Com Resolução do Mérito > Negação Monocrática de Provimento
+905,113,"de estrangeiro para deportação, expulsão ou extradição",A,4,False,"Magistrado > Decisão > Decretação de Prisão Civil > de estrangeiro para deportação, expulsão ou extradição"
+928,48,Republicação,A,3,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Republicação
+940,133,Impedimento ou Suspeição,A,4,False,Magistrado > Decisão > Acolhimento de exceção > Impedimento ou Suspeição
+941,11,Incompetência,A,4,False,Magistrado > Decisão > Declaração > Incompetência
+944,378,Desistência de Recurso,A,4,False,Magistrado > Decisão > Homologação > Desistência de Recurso
+945,157,Decisão anterior,A,4,False,Magistrado > Decisão > Revogação > Decisão anterior
+947,25,Por pendência de AIREsp,I,4,False,Magistrado > Decisão > Suspensão ou Sobrestamento > Por pendência de AIREsp
+960,25,Conflito de Competência,I,4,False,Magistrado > Decisão > Suspensão ou Sobrestamento > Conflito de Competência
+961,3,Suscitação de Conflito de Competência,A,3,False,Magistrado > Decisão > Suscitação de Conflito de Competência
+968,3,Não-Concessão,A,3,True,Magistrado > Decisão > Não-Concessão
+970,48,Audiência,A,3,True,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Audiência
+971,25,Exceção da Verdade,I,4,False,Magistrado > Decisão > Suspensão ou Sobrestamento > Exceção da Verdade
+972,385,Provimento Monocrático,A,4,False,Magistrado > Julgamento > Com Resolução do Mérito > Provimento Monocrático
+973,385,Extinção da Punibilidade ou da Pena,A,4,True,Magistrado > Julgamento > Com Resolução do Mérito > Extinção da Punibilidade ou da Pena
+977,865,Recebimento,A,3,False,Serventuário > Arquivista > Recebimento
+978,865,Remessa,A,3,False,Serventuário > Arquivista > Remessa
+979,15,Recebimento,A,3,False,Serventuário > Contador > Recebimento
+980,15,Remessa,A,3,False,Serventuário > Contador > Remessa
+981,18,Recebimento,A,3,False,Serventuário > Distribuidor > Recebimento
+982,18,Remessa,A,3,False,Serventuário > Distribuidor > Remessa
+985,115,Mandado,A,4,False,Serventuário > Oficial de Justiça > Recebimento > Mandado
+987,115,Ofício,A,4,False,Serventuário > Oficial de Justiça > Recebimento > Ofício
+988,817,Permissão de saída,A,4,False,Magistrado > Decisão > Concessão > Permissão de saída
+990,817,Direito de visita,A,4,False,Magistrado > Decisão > Concessão > Direito de visita
+1002,817,Progressão de regime,A,4,False,Magistrado > Decisão > Concessão > Progressão de regime
+1003,11,Remição,A,4,False,Magistrado > Decisão > Declaração > Remição
+1004,157,Livramento Condicional,A,4,False,Magistrado > Decisão > Revogação > Livramento Condicional
+1008,3,Autorização,A,3,True,Magistrado > Decisão > Autorização
+1009,1008,Trabalho Externo,A,4,False,Magistrado > Decisão > Autorização > Trabalho Externo
+1010,1008,Saída Temporária,A,4,False,Magistrado > Decisão > Autorização > Saída Temporária
+1011,1008,Inclusão em Regime Disciplinar Diferenciado,A,4,False,Magistrado > Decisão > Autorização > Inclusão em Regime Disciplinar Diferenciado
+1013,3,Determinação,A,3,True,Magistrado > Decisão > Determinação
+1014,1013,Regressão de Regime,A,4,False,Magistrado > Decisão > Determinação > Regressão de Regime
+1015,1013,Suspensão do Processo,I,4,False,Magistrado > Decisão > Determinação > Suspensão do Processo
+1016,157,Suspensão Condicional da Pena,A,4,False,Magistrado > Decisão > Revogação > Suspensão Condicional da Pena
+1017,817,Suspensão Condicional da Pena,A,4,False,Magistrado > Decisão > Concessão > Suspensão Condicional da Pena
+1018,1008,Transferência para outro Estabelecimento Penal,A,4,False,Magistrado > Decisão > Autorização > Transferência para outro Estabelecimento Penal
+1019,1008,Transferência da Execução da Pena,A,4,False,Magistrado > Decisão > Autorização > Transferência da Execução da Pena
+1042,973,Morte do agente,A,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Extinção da Punibilidade ou da Pena > Morte do agente
+1043,973,"Anistia, graça ou indulto",A,5,False,"Magistrado > Julgamento > Com Resolução do Mérito > Extinção da Punibilidade ou da Pena > Anistia, graça ou indulto"
+1044,973,Retroatividade de lei,A,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Extinção da Punibilidade ou da Pena > Retroatividade de lei
+1045,973,"Prescrição, decadência ou perempção",I,5,False,"Magistrado > Julgamento > Com Resolução do Mérito > Extinção da Punibilidade ou da Pena > Prescrição, decadência ou perempção"
+1046,973,Renúncia do queixoso ou perdão aceito ,A,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Extinção da Punibilidade ou da Pena > Renúncia do queixoso ou perdão aceito 
+1047,973,Retratação do agente,A,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Extinção da Punibilidade ou da Pena > Retratação do agente
+1048,973,Perdão judicial,A,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Extinção da Punibilidade ou da Pena > Perdão judicial
+1049,973,Pagamento integral do débito,A,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Extinção da Punibilidade ou da Pena > Pagamento integral do débito
+1050,973,Cumprimento da Pena,A,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Extinção da Punibilidade ou da Pena > Cumprimento da Pena
+1051,48,Decurso de Prazo,A,3,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Decurso de Prazo
+1052,48,Bens Apreendidos,A,3,True,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Bens Apreendidos
+1053,1052,Destinação,A,4,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Bens Apreendidos > Destinação
+1054,1052,Destinação Parcial,A,4,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Bens Apreendidos > Destinação Parcial
+1055,1052,Cadastramento,A,4,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Bens Apreendidos > Cadastramento
+1059,1060,Sem efeito suspensivo,A,5,False,Magistrado > Decisão > Recebimento > Recurso > Sem efeito suspensivo
+1060,160,Recurso,A,4,True,Magistrado > Decisão > Recebimento > Recurso
+1061,48,Disponibilização no Diário da Justiça Eletrônico,A,3,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Disponibilização no Diário da Justiça Eletrônico
+1062,48,Redisponibilização no Diário da Justiça Eletrônico,A,3,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Redisponibilização no Diário da Justiça Eletrônico
+1063,1013,Determinação de arquivamento de procedimentos investigatórios,A,4,False,Magistrado > Decisão > Determinação > Determinação de arquivamento de procedimentos investigatórios
+10953,218,Pronúncia,A,4,False,Magistrado > Julgamento > Sem Resolução de Mérito > Pronúncia
+10961,218,Impronúncia,A,4,False,Magistrado > Julgamento > Sem Resolução de Mérito > Impronúncia
+10962,1013,Regressão de Medida Sócio-Educativa,I,4,False,Magistrado > Decisão > Determinação > Regressão de Medida Sócio-Educativa
+10963,817,Progressão de Medida Sócio-Educativa,I,4,False,Magistrado > Decisão > Concessão > Progressão de Medida Sócio-Educativa
+10964,385,Extinção por Cumprimento de Medida Sócio-Educativa,A,4,False,Magistrado > Julgamento > Com Resolução do Mérito > Extinção por Cumprimento de Medida Sócio-Educativa
+10965,210,Remissão a Adolescente Infrator,I,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Concessão > Remissão a Adolescente Infrator
+10966,48,Mudança de Classe Processual,I,3,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Mudança de Classe Processual
+11002,157,Revogação da Suspensão do Processo,I,4,False,Magistrado > Decisão > Revogação > Revogação da Suspensão do Processo
+11003,48,Início do Cumprimento da Transação Penal,A,3,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Início do Cumprimento da Transação Penal
+11008,48,Desmembramento de Feitos,A,3,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Desmembramento de Feitos
+11009,1,Despacho,A,2,True,Magistrado > Despacho
+11010,11009,Mero expediente,A,3,True,Magistrado > Despacho > Mero expediente
+11011,378,Homologada a Remissão,I,4,False,Magistrado > Decisão > Homologação > Homologada a Remissão
+11012,11025,Conflito de Competência,A,4,False,Magistrado > Despacho > Suspensão ou Sobrestamento > Conflito de Competência
+11013,11025,Convenção das Partes,A,4,False,Magistrado > Despacho > Suspensão ou Sobrestamento > Convenção das Partes
+11014,11025,Convenção das Partes para Cumprimento Voluntário da obrigação,I,4,False,Magistrado > Despacho > Suspensão ou Sobrestamento > Convenção das Partes para Cumprimento Voluntário da obrigação
+11015,11025,"Exceção de Incompetência, suspeição ou Impedimento",I,4,False,"Magistrado > Despacho > Suspensão ou Sobrestamento > Exceção de Incompetência, suspeição ou Impedimento"
+11016,11025,Exceção da Verdade,A,4,False,Magistrado > Despacho > Suspensão ou Sobrestamento > Exceção da Verdade
+11017,11025,Incidente de Insanidade Mental,A,4,False,Magistrado > Despacho > Suspensão ou Sobrestamento > Incidente de Insanidade Mental
+11018,11025,Recebimento de Embargos à Execução,A,4,False,Magistrado > Despacho > Suspensão ou Sobrestamento > Recebimento de Embargos à Execução
+11019,11009,Ordenação de entrega de autos,A,3,False,Magistrado > Despacho > Ordenação de entrega de autos
+11020,11009,Requisição de Informações,A,3,False,Magistrado > Despacho > Requisição de Informações
+11021,11009,Conversão,A,3,True,Magistrado > Despacho > Conversão
+11022,11021,Julgamento em Diligência,A,4,False,Magistrado > Despacho > Conversão > Julgamento em Diligência
+11023,11009,Concessão,A,3,True,Magistrado > Despacho > Concessão
+11024,11023,Assistência Judiciária Gratuita,I,4,False,Magistrado > Despacho > Concessão > Assistência Judiciária Gratuita
+11025,11009,Suspensão ou Sobrestamento,A,3,True,Magistrado > Despacho > Suspensão ou Sobrestamento
+11373,218,Anulação de sentença/acórdão,A,4,False,Magistrado > Julgamento > Sem Resolução de Mérito > Anulação de sentença/acórdão
+11374,456,Devedor não encontrado,A,5,False,Magistrado > Julgamento > Sem Resolução de Mérito > Extinção > Devedor não encontrado
+11375,456,Inexistência de bens penhoráveis,A,5,False,Magistrado > Julgamento > Sem Resolução de Mérito > Extinção > Inexistência de bens penhoráveis
+11376,456,Ausência do autor à audiência,A,5,False,Magistrado > Julgamento > Sem Resolução de Mérito > Extinção > Ausência do autor à audiência
+11377,456,Inadmissibilidade do procedimento sumaríssimo,A,5,False,Magistrado > Julgamento > Sem Resolução de Mérito > Extinção > Inadmissibilidade do procedimento sumaríssimo
+11378,456,Incompetência territorial,A,5,False,Magistrado > Julgamento > Sem Resolução de Mérito > Extinção > Incompetência territorial
+11379,456,Incompetência em razão da pessoa,A,5,False,Magistrado > Julgamento > Sem Resolução de Mérito > Extinção > Incompetência em razão da pessoa
+11380,456,Autor falecido e sem habilitação de sucessores,A,5,False,Magistrado > Julgamento > Sem Resolução de Mérito > Extinção > Autor falecido e sem habilitação de sucessores
+11381,456,Ausência de citação de sucessores do réu falecido,A,5,False,Magistrado > Julgamento > Sem Resolução de Mérito > Extinção > Ausência de citação de sucessores do réu falecido
+11382,1013,"Bloqueio, Penhora ou Arresto",A,4,False,"Magistrado > Decisão > Determinação > Bloqueio, Penhora ou Arresto"
+11383,48,Ato ordinatório,A,3,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Ato ordinatório
+11384,48,Liquidação iniciada,A,3,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Liquidação iniciada
+11385,48,Execução/Cumprimento de Sentença Iniciada (o),A,3,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Execução/Cumprimento de Sentença Iniciada (o)
+11393,117,Sanção,A,4,False,Magistrado > Decisão > Decretação de Internação > Sanção
+11394,218,Homologada a Remissão,I,4,False,Magistrado > Julgamento > Sem Resolução de Mérito > Homologada a Remissão
+11395,817,Remissão ao Adolescente como Forma de Suspensão do Processo,A,4,True,Magistrado > Decisão > Concessão > Remissão ao Adolescente como Forma de Suspensão do Processo
+11396,218,Concessão de remissão a adolescente com exclusão do processo,I,4,False,Magistrado > Julgamento > Sem Resolução de Mérito > Concessão de remissão a adolescente com exclusão do processo
+11401,385,Procedência do pedido e procedência do pedido contraposto,A,4,False,Magistrado > Julgamento > Com Resolução do Mérito > Procedência do pedido e procedência do pedido contraposto
+11402,385,Procedência do pedido e procedência em parte do pedido contraposto,A,4,False,Magistrado > Julgamento > Com Resolução do Mérito > Procedência do pedido e procedência em parte do pedido contraposto
+11403,385,Procedência do pedido e improcedência do pedido contraposto,A,4,False,Magistrado > Julgamento > Com Resolução do Mérito > Procedência do pedido e improcedência do pedido contraposto
+11404,385,Procedência em parte do pedido e procedência do pedido contraposto,A,4,False,Magistrado > Julgamento > Com Resolução do Mérito > Procedência em parte do pedido e procedência do pedido contraposto
+11405,385,Procedência em parte do pedido e procedência em parte do pedido contraposto,A,4,False,Magistrado > Julgamento > Com Resolução do Mérito > Procedência em parte do pedido e procedência em parte do pedido contraposto
+11406,385,Procedência em parte do pedido e improcedência do pedido contraposto,A,4,False,Magistrado > Julgamento > Com Resolução do Mérito > Procedência em parte do pedido e improcedência do pedido contraposto
+11407,385,Improcedência do pedido e procedência do pedido contraposto,A,4,False,Magistrado > Julgamento > Com Resolução do Mérito > Improcedência do pedido e procedência do pedido contraposto
+11408,385,Improcedência do pedido e procedência em parte do pedido contraposto,A,4,False,Magistrado > Julgamento > Com Resolução do Mérito > Improcedência do pedido e procedência em parte do pedido contraposto
+11409,385,Improcedência do pedido e improcedência do pedido contraposto,A,4,False,Magistrado > Julgamento > Com Resolução do Mérito > Improcedência do pedido e improcedência do pedido contraposto
+11411,973,Cumprimento da suspensão condicional do processo,A,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Extinção da Punibilidade ou da Pena > Cumprimento da suspensão condicional do processo
+11415,817,Comutação da pena,A,4,False,Magistrado > Decisão > Concessão > Comutação da pena
+11423,817,Medida protetiva,I,4,False,Magistrado > Decisão > Concessão > Medida protetiva
+11424,888,Medida protetiva,I,4,False,Magistrado > Decisão > Concessão em parte > Medida protetiva
+11425,968,Medida protetiva,I,4,False,Magistrado > Decisão > Não-Concessão > Medida protetiva
+11426,157,Medida protetiva,I,4,False,Magistrado > Decisão > Revogação > Medida protetiva
+11554,817,Indulto,A,4,False,Magistrado > Decisão > Concessão > Indulto
+11792,3,Livramento Condicional,A,3,False,Magistrado > Decisão > Livramento Condicional
+11795,385,Procedência do Pedido - Reconhecimento pelo réu,A,4,False,Magistrado > Julgamento > Com Resolução do Mérito > Procedência do Pedido - Reconhecimento pelo réu
+11796,385,Declaração de competência em conflito,A,4,False,Magistrado > Julgamento > Com Resolução do Mérito > Declaração de competência em conflito
+11801,973,Reparação do dano,A,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Extinção da Punibilidade ou da Pena > Reparação do dano
+11876,385,Absolvição Sumária do art. 397-CPP,A,4,False,Magistrado > Julgamento > Com Resolução do Mérito > Absolvição Sumária do art. 397-CPP
+11877,385,Absolvição sumária - crimes dolosos contra a vida,A,4,False,Magistrado > Julgamento > Com Resolução do Mérito > Absolvição sumária - crimes dolosos contra a vida
+11878,973,Prescrição,A,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Extinção da Punibilidade ou da Pena > Prescrição
+11879,973,Decadência ou perempção,A,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Extinção da Punibilidade ou da Pena > Decadência ou perempção
+11975,25,Recurso Especial repetitivo,A,4,False,Magistrado > Decisão > Suspensão ou Sobrestamento > Recurso Especial repetitivo
+11983,48,Retificação de movimento,A,3,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Retificação de movimento
+12028,973,Cumprimento de transação penal,A,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Extinção da Punibilidade ou da Pena > Cumprimento de transação penal
+12029,865,Recebe Teste,I,3,False,Serventuário > Arquivista > Recebe Teste
+12032,210,Exequatur,A,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Concessão > Exequatur
+12033,385,Sentença Estrangeira,A,4,False,Magistrado > Julgamento > Com Resolução do Mérito > Sentença Estrangeira
+12034,385,Exequatur,A,4,False,Magistrado > Julgamento > Com Resolução do Mérito > Exequatur
+12035,160,Representação por ato infracional,A,4,False,Magistrado > Decisão > Recebimento > Representação por ato infracional
+12036,138,Representação por ato infracional,A,4,False,Magistrado > Decisão > Rejeição > Representação por ato infracional
+12037,1013,Quebra de sigilo fiscal,A,4,False,Magistrado > Decisão > Determinação > Quebra de sigilo fiscal
+12038,1013,Quebra de sigilo bancário,A,4,False,Magistrado > Decisão > Determinação > Quebra de sigilo bancário
+12039,1013,Quebra de sigilo telemático,A,4,False,Magistrado > Decisão > Determinação > Quebra de sigilo telemático
+12040,1013,Indisponibilidade de bens,A,4,False,Magistrado > Decisão > Determinação > Indisponibilidade de bens
+12041,210,Recuperação judicial,A,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Concessão > Recuperação judicial
+12065,48,Cumprimento de Suspensão ou Sobrestamento,I,3,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Cumprimento de Suspensão ou Sobrestamento
+12066,48,Cumprimento de Levantamento da Suspensão ,A,3,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Cumprimento de Levantamento da Suspensão 
+12067,3,Levantamento da Suspensão ou Dessobrestamento,I,3,False,Magistrado > Decisão > Levantamento da Suspensão ou Dessobrestamento
+12068,11009,Levantamento da Suspensão ou Dessobrestamento,I,3,False,Magistrado > Despacho > Levantamento da Suspensão ou Dessobrestamento
+12092,3,Afetação ao rito dos recursos repetitivos ,A,3,False,Magistrado > Decisão > Afetação ao rito dos recursos repetitivos 
+12093,3,Desafetação ao rito dos recursos repetitivos ,A,3,False,Magistrado > Decisão > Desafetação ao rito dos recursos repetitivos 
+12094,206,Incidente de Resolução de demandas repetitivas (art. 981 e 982),A,4,False,Magistrado > Decisão > Admissão > Incidente de Resolução de demandas repetitivas (art. 981 e 982)
+12095,207,Incidente de resolução de demandas repetitivas,A,4,False,Magistrado > Decisão > Não-Admissão > Incidente de resolução de demandas repetitivas
+12096,206,Incidente de assunção de competência,A,4,False,Magistrado > Decisão > Admissão > Incidente de assunção de competência
+12097,207,Incidente de assunção de competência ,A,4,False,Magistrado > Decisão > Não-Admissão > Incidente de assunção de competência 
+12098,25,Incidente de Resolução de Demandas Repetitivas ,A,4,False,Magistrado > Decisão > Suspensão ou Sobrestamento > Incidente de Resolução de Demandas Repetitivas 
+12099,25,Por decisão do Presidente do STJ - SIRDR,A,4,False,Magistrado > Decisão > Suspensão ou Sobrestamento > Por decisão do Presidente do STJ - SIRDR
+12100,25,Por decisão do Presidente do STF  - SIRDR,A,4,False,Magistrado > Decisão > Suspensão ou Sobrestamento > Por decisão do Presidente do STF  - SIRDR
+12101,48,Inclusão do processo para julgamento eletrônico,I,3,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Inclusão do processo para julgamento eletrônico
+12102,48,"Adiamento do julgamento (CPC, art. 935)",I,3,False,"Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Adiamento do julgamento (CPC, art. 935)"
+12103,48,Pauta,A,3,True,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Pauta
+12104,12103,Inclusão em pauta,A,4,True,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Pauta > Inclusão em pauta
+12105,12103,Inclusão em Pauta de Sessão Virtual,A,4,True,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Pauta > Inclusão em Pauta de Sessão Virtual
+12106,12103,Adiamento do Julgamento para a Primeira Sessão Seguinte,A,4,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Pauta > Adiamento do Julgamento para a Primeira Sessão Seguinte
+12107,12105,Para análise de repercussão geral,A,5,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Pauta > Inclusão em Pauta de Sessão Virtual > Para análise de repercussão geral
+12108,12104,Para análise de repercussão geral,A,5,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Pauta > Inclusão em pauta > Para análise de repercussão geral
+12109,12105,Para análise da admissão do recurso repetitivo ,A,5,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Pauta > Inclusão em Pauta de Sessão Virtual > Para análise da admissão do recurso repetitivo 
+12110,12104,Para análise da admissão do recurso repetitivo ,A,5,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Pauta > Inclusão em pauta > Para análise da admissão do recurso repetitivo 
+12111,12104,Para análise da admissão do IRDR,A,5,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Pauta > Inclusão em pauta > Para análise da admissão do IRDR
+12112,12105,Para análise da admissão do IRDR,A,5,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Pauta > Inclusão em Pauta de Sessão Virtual > Para análise da admissão do IRDR
+12113,12105,Para análise da admissão do IAC,A,5,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Pauta > Inclusão em Pauta de Sessão Virtual > Para análise da admissão do IAC
+12114,12104,Para análise da admissão do IAC,A,5,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Pauta > Inclusão em pauta > Para análise da admissão do IAC
+12115,12104,Para Julgamento,A,5,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Pauta > Inclusão em pauta > Para Julgamento
+12116,12105,Para Julgamento,A,5,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Pauta > Inclusão em Pauta de Sessão Virtual > Para Julgamento
+12140,7,Prisão em Flagrante em Prisão Preventiva,A,4,False,Magistrado > Decisão > Conversão > Prisão em Flagrante em Prisão Preventiva
+12141,3,Relaxamento do Flagrante,A,3,False,Magistrado > Decisão > Relaxamento do Flagrante
+12142,48,Mudança de Parte,A,3,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Mudança de Parte
+12143,48,Mudança de Assunto Processual,A,3,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Mudança de Assunto Processual
+12144,3,Unificação e Soma de Penas,A,3,False,Magistrado > Decisão > Unificação e Soma de Penas
+12145,157,Detração/Remição,A,4,False,Magistrado > Decisão > Revogação > Detração/Remição
+12146,968,Liberdade Provisória,A,4,False,Magistrado > Decisão > Não-Concessão > Liberdade Provisória
+12147,122,Domiciliar,A,4,False,Magistrado > Decisão > Desacolhimento de Prisão > Domiciliar
+12148,817,Prisão Domiciliar,A,4,False,Magistrado > Decisão > Concessão > Prisão Domiciliar
+12149,817,Detração/Remição da Pena,A,4,False,Magistrado > Decisão > Concessão > Detração/Remição da Pena
+12150,11,Impedimento,A,4,False,Magistrado > Decisão > Declaração > Impedimento
+12151,11,Suspeição,A,4,False,Magistrado > Decisão > Declaração > Suspeição
+12163,3,Outras Decisões,I,3,False,Magistrado > Decisão > Outras Decisões
+12164,3,Outras Decisões,A,3,False,Magistrado > Decisão > Outras Decisões
+12165,48,Requisição de Pagamento,A,3,True,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Requisição de Pagamento
+12166,12165,Precatório,A,4,True,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Requisição de Pagamento > Precatório
+12167,12166,Enviada ao Tribunal,A,5,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Requisição de Pagamento > Precatório > Enviada ao Tribunal
+12168,12166,Preparada para Envio,A,5,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Requisição de Pagamento > Precatório > Preparada para Envio
+12169,12166,Paga,A,5,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Requisição de Pagamento > Precatório > Paga
+12170,12166,Cancelada,A,5,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Requisição de Pagamento > Precatório > Cancelada
+12171,12166,Retificado,A,5,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Requisição de Pagamento > Precatório > Retificado
+12172,12166,Suspensão,A,5,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Requisição de Pagamento > Precatório > Suspensão
+12173,12165,Pequeno Valor,A,4,True,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Requisição de Pagamento > Pequeno Valor
+12174,12173,Enviada ao Tribunal/Ente Devedor,A,5,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Requisição de Pagamento > Pequeno Valor > Enviada ao Tribunal/Ente Devedor
+12175,12173,Preparada para Envio,A,5,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Requisição de Pagamento > Pequeno Valor > Preparada para Envio
+12176,12173,Paga,A,5,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Requisição de Pagamento > Pequeno Valor > Paga
+12177,12173,Cancelada,A,5,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Requisição de Pagamento > Pequeno Valor > Cancelada
+12178,12173,Retificada,A,5,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Requisição de Pagamento > Pequeno Valor > Retificada
+12179,12173,Suspensão,A,5,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Requisição de Pagamento > Pequeno Valor > Suspensão
+12180,11395,Prestação de Serviços à Comunidade,A,5,False,Magistrado > Decisão > Concessão > Remissão ao Adolescente como Forma de Suspensão do Processo > Prestação de Serviços à Comunidade
+12181,11395,Reparação do Dano,A,5,False,Magistrado > Decisão > Concessão > Remissão ao Adolescente como Forma de Suspensão do Processo > Reparação do Dano
+12182,11395,Liberdade Assistida,A,5,False,Magistrado > Decisão > Concessão > Remissão ao Adolescente como Forma de Suspensão do Processo > Liberdade Assistida
+12183,11395,Justiça Restaurativa,A,5,False,Magistrado > Decisão > Concessão > Remissão ao Adolescente como Forma de Suspensão do Processo > Justiça Restaurativa
+12184,218,Suspensão Condicional do Processo,I,4,False,Magistrado > Julgamento > Sem Resolução de Mérito > Suspensão Condicional do Processo
+12185,3,Decisão Interlocutória de Mérito,A,3,False,Magistrado > Decisão > Decisão Interlocutória de Mérito
+12186,48,Cancelamento de Distribuição,A,3,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Cancelamento de Distribuição
+12187,385,Homologação de Decisão de Juiz Leigo,A,4,False,Magistrado > Julgamento > Com Resolução do Mérito > Homologação de Decisão de Juiz Leigo
+12188,1008,Recambiamento de Preso,A,4,False,Magistrado > Decisão > Autorização > Recambiamento de Preso
+12189,48,Entrega de Documento,A,3,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Entrega de Documento
+12198,48,Deliberado em Sessão,A,3,True,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Deliberado em Sessão
+12199,12198,Julgado,A,4,True,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Deliberado em Sessão > Julgado
+12200,12199,Mérito,A,5,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Deliberado em Sessão > Julgado > Mérito
+12201,12199,Liminar,A,5,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Deliberado em Sessão > Julgado > Liminar
+12202,12199,Questão de Ordem,A,5,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Deliberado em Sessão > Julgado > Questão de Ordem
+12203,12198,Adiado,A,4,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Deliberado em Sessão > Adiado
+12204,12198,Pedido de Vista,A,4,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Deliberado em Sessão > Pedido de Vista
+12205,12198,Retirado,A,4,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Deliberado em Sessão > Retirado
+12206,3,Ratificação,A,3,True,Magistrado > Decisão > Ratificação
+12207,12206,Liminar,A,4,False,Magistrado > Decisão > Ratificação > Liminar
+12208,3,Não-Ratificação,A,3,True,Magistrado > Decisão > Não-Ratificação
+12209,12208,Liminar,A,4,False,Magistrado > Decisão > Não-Ratificação > Liminar
+12210,3,Ratificação em Parte,A,3,True,Magistrado > Decisão > Ratificação em Parte
+12211,12210,Liminar,A,4,False,Magistrado > Decisão > Ratificação em Parte > Liminar
+12212,12199,Prorrogação de PAD,A,5,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Deliberado em Sessão > Julgado > Prorrogação de PAD
+12213,12206,Decisão Monocrática,A,4,False,Magistrado > Decisão > Ratificação > Decisão Monocrática
+12214,48,Processo Encaminhado,A,3,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Processo Encaminhado
+12215,48,Processo devolvido à Secretaria,A,3,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Processo devolvido à Secretaria
+12252,385,Sentença confirmada,A,4,False,Magistrado > Julgamento > Com Resolução do Mérito > Sentença confirmada
+12253,385,Sentença confirmada em parte,A,4,False,Magistrado > Julgamento > Com Resolução do Mérito > Sentença confirmada em parte
+12254,385,Sentença desconstituída,A,4,False,Magistrado > Julgamento > Com Resolução do Mérito > Sentença desconstituída
+12255,1013,Redistribuição por prevenção,A,4,False,Magistrado > Decisão > Determinação > Redistribuição por prevenção
+12256,456,Continência,A,5,False,Magistrado > Julgamento > Sem Resolução de Mérito > Extinção > Continência
+12257,385,Definição de tese jurídica em incidentes repetitivos,A,4,False,Magistrado > Julgamento > Com Resolução do Mérito > Definição de tese jurídica em incidentes repetitivos
+12258,385,Emissão de juízo de retratação pelo Órgão Julgador,A,4,False,Magistrado > Julgamento > Com Resolução do Mérito > Emissão de juízo de retratação pelo Órgão Julgador
+12259,25,"Prescrição intercorrente (art. 921, § 4º, CPC)",A,4,False,"Magistrado > Decisão > Suspensão ou Sobrestamento > Prescrição intercorrente (art. 921, § 4º, CPC)"
+12260,48,Autos restaurados,A,3,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Autos restaurados
+12261,160,Emenda a inicial,A,4,False,Magistrado > Decisão > Recebimento > Emenda a inicial
+12262,160,Emenda a inicial,I,4,False,Magistrado > Decisão > Recebimento > Emenda a inicial
+12263,48,Intimação,A,3,True,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Intimação
+12264,12263,Eletrônica,A,4,True,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Intimação > Eletrônica
+12265,12264,Expedida/certificada,A,5,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Intimação > Eletrônica > Expedida/certificada
+12266,12264,Confirmada,A,5,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Intimação > Eletrônica > Confirmada
+12267,12263,Em audiência,A,4,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Intimação > Em audiência
+12268,12263,Em Secretaria,A,4,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Intimação > Em Secretaria
+12269,48,Desentranhamento,A,3,True,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Desentranhamento
+12270,12269,Documento,A,4,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Desentranhamento > Documento
+12271,12269,Petição,A,4,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Desentranhamento > Petição
+12272,12198,Declinada a competência,A,4,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Deliberado em Sessão > Declinada a competência
+12273,12198,Convertido em diligência,A,4,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Deliberado em Sessão > Convertido em diligência
+12274,12198,Sobrestado,A,4,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Deliberado em Sessão > Sobrestado
+12275,12198,Retificado,A,4,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Deliberado em Sessão > Retificado
+12276,48,Cumprimento da pena,A,3,True,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Cumprimento da pena
+12277,12276,Início,A,4,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Cumprimento da pena > Início
+12278,12276,Fim,A,4,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Cumprimento da pena > Fim
+12279,12276,Fim,I,4,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Cumprimento da pena > Fim
+12280,12276,Interrupção,A,4,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Cumprimento da pena > Interrupção
+12281,48,Comunicação eletrônica,A,3,True,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Comunicação eletrônica
+12282,12281,Expedida/Certificada,A,4,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Comunicação eletrônica > Expedida/Certificada
+12283,12281,Confirmada,A,4,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Comunicação eletrônica > Confirmada
+12284,48,Citação,A,3,True,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Citação
+12285,12284,Em Secretaria/Comparecimento Espontâneo,A,4,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Citação > Em Secretaria/Comparecimento Espontâneo
+12286,12284,Eletrônica,A,4,True,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Citação > Eletrônica
+12287,12286,Expedida/Certificada,A,5,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Citação > Eletrônica > Expedida/Certificada
+12288,12286,Confirmada,A,5,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Citação > Eletrônica > Confirmada
+12289,48,Cancelamento,A,3,True,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Cancelamento
+12290,12289,Documento Expedido,A,4,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Cancelamento > Documento Expedido
+12291,12289,Movimentação processual,A,4,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Cancelamento > Movimentação processual
+12292,48,Ato cumprido pela parte ou interessado,A,3,True,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Ato cumprido pela parte ou interessado
+12293,12292,Ato cumprido pela parte ou interessado (sem atributo),A,4,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Ato cumprido pela parte ou interessado > Ato cumprido pela parte ou interessado (sem atributo)
+12294,12292,Comparecimento do Réu/Apenado,A,4,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Ato cumprido pela parte ou interessado > Comparecimento do Réu/Apenado
+12295,12292,Depósito de Bens/Dinheiro,A,4,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Ato cumprido pela parte ou interessado > Depósito de Bens/Dinheiro
+12296,18,Registro Processual,A,3,False,Serventuário > Distribuidor > Registro Processual
+12297,18,Atribuição de competência,A,3,False,Serventuário > Distribuidor > Atribuição de competência
+12298,456,Cancelamento de Dívida Ativa,A,5,False,Magistrado > Julgamento > Sem Resolução de Mérito > Extinção > Cancelamento de Dívida Ativa
+12299,3,Prorrogação de cumprimento de pena/medida de segurança,A,3,False,Magistrado > Decisão > Prorrogação de cumprimento de pena/medida de segurança
+12300,3,Nomeação,A,3,True,Magistrado > Decisão > Nomeação
+12301,12300,Advogado Voluntário,A,4,False,Magistrado > Decisão > Nomeação > Advogado Voluntário
+12302,12300,Curador,A,4,False,Magistrado > Decisão > Nomeação > Curador
+12303,12300,Defensor Dativo,A,4,False,Magistrado > Decisão > Nomeação > Defensor Dativo
+12304,12300,Intérprete/Tradutor,A,4,False,Magistrado > Decisão > Nomeação > Intérprete/Tradutor
+12305,12300,Outros auxiliares de justiça,A,4,False,Magistrado > Decisão > Nomeação > Outros auxiliares de justiça
+12306,12300,Perito,A,4,False,Magistrado > Decisão > Nomeação > Perito
+12307,3,Decretação de revelia,A,3,False,Magistrado > Decisão > Decretação de revelia
+12308,817,Substituição/Sucessão da Parte,A,4,False,Magistrado > Decisão > Concessão > Substituição/Sucessão da Parte
+12309,12103,Retirada,A,4,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Pauta > Retirada
+12310,11009,Pauta,A,3,True,Magistrado > Despacho > Pauta
+12311,12310,Pedido de inclusão,A,4,False,Magistrado > Despacho > Pauta > Pedido de inclusão
+12312,12310,Retirar pedido de inclusão,A,4,False,Magistrado > Despacho > Pauta > Retirar pedido de inclusão
+12313,12310,Pedido de Inclusão em Pauta de Sessão Virtual,A,4,False,Magistrado > Despacho > Pauta > Pedido de Inclusão em Pauta de Sessão Virtual
+12314,12310,Pedido de Retirada de Pauta de Sessão Virtual,A,4,False,Magistrado > Despacho > Pauta > Pedido de Retirada de Pauta de Sessão Virtual
+12315,48,Devolvidos os autos,A,3,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Devolvidos os autos
+12316,48,Notificação Inicial,I,3,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Notificação Inicial
+12317,48,Notificação inicial com liminar,I,3,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Notificação inicial com liminar
+12318,3,Reconhecimento de prevenção,A,3,False,Magistrado > Decisão > Reconhecimento de prevenção
+12319,218,Não conhecimento do pedido,A,4,False,Magistrado > Julgamento > Sem Resolução de Mérito > Não conhecimento do pedido
+12320,3,Denegação de prevenção,A,3,False,Magistrado > Decisão > Denegação de prevenção
+12321,385,Parecer,A,4,True,Magistrado > Julgamento > Com Resolução do Mérito > Parecer
+12322,12321,Favorável,A,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Parecer > Favorável
+12323,12321,Favorável em parte,A,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Parecer > Favorável em parte
+12324,12321,Desfavorável,A,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Parecer > Desfavorável
+12325,456,Perda do objeto,A,5,False,Magistrado > Julgamento > Sem Resolução de Mérito > Extinção > Perda do objeto
+12326,385,Consulta,A,4,True,Magistrado > Julgamento > Com Resolução do Mérito > Consulta
+12327,12326,Respondida,A,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Consulta > Respondida
+12328,12326,Respondida em parte,A,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Consulta > Respondida em parte
+12329,385,Pedido conhecido em parte e procedente,A,4,False,Magistrado > Julgamento > Com Resolução do Mérito > Pedido conhecido em parte e procedente
+12330,385,Pedido conhecido em parte e procedente em parte,A,4,False,Magistrado > Julgamento > Com Resolução do Mérito > Pedido conhecido em parte e procedente em parte
+12331,385,Pedido conhecido em parte e improcedente,A,4,False,Magistrado > Julgamento > Com Resolução do Mérito > Pedido conhecido em parte e improcedente
+12332,3,Prorrogado prazo de conclusão,A,3,False,Magistrado > Decisão > Prorrogado prazo de conclusão
+12359,3,Liminar Prejudicada,A,3,False,Magistrado > Decisão > Liminar Prejudicada
+12387,3,Decisão de Saneamento e Organização,A,3,False,Magistrado > Decisão > Decisão de Saneamento e Organização
+12421,1013,Juízo provisório para medidas urgentes,A,4,False,Magistrado > Decisão > Determinação > Juízo provisório para medidas urgentes
+12422,1013,Devolução da carta rogatória ao juízo rogante,A,4,False,Magistrado > Decisão > Determinação > Devolução da carta rogatória ao juízo rogante
+12425,3,Unificação de Medidas Socioeducativas,A,3,True,Magistrado > Decisão > Unificação de Medidas Socioeducativas
+12427,207,Agravo em recurso especial ,A,4,False,Magistrado > Decisão > Não-Admissão > Agravo em recurso especial 
+12428,206,Reclamação,A,4,False,Magistrado > Decisão > Admissão > Reclamação
+12429,206,Embargos de Divergência,A,4,False,Magistrado > Decisão > Admissão > Embargos de Divergência
+12430,1013,Arquivamento,A,4,False,Magistrado > Decisão > Determinação > Arquivamento
+12431,206,Embargos ,A,4,False,Magistrado > Decisão > Admissão > Embargos 
+12432,3,Afetação,A,3,False,Magistrado > Decisão > Afetação
+12433,385,Conjunto Agravo e Recurso Especial,A,4,True,Magistrado > Julgamento > Com Resolução do Mérito > Conjunto Agravo e Recurso Especial
+12434,12433,Conhecimento para dar provimento ao Recurso Especial ,A,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Conjunto Agravo e Recurso Especial > Conhecimento para dar provimento ao Recurso Especial 
+12435,12433,Conhecimento para negar provimento ao recurso especial,A,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Conjunto Agravo e Recurso Especial > Conhecimento para negar provimento ao recurso especial
+12436,12433,Conhecimento para não conhecer do Recurso Especial,A,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Conjunto Agravo e Recurso Especial > Conhecimento para não conhecer do Recurso Especial
+12437,12433,Conhecimento para determinar sua autuação como Recurso Especial,I,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Conjunto Agravo e Recurso Especial > Conhecimento para determinar sua autuação como Recurso Especial
+12438,12433,conhecimento para dar parcial provimento ao recurso especial,A,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Conjunto Agravo e Recurso Especial > conhecimento para dar parcial provimento ao recurso especial
+12439,12433,conhecimento para conhecer em parte o recurso especial e dar provimento ,A,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Conjunto Agravo e Recurso Especial > conhecimento para conhecer em parte o recurso especial e dar provimento 
+12440,12433,conhecimento para conhecer em parte o recurso especial e negar provimento,A,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Conjunto Agravo e Recurso Especial > conhecimento para conhecer em parte o recurso especial e negar provimento
+12441,12433,Conhecimento para conhecer o recurso especial,A,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Conjunto Agravo e Recurso Especial > Conhecimento para conhecer o recurso especial
+12442,12433,conhecimento para conhecer em parte o recurso especial ,A,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Conjunto Agravo e Recurso Especial > conhecimento para conhecer em parte o recurso especial 
+12443,12433,conhecimento em parte para dar provimento ao recurso especial,A,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Conjunto Agravo e Recurso Especial > conhecimento em parte para dar provimento ao recurso especial
+12444,3,deferimento,A,3,False,Magistrado > Decisão > deferimento
+12445,206,Recurso Ordinário,A,4,False,Magistrado > Decisão > Admissão > Recurso Ordinário
+12446,206,Afetação tornada sem efeito,A,4,False,Magistrado > Decisão > Admissão > Afetação tornada sem efeito
+12447,1008,pagamento,I,4,False,Magistrado > Decisão > Autorização > pagamento
+12448,1013,Demonstração de existência de repercussão geral e  manifestação sobre a questão constitucional,A,4,False,Magistrado > Decisão > Determinação > Demonstração de existência de repercussão geral e  manifestação sobre a questão constitucional
+12449,11010,expedição de alvará de levantamento,I,4,False,Magistrado > Despacho > Mero expediente > expedição de alvará de levantamento
+12450,385,impugnação à execução,A,4,True,Magistrado > Julgamento > Com Resolução do Mérito > impugnação à execução
+12451,12450,Procedência,A,5,False,Magistrado > Julgamento > Com Resolução do Mérito > impugnação à execução > Procedência
+12452,12450,procedência parcial,A,5,False,Magistrado > Julgamento > Com Resolução do Mérito > impugnação à execução > procedência parcial
+12453,12450,improcedência,A,5,False,Magistrado > Julgamento > Com Resolução do Mérito > impugnação à execução > improcedência
+12454,206,Pedido de Uniformização de Interpretação de Lei,A,4,False,Magistrado > Decisão > Admissão > Pedido de Uniformização de Interpretação de Lei
+12455,3,Indeferimento,A,3,False,Magistrado > Decisão > Indeferimento
+12456,207,Recurso Ordinário,A,4,False,Magistrado > Decisão > Não-Admissão > Recurso Ordinário
+12457,1013,Expedição de precatório/rpv,A,4,False,Magistrado > Decisão > Determinação > Expedição de precatório/rpv
+12458,218,Não conhecimento do habeas corpus,A,4,False,Magistrado > Julgamento > Sem Resolução de Mérito > Não conhecimento do habeas corpus
+12459,218,Prejudicado,A,4,False,Magistrado > Julgamento > Sem Resolução de Mérito > Prejudicado
+12467,378,Desistência de pedido,A,4,False,Magistrado > Decisão > Homologação > Desistência de pedido
+12472,1013,Devolução dos autos à origem ,A,4,False,Magistrado > Decisão > Determinação > Devolução dos autos à origem 
+12473,7,agravo em recurso especial ,A,4,False,Magistrado > Decisão > Conversão > agravo em recurso especial 
+12474,1013,Distribuição,A,4,False,Magistrado > Decisão > Determinação > Distribuição
+12475,210,Habeas Corpus de ofício,A,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Concessão > Habeas Corpus de ofício
+12476,378,Medida Protetiva da Lei Maria da Penha Determinada por Autoridade Policial,A,4,False,Magistrado > Decisão > Homologação > Medida Protetiva da Lei Maria da Penha Determinada por Autoridade Policial
+12477,3,Não-Homologação,A,3,True,Magistrado > Decisão > Não-Homologação
+12478,12477,Medida protetiva determinada por autoridade policia,I,4,False,Magistrado > Decisão > Não-Homologação > Medida protetiva determinada por autoridade policia
+12479,157,Medida Protetiva da Lei Maria da Penha Determinada por Autoridade Policial,A,4,False,Magistrado > Decisão > Revogação > Medida Protetiva da Lei Maria da Penha Determinada por Autoridade Policial
+12522,14,Auxiliar da Justiça,A,2,True,Serventuário > Auxiliar da Justiça
+12523,12522,Conciliador,A,3,True,Serventuário > Auxiliar da Justiça > Conciliador
+12524,12522,Juiz Leigo,A,3,True,Serventuário > Auxiliar da Justiça > Juiz Leigo
+12525,12522,Mediador,A,3,True,Serventuário > Auxiliar da Justiça > Mediador
+12526,12525,Conciliação,A,4,True,Serventuário > Auxiliar da Justiça > Mediador > Conciliação
+12527,12525,Mediação,A,4,True,Serventuário > Auxiliar da Justiça > Mediador > Mediação
+12528,12523,Conciliação,A,4,True,Serventuário > Auxiliar da Justiça > Conciliador > Conciliação
+12529,12524,Decisão,A,4,False,Serventuário > Auxiliar da Justiça > Juiz Leigo > Decisão
+12530,12524,Conciliação,A,4,True,Serventuário > Auxiliar da Justiça > Juiz Leigo > Conciliação
+12531,12528,Frutífera,A,5,False,Serventuário > Auxiliar da Justiça > Conciliador > Conciliação > Frutífera
+12532,12528,Infrutífera,A,5,False,Serventuário > Auxiliar da Justiça > Conciliador > Conciliação > Infrutífera
+12533,12530,Frutífera,A,5,False,Serventuário > Auxiliar da Justiça > Juiz Leigo > Conciliação > Frutífera
+12534,12530,Infrutífera,A,5,False,Serventuário > Auxiliar da Justiça > Juiz Leigo > Conciliação > Infrutífera
+12535,12526,Frutífera,A,5,False,Serventuário > Auxiliar da Justiça > Mediador > Conciliação > Frutífera
+12536,12526,Infrutífera,A,5,False,Serventuário > Auxiliar da Justiça > Mediador > Conciliação > Infrutífera
+12537,12527,Não-realizada,I,5,True,Serventuário > Auxiliar da Justiça > Mediador > Mediação > Não-realizada
+12538,12537,Infrutífera,I,6,False,Serventuário > Auxiliar da Justiça > Mediador > Mediação > Não-realizada > Infrutífera
+12539,12527,Infrutífera,A,5,False,Serventuário > Auxiliar da Justiça > Mediador > Mediação > Infrutífera
+12540,12527,Frutífera,A,5,False,Serventuário > Auxiliar da Justiça > Mediador > Mediação > Frutífera
+12548,11009,Expedição de alvará de levantamento,A,3,False,Magistrado > Despacho > Expedição de alvará de levantamento
+12606,48,Remessa negociação consumidor.gov.br,A,3,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Remessa negociação consumidor.gov.br
+12607,48,Recebimento negociação consumidor.gov.br,A,3,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Recebimento negociação consumidor.gov.br
+12608,12528,Parcial,A,5,False,Serventuário > Auxiliar da Justiça > Conciliador > Conciliação > Parcial
+12609,12530,Parcial,A,5,False,Serventuário > Auxiliar da Justiça > Juiz Leigo > Conciliação > Parcial
+12610,12526,Parcial,A,5,False,Serventuário > Auxiliar da Justiça > Mediador > Conciliação > Parcial
+12611,12527,Parcial,A,5,False,Serventuário > Auxiliar da Justiça > Mediador > Mediação > Parcial
+12614,48,Remessa para o CEJUSC ou Centros de Conciliação/Mediação,A,3,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Remessa para o CEJUSC ou Centros de Conciliação/Mediação
+12615,385,Composição Civil,I,4,False,Magistrado > Julgamento > Com Resolução do Mérito > Composição Civil
+12616,973,Composição Civil dos Danos,A,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Extinção da Punibilidade ou da Pena > Composição Civil dos Danos
+12617,456,Renúncia,I,5,False,Magistrado > Julgamento > Sem Resolução de Mérito > Extinção > Renúncia
+12618,48,Remessa CEJUSC,I,3,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Remessa CEJUSC
+12619,48,Recebimento do CEJUSC ou Centros de Conciliação/Mediação,A,3,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Recebimento do CEJUSC ou Centros de Conciliação/Mediação
+12621,48,Recebimento no CEJUSC ou Centros de Conciliação/Mediação,A,3,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Recebimento no CEJUSC ou Centros de Conciliação/Mediação
+12622,48,Remessa para Câmara de Conciliação/Mediação,A,3,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Remessa para Câmara de Conciliação/Mediação
+12623,48,Recebimento de Câmara de Conciliação/Mediação,A,3,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Recebimento de Câmara de Conciliação/Mediação
+12624,970,Audiência do art. 334 CPC,A,4,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Audiência > Audiência do art. 334 CPC
+12646,1013,Determinada a Redistribuição,A,4,False,Magistrado > Decisão > Determinação > Determinada a Redistribuição
+12647,3,Mantida a Distribuição do Processo,A,3,False,Magistrado > Decisão > Mantida a Distribuição do Processo
+12648,1013,Determinação de Diligência,A,4,False,Magistrado > Decisão > Determinação > Determinação de Diligência
+12649,385,Homologação do Pedido,A,4,False,Magistrado > Julgamento > Com Resolução do Mérito > Homologação do Pedido
+12650,385,Não Homologado o Pedido,A,4,False,Magistrado > Julgamento > Com Resolução do Mérito > Não Homologado o Pedido
+12651,385,Contas Não Prestação,A,4,False,Magistrado > Julgamento > Com Resolução do Mérito > Contas Não Prestação
+12652,385,Contas Aprovadas,A,4,False,Magistrado > Julgamento > Com Resolução do Mérito > Contas Aprovadas
+12653,385,Contas Desaprovadas,A,4,False,Magistrado > Julgamento > Com Resolução do Mérito > Contas Desaprovadas
+12654,385,Contas Aprovadas com Ressalvas,A,4,False,Magistrado > Julgamento > Com Resolução do Mérito > Contas Aprovadas com Ressalvas
+12655,48,Identificada Possível Dissidência Partidária,A,3,True,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Identificada Possível Dissidência Partidária
+12656,12655,Partido Movimentado,I,4,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Identificada Possível Dissidência Partidária > Partido Movimentado
+12657,48,Partido Movimentado,A,3,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Partido Movimentado
+12658,48,Sistema de Candidaturas Fechado,A,3,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Sistema de Candidaturas Fechado
+12659,48,Totalização de Eleições Efetuada,A,3,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Totalização de Eleições Efetuada
+12660,12678,Deferimento do Pedido de Registro de Candidatura,A,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Registro de Candidatura > Deferimento do Pedido de Registro de Candidatura
+12661,385,Impugnação do Registro de Candidatura,A,4,True,Magistrado > Julgamento > Com Resolução do Mérito > Impugnação do Registro de Candidatura
+12662,12678,Cassação do Registro de Candidatura,A,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Registro de Candidatura > Cassação do Registro de Candidatura
+12663,12678,Cancelamento do Pedido de Registro de Candidatura,A,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Registro de Candidatura > Cancelamento do Pedido de Registro de Candidatura
+12664,385,Movimentar Partido,A,4,False,Magistrado > Julgamento > Com Resolução do Mérito > Movimentar Partido
+12665,385,Procedência da Impugnação (Registro Deferido),I,4,False,Magistrado > Julgamento > Com Resolução do Mérito > Procedência da Impugnação (Registro Deferido)
+12666,12661,Procedência da Impugnação (Registro Deferido),A,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Impugnação do Registro de Candidatura > Procedência da Impugnação (Registro Deferido)
+12667,12661,Procedência da Impugnação (Registro Indeferido),A,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Impugnação do Registro de Candidatura > Procedência da Impugnação (Registro Indeferido)
+12668,12661,Procedência em Parte da Impugnação (Registro Deferido),A,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Impugnação do Registro de Candidatura > Procedência em Parte da Impugnação (Registro Deferido)
+12669,12661,Procedência em Parte da Impugnação (Registro Indeferido),A,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Impugnação do Registro de Candidatura > Procedência em Parte da Impugnação (Registro Indeferido)
+12670,12661,Procedência em Parte da Impugnação (Registro Cancelado),A,5,True,Magistrado > Julgamento > Com Resolução do Mérito > Impugnação do Registro de Candidatura > Procedência em Parte da Impugnação (Registro Cancelado)
+12671,12670,Procedência em Parte da Impugnação (Registro Cassado),I,6,False,Magistrado > Julgamento > Com Resolução do Mérito > Impugnação do Registro de Candidatura > Procedência em Parte da Impugnação (Registro Cancelado) > Procedência em Parte da Impugnação (Registro Cassado)
+12672,12661,Procedência em Parte da Impugnação (Registro Cassado),A,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Impugnação do Registro de Candidatura > Procedência em Parte da Impugnação (Registro Cassado)
+12673,12661,Não-Procedência da Impugnação (Registro Deferido),A,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Impugnação do Registro de Candidatura > Não-Procedência da Impugnação (Registro Deferido)
+12674,12661,Não-Procedência da Impugnação (Registro Indeferido),A,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Impugnação do Registro de Candidatura > Não-Procedência da Impugnação (Registro Indeferido)
+12675,12661,Não-Procedência da Impugnação (Registro Cancelado),A,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Impugnação do Registro de Candidatura > Não-Procedência da Impugnação (Registro Cancelado)
+12676,12661,Não-Procedência da Impugnação (Registro Cassado),A,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Impugnação do Registro de Candidatura > Não-Procedência da Impugnação (Registro Cassado)
+12677,12661,Procedência da Impugnação (Registro Cancelado),A,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Impugnação do Registro de Candidatura > Procedência da Impugnação (Registro Cancelado)
+12678,385,Registro de Candidatura,A,4,True,Magistrado > Julgamento > Com Resolução do Mérito > Registro de Candidatura
+12679,12678,Provimento (Registro Deferido),A,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Registro de Candidatura > Provimento (Registro Deferido)
+12680,12678,Provimento (Registro Indeferido),A,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Registro de Candidatura > Provimento (Registro Indeferido)
+12681,12678,Provimento (Registro Cancelado),A,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Registro de Candidatura > Provimento (Registro Cancelado)
+12682,12678,Provimento (Registro Cassado),A,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Registro de Candidatura > Provimento (Registro Cassado)
+12683,12678,Provimento (Registro Sem Julgamento),A,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Registro de Candidatura > Provimento (Registro Sem Julgamento)
+12684,12678,Provimento em Parte (Registro Deferido),A,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Registro de Candidatura > Provimento em Parte (Registro Deferido)
+12685,12678,Provimento em Parte (Registro Indeferido),A,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Registro de Candidatura > Provimento em Parte (Registro Indeferido)
+12686,12678,Provimento em Parte (Registro Cancelado),A,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Registro de Candidatura > Provimento em Parte (Registro Cancelado)
+12687,12678,Provimento em Parte (Registro Cassado),A,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Registro de Candidatura > Provimento em Parte (Registro Cassado)
+12688,12678,Provimento em Parte (Registro Sem Julgamento),A,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Registro de Candidatura > Provimento em Parte (Registro Sem Julgamento)
+12689,12678,Não-Provimento (Registro Deferido),A,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Registro de Candidatura > Não-Provimento (Registro Deferido)
+12690,12678,Não-Provimento (Registro Indeferido),A,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Registro de Candidatura > Não-Provimento (Registro Indeferido)
+12691,12678,Não-Provimento (Registro Cancelado),A,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Registro de Candidatura > Não-Provimento (Registro Cancelado)
+12692,12678,Não-Provimento (Registro Cassado),A,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Registro de Candidatura > Não-Provimento (Registro Cassado)
+12693,12678,Não-Provimento (Registro Sem Julgamento),A,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Registro de Candidatura > Não-Provimento (Registro Sem Julgamento)
+12694,12678,Acolhimento (Registro Deferido),A,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Registro de Candidatura > Acolhimento (Registro Deferido)
+12695,12678,Acolhimento (Registro Indeferido),A,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Registro de Candidatura > Acolhimento (Registro Indeferido)
+12696,12678,Acolhimento (Registro Cancelado),A,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Registro de Candidatura > Acolhimento (Registro Cancelado)
+12697,12678,Acolhimento (Registro Cassado),A,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Registro de Candidatura > Acolhimento (Registro Cassado)
+12698,12678,Acolhimento (Registro Sem Julgamento),A,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Registro de Candidatura > Acolhimento (Registro Sem Julgamento)
+12699,12678,Não-Acolhimento (Registro Deferido),A,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Registro de Candidatura > Não-Acolhimento (Registro Deferido)
+12700,12678,Não-Acolhimento (Registro Indeferido),A,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Registro de Candidatura > Não-Acolhimento (Registro Indeferido)
+12701,12678,Não-Acolhimento (Registro Cancelado),A,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Registro de Candidatura > Não-Acolhimento (Registro Cancelado)
+12702,12678,Não-Acolhimento (Registro Cassado),A,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Registro de Candidatura > Não-Acolhimento (Registro Cassado)
+12703,12678,Não-Acolhimento (Registro Sem Julgamento),A,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Registro de Candidatura > Não-Acolhimento (Registro Sem Julgamento)
+12704,12678,Anulação de Acórdão (Registro Deferido),I,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Registro de Candidatura > Anulação de Acórdão (Registro Deferido)
+12705,12678,Anulação de Acórdão (Registro Indeferido),I,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Registro de Candidatura > Anulação de Acórdão (Registro Indeferido)
+12706,12678,Anulação de Acórdão (Registro Cancelado),I,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Registro de Candidatura > Anulação de Acórdão (Registro Cancelado)
+12707,12678,Anulação de Acórdão (Registro Cassado),I,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Registro de Candidatura > Anulação de Acórdão (Registro Cassado)
+12708,12678,Anulação de Acórdão (Registro Sem Julgamento),I,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Registro de Candidatura > Anulação de Acórdão (Registro Sem Julgamento)
+12709,218,Registro de Candidatura,A,4,True,Magistrado > Julgamento > Sem Resolução de Mérito > Registro de Candidatura
+12710,12709,Anulação de Acórdão (Registro Deferido),A,5,False,Magistrado > Julgamento > Sem Resolução de Mérito > Registro de Candidatura > Anulação de Acórdão (Registro Deferido)
+12711,12709,Anulação de Acórdao (Registro Indeferido),A,5,False,Magistrado > Julgamento > Sem Resolução de Mérito > Registro de Candidatura > Anulação de Acórdao (Registro Indeferido)
+12712,12709,Anulação de Acórdão (Registro Cancelado),A,5,False,Magistrado > Julgamento > Sem Resolução de Mérito > Registro de Candidatura > Anulação de Acórdão (Registro Cancelado)
+12713,12709,Anulação de Acórdão (Registro Cassado),A,5,False,Magistrado > Julgamento > Sem Resolução de Mérito > Registro de Candidatura > Anulação de Acórdão (Registro Cassado)
+12714,12709,Anulação de Acórdão (Registro Sem Julgamento),A,5,False,Magistrado > Julgamento > Sem Resolução de Mérito > Registro de Candidatura > Anulação de Acórdão (Registro Sem Julgamento)
+12715,12709,Não Conhecimento (Registro Deferido),A,5,False,Magistrado > Julgamento > Sem Resolução de Mérito > Registro de Candidatura > Não Conhecimento (Registro Deferido)
+12716,12709,Não Conhecimento (Registro Indeferido),A,5,False,Magistrado > Julgamento > Sem Resolução de Mérito > Registro de Candidatura > Não Conhecimento (Registro Indeferido)
+12717,12709,Não Conhecimento (Registro Cancelado),A,5,False,Magistrado > Julgamento > Sem Resolução de Mérito > Registro de Candidatura > Não Conhecimento (Registro Cancelado)
+12718,12709,Não Conhecimento (Registro Cassado),A,5,False,Magistrado > Julgamento > Sem Resolução de Mérito > Registro de Candidatura > Não Conhecimento (Registro Cassado)
+12719,12709,Não Conhecimento (Registro Sem Julgamento),A,5,False,Magistrado > Julgamento > Sem Resolução de Mérito > Registro de Candidatura > Não Conhecimento (Registro Sem Julgamento)
+12720,12709,Negação de Seguimento (Registro Deferido),A,5,False,Magistrado > Julgamento > Sem Resolução de Mérito > Registro de Candidatura > Negação de Seguimento (Registro Deferido)
+12721,12709,Negação de Seguimento (Registro Indeferido),A,5,False,Magistrado > Julgamento > Sem Resolução de Mérito > Registro de Candidatura > Negação de Seguimento (Registro Indeferido)
+12722,12709,Negação de Seguimento (Registro Cancelado),A,5,False,Magistrado > Julgamento > Sem Resolução de Mérito > Registro de Candidatura > Negação de Seguimento (Registro Cancelado)
+12723,12709,Negação de Seguimento (Registro Cassado),A,5,False,Magistrado > Julgamento > Sem Resolução de Mérito > Registro de Candidatura > Negação de Seguimento (Registro Cassado)
+12724,12709,Negação de Seguimento (Registro Sem Julgamento),A,5,False,Magistrado > Julgamento > Sem Resolução de Mérito > Registro de Candidatura > Negação de Seguimento (Registro Sem Julgamento)
+12733,378,Homologação do Acordo de Não Persecução Penal,A,4,False,Magistrado > Decisão > Homologação > Homologação do Acordo de Não Persecução Penal
+12734,157,Revogação do Acordo de Não Persecução Penal,A,4,False,Magistrado > Decisão > Revogação > Revogação do Acordo de Não Persecução Penal
+12735,973,Cumprimento de ANPP,A,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Extinção da Punibilidade ou da Pena > Cumprimento de ANPP
+12736,3,Unificação de Processos de Execução,A,3,False,Magistrado > Decisão > Unificação de Processos de Execução
+12737,157,Revogação da Suspensão Condicional do Processo,A,4,False,Magistrado > Decisão > Revogação > Revogação da Suspensão Condicional do Processo
+12738,385,Homologação de Transação Penal,A,4,False,Magistrado > Julgamento > Com Resolução do Mérito > Homologação de Transação Penal
+12739,970,Admonitória,A,4,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Audiência > Admonitória
+12740,970,de Conciliação,A,4,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Audiência > de Conciliação
+12741,970,de Acolhimento,A,4,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Audiência > de Acolhimento
+12742,970,de Custódia,A,4,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Audiência > de Custódia
+12743,970,de Interrogatório,A,4,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Audiência > de Interrogatório
+12744,970,de Justificação,A,4,True,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Audiência > de Justificação
+12745,970,do art. 16 da Lei 11.340,A,4,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Audiência > do art. 16 da Lei 11.340
+12746,970,em Execução,A,4,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Audiência > em Execução
+12747,970,Inicial,A,4,True,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Audiência > Inicial
+12748,12747,de Instrução,I,5,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Audiência > Inicial > de Instrução
+12749,970,de Instrução,A,4,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Audiência > de Instrução
+12750,970,de Instrução e Julgamento,A,4,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Audiência > de Instrução e Julgamento
+12751,970,de Julgamento,A,4,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Audiência > de Julgamento
+12752,970,de Mediação,A,4,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Audiência > de Mediação
+12753,970,Preliminar,A,4,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Audiência > Preliminar
+12759,48,Realização de Procedimento Restaurativo,I,3,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Realização de Procedimento Restaurativo
+12765,3,Envio para Juízo de Retratação ,I,3,True,Magistrado > Decisão > Envio para Juízo de Retratação 
+12766,12765,Por Divergência de Entendimento com o STF,I,4,False,Magistrado > Decisão > Envio para Juízo de Retratação  > Por Divergência de Entendimento com o STF
+12767,12765,Por Divergência de Entendimento com STJ,I,4,False,Magistrado > Decisão > Envio para Juízo de Retratação  > Por Divergência de Entendimento com STJ
+12768,3,Manutenção de Acórdão,A,3,False,Magistrado > Decisão > Manutenção de Acórdão
+12769,3,Desclassificação de Delito,A,3,False,Magistrado > Decisão > Desclassificação de Delito
+12792,12661,Procedência da Impugnação (Registro Cassado),A,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Impugnação do Registro de Candidatura > Procedência da Impugnação (Registro Cassado)
+14091,48,Devolvidos os autos após Pedido de Vista,A,3,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Devolvidos os autos após Pedido de Vista
+14092,1,Voto,A,2,True,Magistrado > Voto
+14093,14092,Voto do Relator,A,3,False,Magistrado > Voto > Voto do Relator
+14094,14092,Voto Divergente Vencedor,A,3,False,Magistrado > Voto > Voto Divergente Vencedor
+14095,14092,Outros Votos,A,3,False,Magistrado > Voto > Outros Votos
+14096,970,Audiência Pública,A,4,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Audiência > Audiência Pública
+14099,385,Homologação de Acordo em Execução ou em Cumprimento de Sentença,A,4,False,Magistrado > Julgamento > Com Resolução do Mérito > Homologação de Acordo em Execução ou em Cumprimento de Sentença
+14210,12678,Indeferimento do Pedido de Registro de Candidatura,A,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Registro de Candidatura > Indeferimento do Pedido de Registro de Candidatura
+14211,12678,Homologação da Renúncia ao Registro de Candidatura,A,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Registro de Candidatura > Homologação da Renúncia ao Registro de Candidatura
+14212,48,Sistema de Candidaturas Reaberto,A,3,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Sistema de Candidaturas Reaberto
+14213,12678,Acolhimento em Parte (Registro Deferido),A,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Registro de Candidatura > Acolhimento em Parte (Registro Deferido)
+14214,12678,Acolhimento em Parte (Registro Indeferido),A,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Registro de Candidatura > Acolhimento em Parte (Registro Indeferido)
+14215,12678,Acolhimento em Parte (Registro Cancelado),A,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Registro de Candidatura > Acolhimento em Parte (Registro Cancelado)
+14216,12678,Acolhimento em Parte (Registro Cassado),A,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Registro de Candidatura > Acolhimento em Parte (Registro Cassado)
+14217,12678,Acolhimento em Parte (Registro sem Julgamento),A,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Registro de Candidatura > Acolhimento em Parte (Registro sem Julgamento)
+14218,12709,Anulação de Sentença (Registro Sem Julgamento),A,5,False,Magistrado > Julgamento > Sem Resolução de Mérito > Registro de Candidatura > Anulação de Sentença (Registro Sem Julgamento)
+14219,385,Contas Regularizadas,A,4,False,Magistrado > Julgamento > Com Resolução do Mérito > Contas Regularizadas
+14230,3,Apreciação de Questão Interlocutória,I,3,False,Magistrado > Decisão > Apreciação de Questão Interlocutória
+14231,3,Impugnação ao Cumprimento de Sentença,A,3,True,Magistrado > Decisão > Impugnação ao Cumprimento de Sentença
+14232,14231,Acolhimento,A,4,False,Magistrado > Decisão > Impugnação ao Cumprimento de Sentença > Acolhimento
+14233,14231,Não-Acolhimento,A,4,False,Magistrado > Decisão > Impugnação ao Cumprimento de Sentença > Não-Acolhimento
+14234,14231,Acolhimento em Parte,A,4,False,Magistrado > Decisão > Impugnação ao Cumprimento de Sentença > Acolhimento em Parte
+14235,14231,Rejeição,A,4,False,Magistrado > Decisão > Impugnação ao Cumprimento de Sentença > Rejeição
+14680,214,Exequatur,A,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Concessão em Parte > Exequatur
+14681,3,Descumprimento de Medida Protetiva da Lei Maria Penha,A,3,False,Magistrado > Decisão > Descumprimento de Medida Protetiva da Lei Maria Penha
+14682,817,Medida Cautelar Diversa da Prisão,A,4,False,Magistrado > Decisão > Concessão > Medida Cautelar Diversa da Prisão
+14683,157,Medida Cautelar Diversa da Prisão,A,4,False,Magistrado > Decisão > Revogação > Medida Cautelar Diversa da Prisão
+14702,3,Incidente ou Cautelar - Procedimento Resolvido,A,3,False,Magistrado > Decisão > Incidente ou Cautelar - Procedimento Resolvido
+14730,3,Homologação Parcial do Flagrante,I,3,False,Magistrado > Decisão > Homologação Parcial do Flagrante
+14732,48,Conversão de Autos Físicos em Eletrônicos,A,3,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Conversão de Autos Físicos em Eletrônicos
+14733,3,Prorrogação de Medida Protetiva,I,3,False,Magistrado > Decisão > Prorrogação de Medida Protetiva
+14736,48,Inclusão no Juízo 100% Digital,A,3,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Inclusão no Juízo 100% Digital
+14737,48,Exclusão do Juízo 100% Digital,A,3,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Exclusão do Juízo 100% Digital
+14738,48,Retificação de Classe Processual,A,3,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Retificação de Classe Processual
+14739,48,Evolução da Classe Processual,A,3,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Evolução da Classe Processual
+14776,3,Homologação em Parte,A,3,False,Magistrado > Decisão > Homologação em Parte
+14777,385,Sentença Estrangeira,A,4,False,Magistrado > Julgamento > Com Resolução do Mérito > Sentença Estrangeira
+14778,385,Sentença Estrangeira,A,4,False,Magistrado > Julgamento > Com Resolução do Mérito > Sentença Estrangeira
+14848,456,Ausência de Requerimento Administrativo Prévio,A,5,False,Magistrado > Julgamento > Sem Resolução de Mérito > Extinção > Ausência de Requerimento Administrativo Prévio
+14901,48,Perícia,A,3,True,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Perícia
+14902,48,Perícia,I,3,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Perícia
+14903,14901,Determinada/Designada,A,4,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Perícia > Determinada/Designada
+14904,14901,Agendada,A,4,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Perícia > Agendada
+14905,14901,Realizada,A,4,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Perícia > Realizada
+14906,14901,Cancelada,A,4,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Perícia > Cancelada
+14907,14901,Reagendada,A,4,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Perícia > Reagendada
+14908,14901,Não Realizada,A,4,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Perícia > Não Realizada
+14937,385,Acolhimento da Justificativa do Mesário Faltoso ou Dispensa de Multa,A,4,False,Magistrado > Julgamento > Com Resolução do Mérito > Acolhimento da Justificativa do Mesário Faltoso ou Dispensa de Multa
+14961,12281,Erro ou Recusa na Comunicação,A,4,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Comunicação eletrônica > Erro ou Recusa na Comunicação
+14968,25,Por Incidente de Assunção de Competência - IAC,A,4,False,Magistrado > Decisão > Suspensão ou Sobrestamento > Por Incidente de Assunção de Competência - IAC
+14969,25,Por Grupo de Representativos,A,4,False,Magistrado > Decisão > Suspensão ou Sobrestamento > Por Grupo de Representativos
+14970,25,Por Controvérsia,A,4,False,Magistrado > Decisão > Suspensão ou Sobrestamento > Por Controvérsia
+14971,25,Por Ação de Controle Concentrado de Constitucionalidade,A,4,False,Magistrado > Decisão > Suspensão ou Sobrestamento > Por Ação de Controle Concentrado de Constitucionalidade
+14972,25,Por Decisão do Presidente do TST - SIRDR,A,4,False,Magistrado > Decisão > Suspensão ou Sobrestamento > Por Decisão do Presidente do TST - SIRDR
+14973,25,Por Recurso de Revista Repetitivo,A,4,False,Magistrado > Decisão > Suspensão ou Sobrestamento > Por Recurso de Revista Repetitivo
+14974,48,Levantamento da Causa Suspensiva ou de Sobrestamento,A,3,True,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Levantamento da Causa Suspensiva ou de Sobrestamento
+14975,14974,Suspensão/Sobrestamento por Recurso Extraordinário com Repercussão Geral,A,4,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Levantamento da Causa Suspensiva ou de Sobrestamento > Suspensão/Sobrestamento por Recurso Extraordinário com Repercussão Geral
+14976,14974,Suspensão/Sobrestamento por Recurso Especial Repetitivo,A,4,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Levantamento da Causa Suspensiva ou de Sobrestamento > Suspensão/Sobrestamento por Recurso Especial Repetitivo
+14977,14974,Suspensão/Sobrestamento Determinada por Decisão do Presidente do STF - SIRDR,A,4,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Levantamento da Causa Suspensiva ou de Sobrestamento > Suspensão/Sobrestamento Determinada por Decisão do Presidente do STF - SIRDR
+14978,14974,Suspensão/Sobrestamento Determinada por Decisão do Presidente do STJ - SIRDR,A,4,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Levantamento da Causa Suspensiva ou de Sobrestamento > Suspensão/Sobrestamento Determinada por Decisão do Presidente do STJ - SIRDR
+14979,14974,Suspensão/Sobrestamento Determinada por Incidente de Assunção de Competência - IAC,A,4,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Levantamento da Causa Suspensiva ou de Sobrestamento > Suspensão/Sobrestamento Determinada por Incidente de Assunção de Competência - IAC
+14980,14974,Suspensão/Sobrestamento Determinada por Grupo de Representativos,A,4,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Levantamento da Causa Suspensiva ou de Sobrestamento > Suspensão/Sobrestamento Determinada por Grupo de Representativos
+14981,14974,Suspensão/Sobrestamento Determinada por Controvérsia,A,4,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Levantamento da Causa Suspensiva ou de Sobrestamento > Suspensão/Sobrestamento Determinada por Controvérsia
+14982,14974,Suspensão/Sobrestamento Determinada por Ação de Controle Concentrado de Constitucionalidade  - STF,A,4,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Levantamento da Causa Suspensiva ou de Sobrestamento > Suspensão/Sobrestamento Determinada por Ação de Controle Concentrado de Constitucionalidade  - STF
+14983,14974,Suspensão/Sobrestamento Determinada por Decisão do Presidente do TST - SIRDR,A,4,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Levantamento da Causa Suspensiva ou de Sobrestamento > Suspensão/Sobrestamento Determinada por Decisão do Presidente do TST - SIRDR
+14984,14974,Suspensão/Sobrestamento Determinada por Recurso de Revista Repetitivo,A,4,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Levantamento da Causa Suspensiva ou de Sobrestamento > Suspensão/Sobrestamento Determinada por Recurso de Revista Repetitivo
+14985,14974,Suspensão/Sobrestamento por Incidente de Resolução de Demandas Repetitivas,A,4,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Levantamento da Causa Suspensiva ou de Sobrestamento > Suspensão/Sobrestamento por Incidente de Resolução de Demandas Repetitivas
+14997,861,Arquivamento Provisório - Aguardando Captura de Réu Condenado,A,4,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Arquivamento > Arquivamento Provisório - Aguardando Captura de Réu Condenado
+14998,861,Arquivamento Provisório - Adolescente Aguardando Apreensão,A,4,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Arquivamento > Arquivamento Provisório - Adolescente Aguardando Apreensão
+14999,48,Iniciada Tramitação Direta entre MP e Autoridade Policial,A,3,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Iniciada Tramitação Direta entre MP e Autoridade Policial
+15000,48,Finalizada Tramitação Direta entre MP e Autoridade Policial,A,3,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Finalizada Tramitação Direta entre MP e Autoridade Policial
+15009,11025,Por Impedimento ou Suspeição,A,4,False,Magistrado > Despacho > Suspensão ou Sobrestamento > Por Impedimento ou Suspeição
+15021,12198,Destaque para Julgamento Presencial,A,4,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Deliberado em Sessão > Destaque para Julgamento Presencial
+15022,385,Rejeição de Justificativa do Mesário Faltoso ou Manutenção de Multa,A,4,False,Magistrado > Julgamento > Com Resolução do Mérito > Rejeição de Justificativa do Mesário Faltoso ou Manutenção de Multa
+15023,12678,DRAP Deferido,A,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Registro de Candidatura > DRAP Deferido
+15024,12678,DRAP Indeferido,A,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Registro de Candidatura > DRAP Indeferido
+15025,157,Revogação da Transação Penal,A,4,False,Magistrado > Decisão > Revogação > Revogação da Transação Penal
+15026,385,Cancelamento de Inscrição Eleitoral,A,4,False,Magistrado > Julgamento > Com Resolução do Mérito > Cancelamento de Inscrição Eleitoral
+15027,385,Manutenção da Inscrição Eleitoral,A,4,False,Magistrado > Julgamento > Com Resolução do Mérito > Manutenção da Inscrição Eleitoral
+15028,385,Acolhimento de Pedido de Inclusão em Lista Especial,A,4,False,Magistrado > Julgamento > Com Resolução do Mérito > Acolhimento de Pedido de Inclusão em Lista Especial
+15029,385,Indeferimento de Pedido de Inclusão em Lista Especial,A,4,False,Magistrado > Julgamento > Com Resolução do Mérito > Indeferimento de Pedido de Inclusão em Lista Especial
+15030,385,Cancelamento de Filiação Partidária,A,4,False,Magistrado > Julgamento > Com Resolução do Mérito > Cancelamento de Filiação Partidária
+15032,108,Manutenção da Prisão Preventiva,A,4,False,Magistrado > Decisão > Decretação de Prisão Criminal > Manutenção da Prisão Preventiva
+15045,970,Audiência de Apresentação de Adolescente,A,4,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Audiência > Audiência de Apresentação de Adolescente
+15049,970,Audiência Concentrada Protetiva,A,4,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Audiência > Audiência Concentrada Protetiva
+15050,970,Audiência Concentrada Infracional,A,4,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Audiência > Audiência Concentrada Infracional
+15057,206,Admissão de Recurso de Embargos à SDI/TST,A,4,False,Magistrado > Decisão > Admissão > Admissão de Recurso de Embargos à SDI/TST
+15058,206,Admissão de Recurso de Embargos à SDC/TST,A,4,False,Magistrado > Decisão > Admissão > Admissão de Recurso de Embargos à SDC/TST
+15059,207,Não Admissão de Recurso de Embargos à SDI/TST,A,4,False,Magistrado > Decisão > Não-Admissão > Não Admissão de Recurso de Embargos à SDI/TST
+15060,207,Não Admissão de Recurso de Embargos à SDC/TST,A,4,False,Magistrado > Decisão > Não-Admissão > Não Admissão de Recurso de Embargos à SDC/TST
+15061,3,Impugnação aos Cálculos de Liquidação,A,3,True,Magistrado > Decisão > Impugnação aos Cálculos de Liquidação
+15062,15061,Acolhimento,A,4,False,Magistrado > Decisão > Impugnação aos Cálculos de Liquidação > Acolhimento
+15063,15061,Acolhimento em Parte,A,4,False,Magistrado > Decisão > Impugnação aos Cálculos de Liquidação > Acolhimento em Parte
+15064,15061,Não Acolhimento,A,4,False,Magistrado > Decisão > Impugnação aos Cálculos de Liquidação > Não Acolhimento
+15065,15061,Não Admissão,A,4,False,Magistrado > Decisão > Impugnação aos Cálculos de Liquidação > Não Admissão
+15067,25,REsp Sobrestado por Possível Prejudicialidade de RE,A,4,False,Magistrado > Decisão > Suspensão ou Sobrestamento > REsp Sobrestado por Possível Prejudicialidade de RE
+15078,817,Substituição de Medida Socioeducativa,A,4,False,Magistrado > Decisão > Concessão > Substituição de Medida Socioeducativa
+15079,817,Suspensão de Medida Socioeducativa,A,4,False,Magistrado > Decisão > Concessão > Suspensão de Medida Socioeducativa
+15080,1013,Reavaliação de Medida Socioeducativa,A,4,False,Magistrado > Decisão > Determinação > Reavaliação de Medida Socioeducativa
+15081,1013,Busca e Apreensão de Adolescente,A,4,False,Magistrado > Decisão > Determinação > Busca e Apreensão de Adolescente
+15082,3,Revogação de Internação de Adolescente,A,3,False,Magistrado > Decisão > Revogação de Internação de Adolescente
+15083,15232,Manutenção de Internação Provisória,A,4,False,Magistrado > Decisão > Manutenção da Internação > Manutenção de Internação Provisória
+15084,3,Desinternação de Adolescente,A,3,False,Magistrado > Decisão > Desinternação de Adolescente
+15085,1013,Emenda à Inicial,A,4,False,Magistrado > Decisão > Determinação > Emenda à Inicial
+15086,3,Deferimento em Parte,A,3,False,Magistrado > Decisão > Deferimento em Parte
+15092,48,Registro de Candidatura,A,3,True,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Registro de Candidatura
+15093,15092,Cancelamento de Diplomação,A,4,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Registro de Candidatura > Cancelamento de Diplomação
+15094,15092,Pendência de Diplomação,A,4,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Registro de Candidatura > Pendência de Diplomação
+15095,15092,Diplomação,A,4,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Registro de Candidatura > Diplomação
+15096,15092,Alteração da Declaração de Bens,A,4,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Registro de Candidatura > Alteração da Declaração de Bens
+15097,15092,Alteração do Nome para Urna,A,4,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Registro de Candidatura > Alteração do Nome para Urna
+15098,15092,Alteração da Foto,A,4,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Registro de Candidatura > Alteração da Foto
+15099,15092,Alteração do Número do Candidato,A,4,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Registro de Candidatura > Alteração do Número do Candidato
+15100,15092,Alteração da Data de Nascimento do Candidato,A,4,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Registro de Candidatura > Alteração da Data de Nascimento do Candidato
+15101,12289,Conclusão,A,4,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Cancelamento > Conclusão
+15102,48,Sessão Restaurativa,A,3,True,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Sessão Restaurativa
+15103,888,Gratuidade da Justiça,A,4,False,Magistrado > Decisão > Concessão em parte > Gratuidade da Justiça
+15157,15092,Registro de Falecimento,A,4,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Registro de Candidatura > Registro de Falecimento
+15158,15092,Registro de Renúncia,A,4,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Registro de Candidatura > Registro de Renúncia
+15162,3,Acolhimento de Embargos de Declaração,A,3,False,Magistrado > Decisão > Acolhimento de Embargos de Declaração
+15163,3,Acolhimento em Parte de Embargos de Declaração,A,3,False,Magistrado > Decisão > Acolhimento em Parte de Embargos de Declaração
+15164,3,Não Acolhimento de Embargos de Declaração,A,3,False,Magistrado > Decisão > Não Acolhimento de Embargos de Declaração
+15165,385,Resolução Aprovada,A,4,False,Magistrado > Julgamento > Com Resolução do Mérito > Resolução Aprovada
+15166,385,Resolução Desaprovada,A,4,False,Magistrado > Julgamento > Com Resolução do Mérito > Resolução Desaprovada
+15168,12289,"De Liquidação, Cumprimento de Sentença ou Execução por Nulidade da Fase de Conhecimento ",A,4,False,"Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Cancelamento > De Liquidação, Cumprimento de Sentença ou Execução por Nulidade da Fase de Conhecimento "
+15183,207,Pedido de Uniformização de Interpretação de Lei,A,4,False,Magistrado > Decisão > Não-Admissão > Pedido de Uniformização de Interpretação de Lei
+15185,1,Cooperação Judiciária,A,2,False,Magistrado > Cooperação Judiciária
+15186,48,Cooperação Judiciária,A,3,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Cooperação Judiciária
+15188,970,Audiência de Depoimento Especial,A,4,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Audiência > Audiência de Depoimento Especial
+15200,1013,Manutenção da Medida Socioeducativa,A,4,False,Magistrado > Decisão > Determinação > Manutenção da Medida Socioeducativa
+15201,378,Homologação do Plano Individual de Atendimento (PIA),A,4,False,Magistrado > Decisão > Homologação > Homologação do Plano Individual de Atendimento (PIA)
+15202,1013,Determinação de Alteração ou Complementação do Plano Individual de Atendimento (PIA),A,4,False,Magistrado > Decisão > Determinação > Determinação de Alteração ou Complementação do Plano Individual de Atendimento (PIA)
+15203,3,Manutenção de Sentença/Decisão Anterior - Infância e Juventude,A,3,False,Magistrado > Decisão > Manutenção de Sentença/Decisão Anterior - Infância e Juventude
+15204,25,Não Localização do Adolescente,A,4,False,Magistrado > Decisão > Suspensão ou Sobrestamento > Não Localização do Adolescente
+15205,3,Manutenção de Acolhimento Institucional/em Família Acolhedora,A,3,False,Magistrado > Decisão > Manutenção de Acolhimento Institucional/em Família Acolhedora
+15206,3,Desacolhimento Institucional/de Família Acolhedora,A,3,False,Magistrado > Decisão > Desacolhimento Institucional/de Família Acolhedora
+15207,1008,Aproximação de Pretendente à Adoção,A,4,False,Magistrado > Decisão > Autorização > Aproximação de Pretendente à Adoção
+15208,157,Aproximação de Pretendente à Adoção,A,4,False,Magistrado > Decisão > Revogação > Aproximação de Pretendente à Adoção
+15209,1008,Busca Ativa para Adoção,A,4,False,Magistrado > Decisão > Autorização > Busca Ativa para Adoção
+15210,157,Busca Ativa para Adoção,A,4,False,Magistrado > Decisão > Revogação > Busca Ativa para Adoção
+15211,385,Procedência do Pedido com Aplicação de Medida Socioeducativa,A,4,False,Magistrado > Julgamento > Com Resolução do Mérito > Procedência do Pedido com Aplicação de Medida Socioeducativa
+15212,385,Procedência do Pedido sem Aplicação de Medida Socioeducativa,A,4,False,Magistrado > Julgamento > Com Resolução do Mérito > Procedência do Pedido sem Aplicação de Medida Socioeducativa
+15213,385,Procedência em Parte do Pedido com Aplicação de Medida Socioeducativa,A,4,False,Magistrado > Julgamento > Com Resolução do Mérito > Procedência em Parte do Pedido com Aplicação de Medida Socioeducativa
+15214,385,Procedência em Parte do Pedido sem Aplicação de Medida Socioeducativa,A,4,False,Magistrado > Julgamento > Com Resolução do Mérito > Procedência em Parte do Pedido sem Aplicação de Medida Socioeducativa
+15216,11009,Determinação de Citação,A,3,False,Magistrado > Despacho > Determinação de Citação
+15223,3,Prejudicado o Pedido,A,3,False,Magistrado > Decisão > Prejudicado o Pedido
+15225,11009,Indicação de Recurso como Representativo de Controvérsia,A,3,False,Magistrado > Despacho > Indicação de Recurso como Representativo de Controvérsia
+15226,11009,Rejeição de Recurso Como Representativo de Controvérsia,A,3,False,Magistrado > Despacho > Rejeição de Recurso Como Representativo de Controvérsia
+15227,11009,Reconsideração de Recurso como Representativo de Controvérsia,A,3,False,Magistrado > Despacho > Reconsideração de Recurso como Representativo de Controvérsia
+15229,3,Indeferimento de Internação,A,3,True,Magistrado > Decisão > Indeferimento de Internação
+15230,15229,Provisória,A,4,False,Magistrado > Decisão > Indeferimento de Internação > Provisória
+15231,15229,Sanção,A,4,False,Magistrado > Decisão > Indeferimento de Internação > Sanção
+15232,3,Manutenção da Internação,A,3,True,Magistrado > Decisão > Manutenção da Internação
+15233,15232,Sanção,A,4,False,Magistrado > Decisão > Manutenção da Internação > Sanção
+15234,12425,Sem Reinício de Prazo,A,4,False,Magistrado > Decisão > Unificação de Medidas Socioeducativas > Sem Reinício de Prazo
+15235,12425,Com Reinício de Prazo,A,4,False,Magistrado > Decisão > Unificação de Medidas Socioeducativas > Com Reinício de Prazo
+15237,12744,Justificação,I,5,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Audiência > de Justificação > Justificação
+15238,11025,Homologação de Acordo ou Transação,A,4,False,Magistrado > Despacho > Suspensão ou Sobrestamento > Homologação de Acordo ou Transação
+15244,3,Homologação de Acordo Parcial em Execução ou em Cumprimento de Sentença,A,3,False,Magistrado > Decisão > Homologação de Acordo Parcial em Execução ou em Cumprimento de Sentença
+15245,456,Unificação de Medida Socioeducativa,A,5,False,Magistrado > Julgamento > Sem Resolução de Mérito > Extinção > Unificação de Medida Socioeducativa
+15246,12286,Não Confirmada,A,5,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Citação > Eletrônica > Não Confirmada
+15247,25,Por Expedição de Precatório,A,4,False,Magistrado > Decisão > Suspensão ou Sobrestamento > Por Expedição de Precatório
+15248,25,Por Expedição de RPV,A,4,False,Magistrado > Decisão > Suspensão ou Sobrestamento > Por Expedição de RPV
+15249,456,Morte do Adolescente/Socioeducando,A,5,False,Magistrado > Julgamento > Sem Resolução de Mérito > Extinção > Morte do Adolescente/Socioeducando
+15250,456,Aplicação de Pena Privativa de Liberdade ao Adolescente/Socioeducando,A,5,True,Magistrado > Julgamento > Sem Resolução de Mérito > Extinção > Aplicação de Pena Privativa de Liberdade ao Adolescente/Socioeducando
+15251,15250,Condição de Doença Grave do Adolescente/Socioeducando,A,6,False,Magistrado > Julgamento > Sem Resolução de Mérito > Extinção > Aplicação de Pena Privativa de Liberdade ao Adolescente/Socioeducando > Condição de Doença Grave do Adolescente/Socioeducando
+15252,385,Extinção do processo de execução de medida socioeducativa em razão da perda do caráter pedagógico,A,4,False,Magistrado > Julgamento > Com Resolução do Mérito > Extinção do processo de execução de medida socioeducativa em razão da perda do caráter pedagógico
+15253,218,Concessão de Remissão a Adolescente com Extinção do Processo,A,4,True,Magistrado > Julgamento > Sem Resolução de Mérito > Concessão de Remissão a Adolescente com Extinção do Processo
+15254,15253,Justiça Restaurativa,A,5,False,Magistrado > Julgamento > Sem Resolução de Mérito > Concessão de Remissão a Adolescente com Extinção do Processo > Justiça Restaurativa
+15255,15253,Sem Medida Socioeducativa,A,5,False,Magistrado > Julgamento > Sem Resolução de Mérito > Concessão de Remissão a Adolescente com Extinção do Processo > Sem Medida Socioeducativa
+15256,15253,Liberdade Assistida,A,5,False,Magistrado > Julgamento > Sem Resolução de Mérito > Concessão de Remissão a Adolescente com Extinção do Processo > Liberdade Assistida
+15257,15253,Prestação de Serviços à Comunidade,A,5,False,Magistrado > Julgamento > Sem Resolução de Mérito > Concessão de Remissão a Adolescente com Extinção do Processo > Prestação de Serviços à Comunidade
+15258,15253,Reparação de Dano,A,5,False,Magistrado > Julgamento > Sem Resolução de Mérito > Concessão de Remissão a Adolescente com Extinção do Processo > Reparação de Dano
+15259,15253,Advertência,A,5,False,Magistrado > Julgamento > Sem Resolução de Mérito > Concessão de Remissão a Adolescente com Extinção do Processo > Advertência
+15260,218,Homologada a Remissão,A,4,True,Magistrado > Julgamento > Sem Resolução de Mérito > Homologada a Remissão
+15261,15260,Justiça Restaurativa,A,5,False,Magistrado > Julgamento > Sem Resolução de Mérito > Homologada a Remissão > Justiça Restaurativa
+15262,15260,Sem Medida Socioeducativa,A,5,False,Magistrado > Julgamento > Sem Resolução de Mérito > Homologada a Remissão > Sem Medida Socioeducativa
+15263,15260,Liberdade Assistida,A,5,False,Magistrado > Julgamento > Sem Resolução de Mérito > Homologada a Remissão > Liberdade Assistida
+15264,15260,Prestação de Serviços à Comunidade,A,5,False,Magistrado > Julgamento > Sem Resolução de Mérito > Homologada a Remissão > Prestação de Serviços à Comunidade
+15265,15260,Reparação do Dano,A,5,False,Magistrado > Julgamento > Sem Resolução de Mérito > Homologada a Remissão > Reparação do Dano
+15266,15260,Advertência,A,5,False,Magistrado > Julgamento > Sem Resolução de Mérito > Homologada a Remissão > Advertência
+15322,973,Extinção da Pena - Cumprimento de Sursis,A,5,False,Magistrado > Julgamento > Com Resolução do Mérito > Extinção da Punibilidade ou da Pena > Extinção da Pena - Cumprimento de Sursis
+15366,3,Acolhimento em Parte de Exceção de Pré-Executividade,A,3,False,Magistrado > Decisão > Acolhimento em Parte de Exceção de Pré-Executividade
+15408,218,Não Conhecimento de Embargos de Declaração,A,4,False,Magistrado > Julgamento > Sem Resolução de Mérito > Não Conhecimento de Embargos de Declaração
+15409,3,Não Conhecimento de Embargos de Declaração,A,3,False,Magistrado > Decisão > Não Conhecimento de Embargos de Declaração
+15413,25,Ação Coletiva,A,4,False,Magistrado > Decisão > Suspensão ou Sobrestamento > Ação Coletiva
+15414,14974,Ação Coletiva,A,4,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Levantamento da Causa Suspensiva ou de Sobrestamento > Ação Coletiva
+15415,25,Incidente de Resolução de Demandas Repetitivas do TST,A,4,False,Magistrado > Decisão > Suspensão ou Sobrestamento > Incidente de Resolução de Demandas Repetitivas do TST
+15416,14974,Suspensão/Sobrestamento por Incidente de Resolução de Demandas Repetitivas do TST,A,4,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Levantamento da Causa Suspensiva ou de Sobrestamento > Suspensão/Sobrestamento por Incidente de Resolução de Demandas Repetitivas do TST
+15417,48,Migração de Sistema Eletrônico,A,3,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Migração de Sistema Eletrônico
+15418,12765,Por Divergência de Entendimento com TST,A,4,False,Magistrado > Decisão > Envio para Juízo de Retratação  > Por Divergência de Entendimento com TST
+15419,12765,Por Divergência de Entendimento com TNU,I,4,False,Magistrado > Decisão > Envio para Juízo de Retratação  > Por Divergência de Entendimento com TNU
+15420,12198,Acolhimento de Proposta de Afetação,A,4,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Deliberado em Sessão > Acolhimento de Proposta de Afetação
+15421,12198,Rejeição de Proposta de Afetação,A,4,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Deliberado em Sessão > Rejeição de Proposta de Afetação
+15422,12198,Suspensão para Submissão de Proposta de Afetação,A,4,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Deliberado em Sessão > Suspensão para Submissão de Proposta de Afetação
+15424,12477,Não Homologação de ANPP,A,4,False,Magistrado > Decisão > Não-Homologação > Não Homologação de ANPP
+15425,25,Aguardando Apresentação ou Captura de Desertor,A,4,False,Magistrado > Decisão > Suspensão ou Sobrestamento > Aguardando Apresentação ou Captura de Desertor
+15426,108,Captura ou Apresentação de Desertor,A,4,False,Magistrado > Decisão > Decretação de Prisão Criminal > Captura ou Apresentação de Desertor
+15427,970,Audiência de Admoestação,A,4,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Audiência > Audiência de Admoestação
+15486,817,Medida Protetiva da Lei Maria da Penha,A,4,False,Magistrado > Decisão > Concessão > Medida Protetiva da Lei Maria da Penha
+15487,888,Medida Protetiva da Lei Maria da Penha,A,4,False,Magistrado > Decisão > Concessão em parte > Medida Protetiva da Lei Maria da Penha
+15488,968,Medida Protetiva da Lei Maria da Penha,A,4,False,Magistrado > Decisão > Não-Concessão > Medida Protetiva da Lei Maria da Penha
+15489,157,Medida Protetiva da Lei Maria da Penha,A,4,False,Magistrado > Decisão > Revogação > Medida Protetiva da Lei Maria da Penha
+15490,3,Prorrogação de Medida Protetiva da Lei Maria da Penha,A,3,False,Magistrado > Decisão > Prorrogação de Medida Protetiva da Lei Maria da Penha
+15491,817,Medida Protetiva da Lei Henry Borel,A,4,False,Magistrado > Decisão > Concessão > Medida Protetiva da Lei Henry Borel
+15492,888,Medida Protetiva da Lei Henry Borel,A,4,False,Magistrado > Decisão > Concessão em parte > Medida Protetiva da Lei Henry Borel
+15493,968,Medida Protetiva da Lei Henry Borel,A,4,False,Magistrado > Decisão > Não-Concessão > Medida Protetiva da Lei Henry Borel
+15494,157,Medida Protetiva da Lei Henry Borel,A,4,False,Magistrado > Decisão > Revogação > Medida Protetiva da Lei Henry Borel
+15495,3,Prorrogação de Medida Protetiva da Lei Henry Borel,A,3,False,Magistrado > Decisão > Prorrogação de Medida Protetiva da Lei Henry Borel
+15496,817,Medida de Proteção do Estatuto do Idoso,A,4,False,Magistrado > Decisão > Concessão > Medida de Proteção do Estatuto do Idoso
+15497,888,Medida de Proteção do Estatuto do Idoso,A,4,False,Magistrado > Decisão > Concessão em parte > Medida de Proteção do Estatuto do Idoso
+15498,968,Medida de Proteção do Estatuto do Idoso,A,4,False,Magistrado > Decisão > Não-Concessão > Medida de Proteção do Estatuto do Idoso
+15499,157,Medida de Proteção do Estatuto do Idoso,A,4,False,Magistrado > Decisão > Revogação > Medida de Proteção do Estatuto do Idoso
+15500,3,Prorrogação de Medida de Proteção do Estatuto do Idoso,A,3,False,Magistrado > Decisão > Prorrogação de Medida de Proteção do Estatuto do Idoso
+15501,817,Medida de Proteção do Estatuto da Criança e do Adolescente,A,4,False,Magistrado > Decisão > Concessão > Medida de Proteção do Estatuto da Criança e do Adolescente
+15502,888,Medida de Proteção do Estatuto da Criança e do Adolescente,A,4,False,Magistrado > Decisão > Concessão em parte > Medida de Proteção do Estatuto da Criança e do Adolescente
+15503,968,Medida de Proteção do Estatuto da Criança e do Adolescente,A,4,False,Magistrado > Decisão > Não-Concessão > Medida de Proteção do Estatuto da Criança e do Adolescente
+15504,157,Medida de Proteção do Estatuto da Criança e do Adolescente,A,4,False,Magistrado > Decisão > Revogação > Medida de Proteção do Estatuto da Criança e do Adolescente
+15505,3,Prorrogação de Medida de Proteção do Estatuto da Criança e do Adolescente,A,3,False,Magistrado > Decisão > Prorrogação de Medida de Proteção do Estatuto da Criança e do Adolescente
+15506,817,Medida de Proteção da Lei 13.431/2017,A,4,False,Magistrado > Decisão > Concessão > Medida de Proteção da Lei 13.431/2017
+15507,888,Medida de Proteção da Lei 13.431/2017,A,4,False,Magistrado > Decisão > Concessão em parte > Medida de Proteção da Lei 13.431/2017
+15508,968,Medida de Proteção da Lei 13.431/2017,A,4,False,Magistrado > Decisão > Não-Concessão > Medida de Proteção da Lei 13.431/2017
+15509,157,Medida de Proteção da Lei 13.431/2017,A,4,False,Magistrado > Decisão > Revogação > Medida de Proteção da Lei 13.431/2017
+15510,3,Prorrogação de Medida de Proteção da Lei 13.431/2017,A,3,False,Magistrado > Decisão > Prorrogação de Medida de Proteção da Lei 13.431/2017
+15530,48,Iniciada Tramitação Interna do PIC do MP,A,3,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Iniciada Tramitação Interna do PIC do MP
+15531,48,Finalizada Tramitação Interna do PIC no MP,A,3,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Finalizada Tramitação Interna do PIC no MP
+15538,817,Menagem,A,4,True,Magistrado > Decisão > Concessão > Menagem
+15539,15538,Menagem-Liberdade,A,5,False,Magistrado > Decisão > Concessão > Menagem > Menagem-Liberdade
+15540,15538,Menagem-Prisão,A,5,False,Magistrado > Decisão > Concessão > Menagem > Menagem-Prisão
+15541,968,Menagem,A,4,False,Magistrado > Decisão > Não-Concessão > Menagem
+15542,157,Menagem,A,4,False,Magistrado > Decisão > Revogação > Menagem
+15547,12264,Erro/Falha na Intimação,A,5,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Intimação > Eletrônica > Erro/Falha na Intimação
+15548,12286,Erro/Falha na Citação,A,5,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Citação > Eletrônica > Erro/Falha na Citação
+15561,11009,Envio para Juízo de Retratação,A,3,True,Magistrado > Despacho > Envio para Juízo de Retratação
+15562,15561,Por Divergência de Entendimento com o STF,A,4,False,Magistrado > Despacho > Envio para Juízo de Retratação > Por Divergência de Entendimento com o STF
+15563,15561,Por Divergência de Entendimento com o STJ,A,4,False,Magistrado > Despacho > Envio para Juízo de Retratação > Por Divergência de Entendimento com o STJ
+15564,15561,Por Divergência de Entendimento com o TST,A,4,False,Magistrado > Despacho > Envio para Juízo de Retratação > Por Divergência de Entendimento com o TST
+15565,15561,Por Divergência de Entendimento com a TNU,A,4,False,Magistrado > Despacho > Envio para Juízo de Retratação > Por Divergência de Entendimento com a TNU
+15569,970,Para Homologação de Acordo de Não Persecução Penal,A,4,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Audiência > Para Homologação de Acordo de Não Persecução Penal
+15579,968,Reabilitação Criminal,A,4,False,Magistrado > Decisão > Não-Concessão > Reabilitação Criminal
+15580,817,Reabilitação Criminal,A,4,False,Magistrado > Decisão > Concessão > Reabilitação Criminal
+15581,157,Reabilitação Criminal,A,4,False,Magistrado > Decisão > Revogação > Reabilitação Criminal
+15582,968,Indulto,A,4,False,Magistrado > Decisão > Não-Concessão > Indulto
+15583,968,Comutação,A,4,False,Magistrado > Decisão > Não-Concessão > Comutação
+15585,48,Oficina de Pais,A,3,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Oficina de Pais
+15587,3,Descumprimento de Medida Protetiva da Lei Henry Borel,A,3,False,Magistrado > Decisão > Descumprimento de Medida Protetiva da Lei Henry Borel
+15589,378,Homologação de Cálculos,A,4,False,Magistrado > Decisão > Homologação > Homologação de Cálculos
+15621,3,Negação de Seguimento ao Recurso Extraordinário (Tema RG),A,3,False,Magistrado > Decisão > Negação de Seguimento ao Recurso Extraordinário (Tema RG)
+15622,3,Negação de Seguimento ao Recurso Especial (Tema Repetitivo),A,3,False,Magistrado > Decisão > Negação de Seguimento ao Recurso Especial (Tema Repetitivo)
+15625,3,Devolução de Autos - Tema Repetitivo IAC do STJ,A,3,False,Magistrado > Decisão > Devolução de Autos - Tema Repetitivo IAC do STJ
+15626,3,Devolução de Autos - Afetação de Tema de Repercussão Geral,A,3,False,Magistrado > Decisão > Devolução de Autos - Afetação de Tema de Repercussão Geral
+15627,3,Devolução de Autos - Afetação de Tema Repetitivo,A,3,False,Magistrado > Decisão > Devolução de Autos - Afetação de Tema Repetitivo
+15693,3,Negação de Seguimento a Recurso de Revista por Uniformização de Tese em Recurso Repetitivo,A,3,False,Magistrado > Decisão > Negação de Seguimento a Recurso de Revista por Uniformização de Tese em Recurso Repetitivo
+15695,48,Remessa para Admissibilidade Recursal,A,3,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Remessa para Admissibilidade Recursal
+15696,48,Remessa ao Relator para Diligências,A,3,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Remessa ao Relator para Diligências
+15711,12522,Facilitador,A,3,True,Serventuário > Auxiliar da Justiça > Facilitador
+15712,15711,Realização Frutífera de Procedimentos Restaurativos,A,4,False,Serventuário > Auxiliar da Justiça > Facilitador > Realização Frutífera de Procedimentos Restaurativos
+15713,15711,Realização Infrutífera de Procedimentos Restaurativos,A,4,False,Serventuário > Auxiliar da Justiça > Facilitador > Realização Infrutífera de Procedimentos Restaurativos
+15714,15102,Sessão Restaurativa - Pré-Encontro,A,4,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Sessão Restaurativa > Sessão Restaurativa - Pré-Encontro
+15715,15102,Sessão Restaurativa - Encontro,A,4,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Sessão Restaurativa > Sessão Restaurativa - Encontro
+15716,15102,Sessão Restaurativa Pós-Encontro,A,4,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Sessão Restaurativa > Sessão Restaurativa Pós-Encontro
+15717,1013,Derivação para a Justiça Restaurativa,A,4,False,Magistrado > Decisão > Determinação > Derivação para a Justiça Restaurativa
+15718,48,Remessa para a Justiça Restaurativa,A,3,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Remessa para a Justiça Restaurativa
+15719,48,Recebido na Justiça Restaurativa,A,3,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Recebido na Justiça Restaurativa
+15721,12284,Citação Realizada,A,4,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Citação > Citação Realizada
+15725,48,Cientificação sobre Ausência de Localização do Devedor ou de seus Bens,A,3,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Cientificação sobre Ausência de Localização do Devedor ou de seus Bens
+15726,12284,Citação Expedida,A,4,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Citação > Citação Expedida
+15727,12284,Citação Não Realizada,A,4,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Citação > Citação Não Realizada
+15728,12263,Intimação Realizada,A,4,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Intimação > Intimação Realizada
+15729,12263,Intimação Expedida,A,4,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Intimação > Intimação Expedida
+15730,48,Acompanhamento de Medida Protetiva de Urgência - Lei Maria da Penha,A,3,False,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Acompanhamento de Medida Protetiva de Urgência - Lei Maria da Penha

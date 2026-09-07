@@ -1,0 +1,70 @@
+estado,mov_codigo,caminho_prefixo,comp_descricao,comp_valor,grau,papel,confianca,observacao
+distribuicao,26,,,,,entrada,alta,Distribuição (TPU 26)
+distribuicao,36,,,,,evidencia,media,Redistribuição — não reinicia o relógio; sinaliza mudança de unidade
+distribuicao,12296,,,,,evidencia,baixa,Registro processual (SAJ/TJAL) — protocolo sem distribuição explícita
+analise_inicial,15085,,,,,evidencia,media,Determinação de emenda à inicial
+analise_inicial,12261,,,,,evidencia,media,Recebimento de emenda à inicial
+citacao,,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Citação,,,,entrada,alta,Subárvore Citação da TPU (12284…; PJe/eproc)
+citacao,60,,tipo_de_documento,170,,entrada,media,Carta expedida (SAJ) — pode ser citação ou intimação postal
+citacao,60,,tipo_de_documento,78,,entrada,media,Mandado expedido — pode ser citação ou intimação por oficial
+citacao,60,,tipo_de_documento,76,,entrada,media,Carta precatória expedida
+citacao,581,,tipo_de_documento,74,,evidencia,media,AR juntado (retorno da comunicação postal)
+citacao,106,,resultado,7,,evidencia,media,Mandado devolvido: entregue ao destinatário
+citacao,12282,,,,,evidencia,baixa,Comunicação eletrônica expedida (citação ou intimação; ambíguo)
+defesa,85,,tipo_de_peticao,45,,entrada,alta,Contestação (PJe tipa a petição; SAJ não)
+defesa,85,,tipo_de_peticao,70,,evidencia,alta,Réplica
+instrucao,12387,,,,,entrada,alta,Decisão de saneamento e organização (art. 357 CPC)
+instrucao,12306,,,,,entrada,alta,Nomeação de perito
+instrucao,970,,tipo_de_audiencia,22,,entrada,alta,Audiência de instrução
+instrucao,970,,tipo_de_audiencia,23,,entrada,alta,Audiência de instrução e julgamento
+audiencia,970,,situacao_da_audiencia,13,,entrada,alta,Audiência realizada
+audiencia,12624,,,,,entrada,media,Audiência do art. 334 CPC
+audiencia,12740,,,,,entrada,media,Audiência de conciliação
+audiencia,970,,situacao_da_audiencia,9,,evidencia,media,Audiência designada (agenda; não é realização)
+audiencia,970,,,,,evidencia,baixa,Audiência sem situação informada
+conclusao_julgamento,51,,tipo_de_conclusao,36,,entrada,alta,Conclusos para julgamento
+conclusao,51,,,,,entrada,alta,Conclusos para despacho/decisão (tempo de gabinete)
+suspensao,,Magistrado > Decisão > Suspensão ou Sobrestamento,,,,entrada,alta,Subárvore Suspensão (Decisão)
+suspensao,,Magistrado > Despacho > Suspensão ou Sobrestamento,,,,entrada,alta,Subárvore Suspensão (Despacho)
+suspensao,12065,,,,,entrada,media,Cumprimento de suspensão ou sobrestamento
+secretaria,12066,,,,,entrada,media,Cumprimento de levantamento da suspensão (fim da suspensão)
+secretaria,12067,,,,,entrada,media,Levantamento da suspensão (decisão)
+secretaria,12068,,,,,entrada,media,Levantamento da suspensão (despacho)
+sentenca,,Magistrado > Julgamento > Com Resolução do Mérito > Acolhimento,,,,evidencia,alta,Embargos de declaração acolhidos — não conta como nova sentença
+sentenca,200,,,,,evidencia,alta,Embargos de declaração não acolhidos
+sentenca,871,,,,,evidencia,alta,Embargos de declaração acolhidos em parte
+sentenca,15164,,,,,evidencia,alta,Embargos de declaração não acolhidos (decisão)
+sentenca,,Magistrado > Julgamento,,,G1;JE,terminal,alta,Qualquer julgamento no 1º grau/JE (com ou sem mérito) = sentença
+sentenca,12185,,,,,evidencia,media,Decisão interlocutória de mérito (julgamento parcial; art. 356 CPC)
+julgamento_recursal,,Magistrado > Julgamento,,,G2;TR,terminal,alta,Julgamento no documento de 2º grau / Turma Recursal (acórdão)
+recurso,123,,motivo_da_remessa,38,,entrada,alta,Remessa em grau de recurso
+recurso,85,,tipo_de_peticao,44,,entrada,alta,Apelação protocolada
+recurso,85,,tipo_de_peticao,46,,evidencia,alta,Contrarrazões
+recurso,1060,,,,,evidencia,alta,Recebimento do recurso
+recurso,1059,,,,,evidencia,alta,Recebimento do recurso sem efeito suspensivo
+recurso,394,,,,,evidencia,alta,Recebimento do recurso com efeito suspensivo
+julgamento_recursal,123,,motivo_da_remessa,194,,evidencia,alta,Remessa por julgamento definitivo do recurso (retorno)
+julgamento_recursal,132,,,,G1;JE,evidencia,baixa,Recebimento dos autos no 1º grau (pode ser retorno do 2º grau)
+transito_julgado,848,,,,,evidencia,alta,Trânsito em julgado (marco; não é baixa)
+cumprimento,11385,,,,,entrada,alta,Execução/cumprimento de sentença iniciado
+cumprimento,85,,tipo_de_peticao,52,,entrada,media,Petição de execução/cumprimento de sentença
+cumprimento,85,,tipo_de_peticao,53,,evidencia,media,Impugnação ao cumprimento
+cumprimento,10966,,,,,evidencia,baixa,Mudança de classe processual (possível conversão em cumprimento)
+baixa,22,,,,,terminal,alta,Baixa definitiva
+baixa,246,,,,,terminal,alta,Arquivamento definitivo
+baixa,867,,,,,terminal,media,Guarda permanente (arquivista)
+baixa,861,,,,,terminal,baixa,Arquivamento (genérico)
+baixa,245,,,,,evidencia,media,Arquivamento provisório — não é baixa
+secretaria,893,,,,,reabertura,alta,Desarquivamento
+secretaria,849,,,,,reabertura,alta,Reativação
+secretaria,,Magistrado > Despacho,,,,entrada,baixa,Despacho devolvido à secretaria (fim do tempo de gabinete)
+secretaria,,Magistrado > Decisão,,,,entrada,baixa,Decisão devolvida à secretaria (fim do tempo de gabinete)
+secretaria,92,,,,,entrada,baixa,Publicação
+secretaria,1061,,,,,entrada,baixa,Disponibilização no DJe
+secretaria,11383,,,,,entrada,baixa,Ato ordinatório
+secretaria,123,,,,,entrada,baixa,Remessa (outros motivos)
+secretaria,60,,,,,entrada,baixa,Expedição de documento (certidão/ofício/outros)
+secretaria,1051,,,,,entrada,baixa,Decurso de prazo
+secretaria,132,,,,,entrada,baixa,Recebimento
+secretaria,12283,,,,,entrada,baixa,Comunicação eletrônica confirmada
+secretaria,118,,,,,entrada,baixa,Protocolo de petição

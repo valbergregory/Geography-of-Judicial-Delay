@@ -1,0 +1,850 @@
+codigo,codigo_pai,nome,situacao,nivel,tem_filhos,caminho
+2,0,PROCESSO CÍVEL E DO TRABALHO,A,1,True,PROCESSO CÍVEL E DO TRABALHO
+5,0,SUPERIOR TRIBUNAL DE JUSTIÇA,A,1,True,SUPERIOR TRIBUNAL DE JUSTIÇA
+7,1107,Procedimento Comum Cível,A,4,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimento Comum Cível
+22,1107,Procedimento Sumário,I,4,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimento Sumário
+26,1107,Procedimentos Especiais,A,4,True,PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais
+27,26,Procedimentos Especiais de Jurisdição Contenciosa,A,5,True,PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Especiais de Jurisdição Contenciosa
+28,27,Anulação e Substituição de Títulos ao Portador,I,6,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Especiais de Jurisdição Contenciosa > Anulação e Substituição de Títulos ao Portador
+29,27,Apreensão e Depósito de Coisa Vendida com Reserva de Domínio,I,6,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Especiais de Jurisdição Contenciosa > Apreensão e Depósito de Coisa Vendida com Reserva de Domínio
+30,27,Arrolamento Comum,A,6,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Especiais de Jurisdição Contenciosa > Arrolamento Comum
+31,27,Arrolamento Sumário,A,6,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Especiais de Jurisdição Contenciosa > Arrolamento Sumário
+32,27,Consignação em Pagamento,A,6,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Especiais de Jurisdição Contenciosa > Consignação em Pagamento
+34,27,Demarcação / Divisão,A,6,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Especiais de Jurisdição Contenciosa > Demarcação / Divisão
+35,27,Depósito,I,6,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Especiais de Jurisdição Contenciosa > Depósito
+37,27,Embargos de Terceiro Cível,A,6,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Especiais de Jurisdição Contenciosa > Embargos de Terceiro Cível
+38,27,Habilitação,A,6,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Especiais de Jurisdição Contenciosa > Habilitação
+39,27,Inventário,A,6,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Especiais de Jurisdição Contenciosa > Inventário
+40,27,Monitória,A,6,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Especiais de Jurisdição Contenciosa > Monitória
+41,27,Nunciação de Obra Nova,I,6,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Especiais de Jurisdição Contenciosa > Nunciação de Obra Nova
+44,27,Prestação de Contas - Oferecidas,I,6,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Especiais de Jurisdição Contenciosa > Prestação de Contas - Oferecidas
+45,27,Ação de Exigir Contas,A,6,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Especiais de Jurisdição Contenciosa > Ação de Exigir Contas
+46,27,Restauração de Autos Cível,A,6,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Especiais de Jurisdição Contenciosa > Restauração de Autos Cível
+47,27,Ação Rescisória,A,6,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Especiais de Jurisdição Contenciosa > Ação Rescisória
+48,27,Sobrepartilha,A,6,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Especiais de Jurisdição Contenciosa > Sobrepartilha
+49,27,Usucapião,A,6,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Especiais de Jurisdição Contenciosa > Usucapião
+50,26,Procedimentos Especiais de Jurisdição Voluntária,A,5,True,PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Especiais de Jurisdição Voluntária
+51,50,"Abertura, Registro e Cumprimento de Testamento",A,6,False,"PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Especiais de Jurisdição Voluntária > Abertura, Registro e Cumprimento de Testamento"
+52,50,Alienação Judicial de Bens,A,6,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Especiais de Jurisdição Voluntária > Alienação Judicial de Bens
+53,50,Arrecadação das Coisas Vagas,A,6,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Especiais de Jurisdição Voluntária > Arrecadação das Coisas Vagas
+54,50,Confirmação de Testamento,A,6,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Especiais de Jurisdição Voluntária > Confirmação de Testamento
+55,50,Declaração de Ausência,A,6,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Especiais de Jurisdição Voluntária > Declaração de Ausência
+56,50,Especialização de Hipoteca Legal,I,6,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Especiais de Jurisdição Voluntária > Especialização de Hipoteca Legal
+57,50,Herança Jacente,A,6,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Especiais de Jurisdição Voluntária > Herança Jacente
+58,50,Interdição/Curatela,A,6,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Especiais de Jurisdição Voluntária > Interdição/Curatela
+59,50,Organização e Fiscalização de Fundação,A,6,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Especiais de Jurisdição Voluntária > Organização e Fiscalização de Fundação
+60,50,Separação Consensual,A,6,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Especiais de Jurisdição Voluntária > Separação Consensual
+61,50,Tutela e Curatela -  Nomeação,I,6,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Especiais de Jurisdição Voluntária > Tutela e Curatela -  Nomeação
+62,26,"Procedimentos Regidos por Outros Códigos, Leis Esparsas e Regimentos",A,5,True,"PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Regidos por Outros Códigos, Leis Esparsas e Regimentos"
+63,62,Ação Civil Coletiva,A,6,False,"PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Regidos por Outros Códigos, Leis Esparsas e Regimentos > Ação Civil Coletiva"
+64,62,Ação Civil de Improbidade Administrativa,A,6,False,"PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Regidos por Outros Códigos, Leis Esparsas e Regimentos > Ação Civil de Improbidade Administrativa"
+65,62,Ação Civil Pública,A,6,False,"PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Regidos por Outros Códigos, Leis Esparsas e Regimentos > Ação Civil Pública"
+66,62,Ação Popular,A,6,False,"PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Regidos por Outros Códigos, Leis Esparsas e Regimentos > Ação Popular"
+69,62,Alimentos - Lei Especial Nº 5.478/68,A,6,False,"PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Regidos por Outros Códigos, Leis Esparsas e Regimentos > Alimentos - Lei Especial Nº 5.478/68"
+72,62,Alteração do Regime de Bens,I,6,False,"PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Regidos por Outros Códigos, Leis Esparsas e Regimentos > Alteração do Regime de Bens"
+74,62,Alvará Judicial - Lei 6858/80,A,6,False,"PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Regidos por Outros Códigos, Leis Esparsas e Regimentos > Alvará Judicial - Lei 6858/80"
+76,62,Apreensão de Embarcações,I,6,False,"PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Regidos por Outros Códigos, Leis Esparsas e Regimentos > Apreensão de Embarcações"
+77,62,Arribadas Forçadas,I,6,False,"PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Regidos por Outros Códigos, Leis Esparsas e Regimentos > Arribadas Forçadas"
+79,62,Regulação de Avaria Grossa,I,6,False,"PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Regidos por Outros Códigos, Leis Esparsas e Regimentos > Regulação de Avaria Grossa"
+80,62,Avarias,I,6,False,"PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Regidos por Outros Códigos, Leis Esparsas e Regimentos > Avarias"
+81,62,Busca e Apreensão em Alienação Fiduciária,A,6,False,"PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Regidos por Outros Códigos, Leis Esparsas e Regimentos > Busca e Apreensão em Alienação Fiduciária"
+82,62,Cancelamento de Naturalização,A,6,False,"PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Regidos por Outros Códigos, Leis Esparsas e Regimentos > Cancelamento de Naturalização"
+83,175,Cautelar Fiscal,A,3,False,PROCESSO CÍVEL E DO TRABALHO > Processo Cautelar > Cautelar Fiscal
+84,62,Cobrança de Cédula de Crédito Industrial,A,6,False,"PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Regidos por Outros Códigos, Leis Esparsas e Regimentos > Cobrança de Cédula de Crédito Industrial"
+85,62,Compromisso Arbitral,A,6,False,"PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Regidos por Outros Códigos, Leis Esparsas e Regimentos > Compromisso Arbitral"
+86,62,Consignatória de Aluguéis,A,6,False,"PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Regidos por Outros Códigos, Leis Esparsas e Regimentos > Consignatória de Aluguéis"
+87,62,Conversão de Separação Judicial em Divórcio,A,6,False,"PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Regidos por Outros Códigos, Leis Esparsas e Regimentos > Conversão de Separação Judicial em Divórcio"
+88,1198,Correição Parcial ou Reclamação Correicional,A,2,False,PROCEDIMENTOS ADMINISTRATIVOS > Correição Parcial ou Reclamação Correicional
+89,62,Depósito da Lei 8. 866/94,A,6,False,"PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Regidos por Outros Códigos, Leis Esparsas e Regimentos > Depósito da Lei 8. 866/94"
+90,62,Desapropriação,A,6,False,"PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Regidos por Outros Códigos, Leis Esparsas e Regimentos > Desapropriação"
+91,62,Desapropriação Imóvel Rural por Interesse Social,A,6,False,"PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Regidos por Outros Códigos, Leis Esparsas e Regimentos > Desapropriação Imóvel Rural por Interesse Social"
+92,62,Despejo,A,6,False,"PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Regidos por Outros Códigos, Leis Esparsas e Regimentos > Despejo"
+93,62,Despejo por Falta de Pagamento,A,6,False,"PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Regidos por Outros Códigos, Leis Esparsas e Regimentos > Despejo por Falta de Pagamento"
+94,62,Despejo por Falta de Pagamento Cumulado Com Cobrança,A,6,False,"PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Regidos por Outros Códigos, Leis Esparsas e Regimentos > Despejo por Falta de Pagamento Cumulado Com Cobrança"
+95,62,Ação Direta de Inconstitucionalidade,A,6,False,"PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Regidos por Outros Códigos, Leis Esparsas e Regimentos > Ação Direta de Inconstitucionalidade"
+96,62,Discriminatória,A,6,False,"PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Regidos por Outros Códigos, Leis Esparsas e Regimentos > Discriminatória"
+97,62,Dissolução e Liquidação de Sociedade,I,6,False,"PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Regidos por Outros Códigos, Leis Esparsas e Regimentos > Dissolução e Liquidação de Sociedade"
+98,62,Divórcio Consensual,I,6,False,"PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Regidos por Outros Códigos, Leis Esparsas e Regimentos > Divórcio Consensual"
+99,62,Divórcio Litigioso,I,6,False,"PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Regidos por Outros Códigos, Leis Esparsas e Regimentos > Divórcio Litigioso"
+100,62,Dúvida,A,6,False,"PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Regidos por Outros Códigos, Leis Esparsas e Regimentos > Dúvida"
+107,62,Expropriação da Lei 8.257/91,A,6,False,"PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Regidos por Outros Códigos, Leis Esparsas e Regimentos > Expropriação da Lei 8.257/91"
+108,62,"Falência de Empresários, Sociedades Empresáriais, Microempresas e Empresas de Pequeno Porte",A,6,False,"PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Regidos por Outros Códigos, Leis Esparsas e Regimentos > Falência de Empresários, Sociedades Empresáriais, Microempresas e Empresas de Pequeno Porte"
+110,62,Habeas Data Cível,A,6,False,"PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Regidos por Outros Códigos, Leis Esparsas e Regimentos > Habeas Data Cível"
+111,62,Habilitação de Crédito,A,6,False,"PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Regidos por Outros Códigos, Leis Esparsas e Regimentos > Habilitação de Crédito"
+112,62,Homologação de Transação Extrajudicial,I,6,False,"PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Regidos por Outros Códigos, Leis Esparsas e Regimentos > Homologação de Transação Extrajudicial"
+113,62,Imissão na Posse,A,6,False,"PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Regidos por Outros Códigos, Leis Esparsas e Regimentos > Imissão na Posse"
+114,62,Impugnação de Crédito,A,6,False,"PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Regidos por Outros Códigos, Leis Esparsas e Regimentos > Impugnação de Crédito"
+115,62,Inquérito Extrajudicial,A,6,False,"PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Regidos por Outros Códigos, Leis Esparsas e Regimentos > Inquérito Extrajudicial"
+118,62,Mandado de Injunção,A,6,False,"PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Regidos por Outros Códigos, Leis Esparsas e Regimentos > Mandado de Injunção"
+119,62,Mandado de Segurança Coletivo,A,6,False,"PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Regidos por Outros Códigos, Leis Esparsas e Regimentos > Mandado de Segurança Coletivo"
+120,62,Mandado de Segurança Cível,A,6,False,"PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Regidos por Outros Códigos, Leis Esparsas e Regimentos > Mandado de Segurança Cível"
+121,62,Naturalização,A,6,False,"PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Regidos por Outros Códigos, Leis Esparsas e Regimentos > Naturalização"
+122,62,Opção de Nacionalidade,A,6,False,"PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Regidos por Outros Códigos, Leis Esparsas e Regimentos > Opção de Nacionalidade"
+123,62,Averiguação de Paternidade,A,6,False,"PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Regidos por Outros Códigos, Leis Esparsas e Regimentos > Averiguação de Paternidade"
+124,62,Pedido de Resposta ou Retificação da Lei de Imprensa,A,6,False,"PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Regidos por Outros Códigos, Leis Esparsas e Regimentos > Pedido de Resposta ou Retificação da Lei de Imprensa"
+127,62,Protesto Formado a Bordo,I,6,False,"PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Regidos por Outros Códigos, Leis Esparsas e Regimentos > Protesto Formado a Bordo"
+128,62,Recuperação Extrajudicial,A,6,False,"PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Regidos por Outros Códigos, Leis Esparsas e Regimentos > Recuperação Extrajudicial"
+129,62,Recuperação Judicial,A,6,False,"PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Regidos por Outros Códigos, Leis Esparsas e Regimentos > Recuperação Judicial"
+134,62,Registro Torrens,A,6,False,"PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Regidos por Outros Códigos, Leis Esparsas e Regimentos > Registro Torrens"
+135,62,Relatório Falimentar,A,6,False,"PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Regidos por Outros Códigos, Leis Esparsas e Regimentos > Relatório Falimentar"
+136,62,Remição do Imóvel Hipotecado,A,6,False,"PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Regidos por Outros Códigos, Leis Esparsas e Regimentos > Remição do Imóvel Hipotecado"
+137,62,Renovatória de Locação,A,6,False,"PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Regidos por Outros Códigos, Leis Esparsas e Regimentos > Renovatória de Locação"
+138,62,Restituição de Coisa ou Dinheiro na Falência do Devedor Empresário,A,6,False,"PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Regidos por Outros Códigos, Leis Esparsas e Regimentos > Restituição de Coisa ou Dinheiro na Falência do Devedor Empresário"
+140,62,Revisional de Aluguel,A,6,False,"PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Regidos por Outros Códigos, Leis Esparsas e Regimentos > Revisional de Aluguel"
+141,62,Separação Litigiosa,I,6,False,"PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Regidos por Outros Códigos, Leis Esparsas e Regimentos > Separação Litigiosa"
+142,62,Sonegados,A,6,False,"PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Regidos por Outros Códigos, Leis Esparsas e Regimentos > Sonegados"
+143,62,Suprimento de Idade e/ou Consentimento,A,6,False,"PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Regidos por Outros Códigos, Leis Esparsas e Regimentos > Suprimento de Idade e/ou Consentimento"
+144,62,Suspensão de Liminar ou Antecipação de Tutela,I,6,False,"PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Regidos por Outros Códigos, Leis Esparsas e Regimentos > Suspensão de Liminar ou Antecipação de Tutela"
+145,62,Suspensão de Execução de Sentença,I,6,False,"PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Regidos por Outros Códigos, Leis Esparsas e Regimentos > Suspensão de Execução de Sentença"
+150,1106,Procedimento de Liquidação,A,3,True,PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Liquidação
+151,150,Liquidação por Arbitramento,A,4,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Liquidação > Liquidação por Arbitramento
+152,150,Liquidação de Sentença pelo Procedimento Comum,A,4,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Liquidação > Liquidação de Sentença pelo Procedimento Comum
+153,150,Liquidação Provisória por Arbitramento,A,4,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Liquidação > Liquidação Provisória por Arbitramento
+154,150,Liquidação Provisória de Sentença pelo Procedimento Comum,A,4,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Liquidação > Liquidação Provisória de Sentença pelo Procedimento Comum
+155,1106,Procedimento de Cumprimento de Sentença/Decisão,A,3,True,PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Cumprimento de Sentença/Decisão
+156,155,Cumprimento de sentença,A,4,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Cumprimento de Sentença/Decisão > Cumprimento de sentença
+157,155,Cumprimento Provisório de Sentença,A,4,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Cumprimento de Sentença/Decisão > Cumprimento Provisório de Sentença
+158,2,Processo de Execução,A,2,True,PROCESSO CÍVEL E DO TRABALHO > Processo de Execução
+159,158,Execução de Título Extrajudicial,A,3,True,PROCESSO CÍVEL E DO TRABALHO > Processo de Execução > Execução de Título Extrajudicial
+165,158,Insolvência Civil,A,3,True,PROCESSO CÍVEL E DO TRABALHO > Processo de Execução > Insolvência Civil
+166,165,Insolvência Requerida pelo Credor,A,4,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Execução > Insolvência Civil > Insolvência Requerida pelo Credor
+167,165,Insolvência Requerida pelo Devedor ou pelo Espólio,A,4,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Execução > Insolvência Civil > Insolvência Requerida pelo Devedor ou pelo Espólio
+169,158,Embargos,A,3,True,PROCESSO CÍVEL E DO TRABALHO > Processo de Execução > Embargos
+170,169,Embargos à Adjudicação,I,4,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Execução > Embargos > Embargos à Adjudicação
+171,169,Embargos à Arrematação,I,4,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Execução > Embargos > Embargos à Arrematação
+172,169,Embargos à Execução,A,4,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Execução > Embargos > Embargos à Execução
+173,169,Embargos de Retenção por Benfeitorias,I,4,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Execução > Embargos > Embargos de Retenção por Benfeitorias
+175,2,Processo Cautelar,A,2,True,PROCESSO CÍVEL E DO TRABALHO > Processo Cautelar
+176,175,Alimentos - Provisionais,I,3,False,PROCESSO CÍVEL E DO TRABALHO > Processo Cautelar > Alimentos - Provisionais
+177,175,Apreensão de  Títulos,I,3,False,PROCESSO CÍVEL E DO TRABALHO > Processo Cautelar > Apreensão de  Títulos
+178,175,Arresto ,I,3,False,PROCESSO CÍVEL E DO TRABALHO > Processo Cautelar > Arresto 
+179,175,Arrolamento de Bens,I,3,False,PROCESSO CÍVEL E DO TRABALHO > Processo Cautelar > Arrolamento de Bens
+180,175,Atentado,I,3,False,PROCESSO CÍVEL E DO TRABALHO > Processo Cautelar > Atentado
+181,175,Busca e Apreensão,I,3,False,PROCESSO CÍVEL E DO TRABALHO > Processo Cautelar > Busca e Apreensão
+182,175,Caução,I,3,False,PROCESSO CÍVEL E DO TRABALHO > Processo Cautelar > Caução
+183,175,Cautelar Inominada,I,3,False,PROCESSO CÍVEL E DO TRABALHO > Processo Cautelar > Cautelar Inominada
+186,175,Exibição,I,3,False,PROCESSO CÍVEL E DO TRABALHO > Processo Cautelar > Exibição
+188,175,Homologação do Penhor Legal,I,3,False,PROCESSO CÍVEL E DO TRABALHO > Processo Cautelar > Homologação do Penhor Legal
+190,175,Justificação,I,3,False,PROCESSO CÍVEL E DO TRABALHO > Processo Cautelar > Justificação
+191,175,Protesto,I,3,False,PROCESSO CÍVEL E DO TRABALHO > Processo Cautelar > Protesto
+192,175,Posse em Nome do Nascituro,I,3,False,PROCESSO CÍVEL E DO TRABALHO > Processo Cautelar > Posse em Nome do Nascituro
+193,175,Produção Antecipada da Prova,I,3,False,PROCESSO CÍVEL E DO TRABALHO > Processo Cautelar > Produção Antecipada da Prova
+194,175,Regulamentação de Visitas,I,3,False,PROCESSO CÍVEL E DO TRABALHO > Processo Cautelar > Regulamentação de Visitas
+195,175,Separação de Corpos,I,3,False,PROCESSO CÍVEL E DO TRABALHO > Processo Cautelar > Separação de Corpos
+196,175,Seqüestro,I,3,False,PROCESSO CÍVEL E DO TRABALHO > Processo Cautelar > Seqüestro
+197,2,Recursos,A,2,True,PROCESSO CÍVEL E DO TRABALHO > Recursos
+198,197,Apelação Cível,A,3,False,PROCESSO CÍVEL E DO TRABALHO > Recursos > Apelação Cível
+199,197,Remessa Necessária Cível,A,3,False,PROCESSO CÍVEL E DO TRABALHO > Recursos > Remessa Necessária Cível
+200,197,Agravos,A,3,True,PROCESSO CÍVEL E DO TRABALHO > Recursos > Agravos
+202,200,Agravo de Instrumento,A,4,False,PROCESSO CÍVEL E DO TRABALHO > Recursos > Agravos > Agravo de Instrumento
+203,200,Agravo de Instrumento em Recurso Especial,I,4,False,PROCESSO CÍVEL E DO TRABALHO > Recursos > Agravos > Agravo de Instrumento em Recurso Especial
+204,200,Agravo de Instrumento em Recurso Extraordinário,A,4,False,PROCESSO CÍVEL E DO TRABALHO > Recursos > Agravos > Agravo de Instrumento em Recurso Extraordinário
+206,200,Agravo Regimental Cível,A,4,False,PROCESSO CÍVEL E DO TRABALHO > Recursos > Agravos > Agravo Regimental Cível
+207,197,Embargos,A,3,True,PROCESSO CÍVEL E DO TRABALHO > Recursos > Embargos
+208,207,Embargos Infringentes,I,4,False,PROCESSO CÍVEL E DO TRABALHO > Recursos > Embargos > Embargos Infringentes
+210,207,Embargos Infringentes na Execução Fiscal,A,4,False,PROCESSO CÍVEL E DO TRABALHO > Recursos > Embargos > Embargos Infringentes na Execução Fiscal
+211,197,Recurso Ordinário Cível,A,3,False,PROCESSO CÍVEL E DO TRABALHO > Recursos > Recurso Ordinário Cível
+212,197,Recurso Extraordinário,A,3,False,PROCESSO CÍVEL E DO TRABALHO > Recursos > Recurso Extraordinário
+213,197,Recurso Especial,A,3,False,PROCESSO CÍVEL E DO TRABALHO > Recursos > Recurso Especial
+214,2,Outros Procedimentos,A,2,True,PROCESSO CÍVEL E DO TRABALHO > Outros Procedimentos
+215,214,Incidentes,A,3,True,PROCESSO CÍVEL E DO TRABALHO > Outros Procedimentos > Incidentes
+216,215,Incidente De Arguição de Inconstitucionalidade Cível,A,4,False,PROCESSO CÍVEL E DO TRABALHO > Outros Procedimentos > Incidentes > Incidente De Arguição de Inconstitucionalidade Cível
+218,215,Assistência Judiciária,I,4,False,PROCESSO CÍVEL E DO TRABALHO > Outros Procedimentos > Incidentes > Assistência Judiciária
+221,215,Conflito de competência cível,A,4,False,PROCESSO CÍVEL E DO TRABALHO > Outros Procedimentos > Incidentes > Conflito de competência cível
+224,215,Exceções,I,4,True,PROCESSO CÍVEL E DO TRABALHO > Outros Procedimentos > Incidentes > Exceções
+228,215,Exibição de Documento ou Coisa Cível,A,4,False,PROCESSO CÍVEL E DO TRABALHO > Outros Procedimentos > Incidentes > Exibição de Documento ou Coisa Cível
+229,155,Impugnação ao Cumprimento de Sentença,I,4,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Cumprimento de Sentença/Decisão > Impugnação ao Cumprimento de Sentença
+230,215,Impugnação ao Pedido de Assistência Litisconsorcial ou Simples,I,4,False,PROCESSO CÍVEL E DO TRABALHO > Outros Procedimentos > Incidentes > Impugnação ao Pedido de Assistência Litisconsorcial ou Simples
+231,215,Impugnação ao Valor da Causa Cível,I,4,False,PROCESSO CÍVEL E DO TRABALHO > Outros Procedimentos > Incidentes > Impugnação ao Valor da Causa Cível
+232,215,Incidente de Falsidade,I,4,False,PROCESSO CÍVEL E DO TRABALHO > Outros Procedimentos > Incidentes > Incidente de Falsidade
+233,215,Incidente de Uniformização de Jurisprudência,I,4,False,PROCESSO CÍVEL E DO TRABALHO > Outros Procedimentos > Incidentes > Incidente de Uniformização de Jurisprudência
+234,215,Remoção de Inventariante,A,4,False,PROCESSO CÍVEL E DO TRABALHO > Outros Procedimentos > Incidentes > Remoção de Inventariante
+236,215,Oposição,A,4,False,PROCESSO CÍVEL E DO TRABALHO > Outros Procedimentos > Incidentes > Oposição
+237,214,Atos e expedientes,A,3,True,PROCESSO CÍVEL E DO TRABALHO > Outros Procedimentos > Atos e expedientes
+238,237,Avocatória,A,4,False,PROCESSO CÍVEL E DO TRABALHO > Outros Procedimentos > Atos e expedientes > Avocatória
+239,237,Habilitação para Casamento,A,4,False,PROCESSO CÍVEL E DO TRABALHO > Outros Procedimentos > Atos e expedientes > Habilitação para Casamento
+240,237,Instrução de Rescisória,A,4,False,PROCESSO CÍVEL E DO TRABALHO > Outros Procedimentos > Atos e expedientes > Instrução de Rescisória
+241,237,Petição Cível,A,4,False,PROCESSO CÍVEL E DO TRABALHO > Outros Procedimentos > Atos e expedientes > Petição Cível
+242,237,Comunicação,A,4,False,PROCESSO CÍVEL E DO TRABALHO > Outros Procedimentos > Atos e expedientes > Comunicação
+244,62,Reclamação,I,6,False,"PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Regidos por Outros Códigos, Leis Esparsas e Regimentos > Reclamação"
+251,237,Registro de Casamento Nuncupativo,A,4,False,PROCESSO CÍVEL E DO TRABALHO > Outros Procedimentos > Atos e expedientes > Registro de Casamento Nuncupativo
+256,1198,Representação por Excesso de Prazo,A,2,False,PROCEDIMENTOS ADMINISTRATIVOS > Representação por Excesso de Prazo
+257,214,Cartas,A,3,True,PROCESSO CÍVEL E DO TRABALHO > Outros Procedimentos > Cartas
+258,257,Carta de Ordem Cível,A,4,False,PROCESSO CÍVEL E DO TRABALHO > Outros Procedimentos > Cartas > Carta de Ordem Cível
+261,257,Carta Precatória Cível,A,4,False,PROCESSO CÍVEL E DO TRABALHO > Outros Procedimentos > Cartas > Carta Precatória Cível
+264,257,Carta Rogatória Cível,A,4,False,PROCESSO CÍVEL E DO TRABALHO > Outros Procedimentos > Cartas > Carta Rogatória Cível
+268,0,PROCESSO CRIMINAL,A,1,True,PROCESSO CRIMINAL
+269,268,Medidas Preparatórias,A,2,True,PROCESSO CRIMINAL > Medidas Preparatórias
+270,269,Notícia-Crime,I,3,False,PROCESSO CRIMINAL > Medidas Preparatórias > Notícia-Crime
+271,277,Representação Criminal,A,3,True,PROCESSO CRIMINAL > Procedimentos Investigatórios > Representação Criminal
+272,271,Representação Criminal/Notícia de Crime,A,4,False,PROCESSO CRIMINAL > Procedimentos Investigatórios > Representação Criminal > Representação Criminal/Notícia de Crime
+273,271,Pedido de Arquivamento em Representação Criminal,I,4,False,PROCESSO CRIMINAL > Procedimentos Investigatórios > Representação Criminal > Pedido de Arquivamento em Representação Criminal
+274,269,Interpelações,A,3,True,PROCESSO CRIMINAL > Medidas Preparatórias > Interpelações
+275,274,Notificação para Explicações,A,4,False,PROCESSO CRIMINAL > Medidas Preparatórias > Interpelações > Notificação para Explicações
+276,274,Notificação para Explicações (Lei de Imprensa),A,4,False,PROCESSO CRIMINAL > Medidas Preparatórias > Interpelações > Notificação para Explicações (Lei de Imprensa)
+277,268,Procedimentos Investigatórios,A,2,True,PROCESSO CRIMINAL > Procedimentos Investigatórios
+278,277,Termo Circunstanciado,A,3,False,PROCESSO CRIMINAL > Procedimentos Investigatórios > Termo Circunstanciado
+279,277,Inquérito Policial,A,3,False,PROCESSO CRIMINAL > Procedimentos Investigatórios > Inquérito Policial
+280,277,Auto de Prisão em Flagrante,A,3,False,PROCESSO CRIMINAL > Procedimentos Investigatórios > Auto de Prisão em Flagrante
+281,268,Procedimento Comum,A,2,True,PROCESSO CRIMINAL > Procedimento Comum
+282,281,Ação Penal de Competência do Júri,A,3,False,PROCESSO CRIMINAL > Procedimento Comum > Ação Penal de Competência do Júri
+283,281,Ação Penal - Procedimento Ordinário,A,3,False,PROCESSO CRIMINAL > Procedimento Comum > Ação Penal - Procedimento Ordinário
+284,268,Processo Especial,A,2,True,PROCESSO CRIMINAL > Processo Especial
+285,284,Processo Especial do Código de Processo Penal,A,3,True,PROCESSO CRIMINAL > Processo Especial > Processo Especial do Código de Processo Penal
+287,285,Crimes de Responsabilidade dos Funcionários Públicos,A,4,False,PROCESSO CRIMINAL > Processo Especial > Processo Especial do Código de Processo Penal > Crimes de Responsabilidade dos Funcionários Públicos
+288,285,"Crimes de Calúnia, Injúria e Difamação de Competência do Juiz Singular",A,4,False,"PROCESSO CRIMINAL > Processo Especial > Processo Especial do Código de Processo Penal > Crimes de Calúnia, Injúria e Difamação de Competência do Juiz Singular"
+289,285,Crimes Contra a Propriedade Imaterial,A,4,False,PROCESSO CRIMINAL > Processo Especial > Processo Especial do Código de Processo Penal > Crimes Contra a Propriedade Imaterial
+290,285,Processo Sumário (Detenção),I,4,False,PROCESSO CRIMINAL > Processo Especial > Processo Especial do Código de Processo Penal > Processo Sumário (Detenção)
+291,285,Restauração de Autos Criminal,A,4,False,PROCESSO CRIMINAL > Processo Especial > Processo Especial do Código de Processo Penal > Restauração de Autos Criminal
+292,284,Processo Especial de Leis Esparsas,A,3,True,PROCESSO CRIMINAL > Processo Especial > Processo Especial de Leis Esparsas
+293,292,Crimes Ambientais,A,4,False,PROCESSO CRIMINAL > Processo Especial > Processo Especial de Leis Esparsas > Crimes Ambientais
+294,292,Crimes Contra a Propriedade Industrial,A,4,False,PROCESSO CRIMINAL > Processo Especial > Processo Especial de Leis Esparsas > Crimes Contra a Propriedade Industrial
+295,292,Crimes Contra a Propriedade Intelectual,A,4,False,PROCESSO CRIMINAL > Processo Especial > Processo Especial de Leis Esparsas > Crimes Contra a Propriedade Intelectual
+297,292,Crimes de Imprensa,A,4,False,PROCESSO CRIMINAL > Processo Especial > Processo Especial de Leis Esparsas > Crimes de Imprensa
+299,292,Procedimento do Juizado Especial Criminal - Sumariíssimo,I,4,False,PROCESSO CRIMINAL > Processo Especial > Processo Especial de Leis Esparsas > Procedimento do Juizado Especial Criminal - Sumariíssimo
+300,292,Procedimento Especial da Lei Antitóxicos,A,4,False,PROCESSO CRIMINAL > Processo Especial > Processo Especial de Leis Esparsas > Procedimento Especial da Lei Antitóxicos
+302,292,Procedimento Especial dos Crimes de Abuso de Autoridade,A,4,False,PROCESSO CRIMINAL > Processo Especial > Processo Especial de Leis Esparsas > Procedimento Especial dos Crimes de Abuso de Autoridade
+303,268,Medidas Garantidoras,A,2,True,PROCESSO CRIMINAL > Medidas Garantidoras
+304,303,Liberdade,A,3,True,PROCESSO CRIMINAL > Medidas Garantidoras > Liberdade
+305,304,Liberdade Provisória com ou sem fiança,A,4,False,PROCESSO CRIMINAL > Medidas Garantidoras > Liberdade > Liberdade Provisória com ou sem fiança
+306,304,Relaxamento de Prisão,A,4,False,PROCESSO CRIMINAL > Medidas Garantidoras > Liberdade > Relaxamento de Prisão
+307,303,Habeas Corpus Criminal,A,3,False,PROCESSO CRIMINAL > Medidas Garantidoras > Habeas Corpus Criminal
+308,268,Medidas Cautelares,A,2,True,PROCESSO CRIMINAL > Medidas Cautelares
+309,308,Pedido de Busca e Apreensão Criminal,A,3,False,PROCESSO CRIMINAL > Medidas Cautelares > Pedido de Busca e Apreensão Criminal
+310,308,Pedido de Quebra de Sigilo de Dados e/ou Telefônico,A,3,False,PROCESSO CRIMINAL > Medidas Cautelares > Pedido de Quebra de Sigilo de Dados e/ou Telefônico
+311,308,Medidas Investigatórias Sobre Organizações Criminosas,A,3,False,PROCESSO CRIMINAL > Medidas Cautelares > Medidas Investigatórias Sobre Organizações Criminosas
+312,308,Pedido de Prisão,A,3,True,PROCESSO CRIMINAL > Medidas Cautelares > Pedido de Prisão
+313,312,Pedido de Prisão Preventiva,A,4,False,PROCESSO CRIMINAL > Medidas Cautelares > Pedido de Prisão > Pedido de Prisão Preventiva
+314,312,Pedido de Prisão Temporária,A,4,False,PROCESSO CRIMINAL > Medidas Cautelares > Pedido de Prisão > Pedido de Prisão Temporária
+315,312,Pedido de Prisão/ Liberdade Vigiada para Fins de Expulsão,I,4,False,PROCESSO CRIMINAL > Medidas Cautelares > Pedido de Prisão > Pedido de Prisão/ Liberdade Vigiada para Fins de Expulsão
+316,268,Questões e Processos Incidentes,A,2,True,PROCESSO CRIMINAL > Questões e Processos Incidentes
+317,316,Exceções,A,3,True,PROCESSO CRIMINAL > Questões e Processos Incidentes > Exceções
+318,317,Exceção de Suspeição,A,4,False,PROCESSO CRIMINAL > Questões e Processos Incidentes > Exceções > Exceção de Suspeição
+319,317,Exceção de Incompetência de Juízo,A,4,False,PROCESSO CRIMINAL > Questões e Processos Incidentes > Exceções > Exceção de Incompetência de Juízo
+320,317,Exceção de Litispendência,A,4,False,PROCESSO CRIMINAL > Questões e Processos Incidentes > Exceções > Exceção de Litispendência
+321,317,Exceção de Ilegitimidade de Parte,A,4,False,PROCESSO CRIMINAL > Questões e Processos Incidentes > Exceções > Exceção de Ilegitimidade de Parte
+322,317,Exceção de Coisa Julgada,A,4,False,PROCESSO CRIMINAL > Questões e Processos Incidentes > Exceções > Exceção de Coisa Julgada
+323,317,Exceção de Impedimento,A,4,False,PROCESSO CRIMINAL > Questões e Processos Incidentes > Exceções > Exceção de Impedimento
+324,317,Exceção da Verdade,A,4,False,PROCESSO CRIMINAL > Questões e Processos Incidentes > Exceções > Exceção da Verdade
+325,331,Conflito de Jurisdição,A,4,False,PROCESSO CRIMINAL > Questões e Processos Incidentes > Incidentes > Conflito de Jurisdição
+326,316,Restituição de Coisas Apreendidas,A,3,False,PROCESSO CRIMINAL > Questões e Processos Incidentes > Restituição de Coisas Apreendidas
+327,316,Embargos de Terceiro Criminal,A,3,False,PROCESSO CRIMINAL > Questões e Processos Incidentes > Embargos de Terceiro Criminal
+328,316,Medidas Assecuratórias,A,3,True,PROCESSO CRIMINAL > Questões e Processos Incidentes > Medidas Assecuratórias
+329,328,Seqüestro,A,4,False,PROCESSO CRIMINAL > Questões e Processos Incidentes > Medidas Assecuratórias > Seqüestro
+330,328,Arresto / Hipoteca Legal,A,4,False,PROCESSO CRIMINAL > Questões e Processos Incidentes > Medidas Assecuratórias > Arresto / Hipoteca Legal
+331,316,Incidentes,A,3,True,PROCESSO CRIMINAL > Questões e Processos Incidentes > Incidentes
+332,331,Incidente de Falsidade,A,4,False,PROCESSO CRIMINAL > Questões e Processos Incidentes > Incidentes > Incidente de Falsidade
+333,331,Insanidade Mental do Acusado,A,4,False,PROCESSO CRIMINAL > Questões e Processos Incidentes > Incidentes > Insanidade Mental do Acusado
+334,268,Cartas,A,2,True,PROCESSO CRIMINAL > Cartas
+335,334,Carta de Ordem Criminal,A,3,False,PROCESSO CRIMINAL > Cartas > Carta de Ordem Criminal
+355,334,Carta Precatória Criminal,A,3,False,PROCESSO CRIMINAL > Cartas > Carta Precatória Criminal
+375,334,Carta Rogatória Criminal,A,3,False,PROCESSO CRIMINAL > Cartas > Carta Rogatória Criminal
+385,0,EXECUÇÃO PENAL E DE MEDIDAS ALTERNATIVAS,A,1,True,EXECUÇÃO PENAL E DE MEDIDAS ALTERNATIVAS
+386,385,Execução da Pena,A,2,False,EXECUÇÃO PENAL E DE MEDIDAS ALTERNATIVAS > Execução da Pena
+406,385,Incidentes,I,2,True,EXECUÇÃO PENAL E DE MEDIDAS ALTERNATIVAS > Incidentes
+407,406,Conversão de Pena,I,3,False,EXECUÇÃO PENAL E DE MEDIDAS ALTERNATIVAS > Incidentes > Conversão de Pena
+408,406,Excesso ou Desvio,I,3,False,EXECUÇÃO PENAL E DE MEDIDAS ALTERNATIVAS > Incidentes > Excesso ou Desvio
+409,406,Anistia,I,3,False,EXECUÇÃO PENAL E DE MEDIDAS ALTERNATIVAS > Incidentes > Anistia
+410,406,Indulto,I,3,False,EXECUÇÃO PENAL E DE MEDIDAS ALTERNATIVAS > Incidentes > Indulto
+411,406,Comutação de Pena,I,3,False,EXECUÇÃO PENAL E DE MEDIDAS ALTERNATIVAS > Incidentes > Comutação de Pena
+412,268,Recursos,A,2,True,PROCESSO CRIMINAL > Recursos
+413,412,Agravo de Execução Penal,A,3,False,PROCESSO CRIMINAL > Recursos > Agravo de Execução Penal
+416,412,Apelação em Mandado de Segurança,I,3,False,PROCESSO CRIMINAL > Recursos > Apelação em Mandado de Segurança
+417,412,Apelação Criminal,A,3,False,PROCESSO CRIMINAL > Recursos > Apelação Criminal
+418,412,Carta Testemunhável,A,3,False,PROCESSO CRIMINAL > Recursos > Carta Testemunhável
+419,412,Correição Parcial Criminal,A,3,False,PROCESSO CRIMINAL > Recursos > Correição Parcial Criminal
+420,412,Embargos de Declaração Criminal,A,3,False,PROCESSO CRIMINAL > Recursos > Embargos de Declaração Criminal
+421,412,Embargos Infringentes e de Nulidade,A,3,False,PROCESSO CRIMINAL > Recursos > Embargos Infringentes e de Nulidade
+422,412,Protesto por Novo Júri,I,3,False,PROCESSO CRIMINAL > Recursos > Protesto por Novo Júri
+424,412,Recurso de Medida Cautelar Criminal,A,3,False,PROCESSO CRIMINAL > Recursos > Recurso de Medida Cautelar Criminal
+425,412,Recurso de Sentença Criminal,I,3,False,PROCESSO CRIMINAL > Recursos > Recurso de Sentença Criminal
+426,412,Recurso em Sentido Estrito,A,3,False,PROCESSO CRIMINAL > Recursos > Recurso em Sentido Estrito
+427,412,Remessa Necessária Criminal,A,3,False,PROCESSO CRIMINAL > Recursos > Remessa Necessária Criminal
+428,412,Revisão Criminal,I,3,False,PROCESSO CRIMINAL > Recursos > Revisão Criminal
+432,331,Desaforamento de Julgamento,A,4,False,PROCESSO CRIMINAL > Questões e Processos Incidentes > Incidentes > Desaforamento de Julgamento
+433,331,Incidente de Uniformização de Jurisprudência,I,4,False,PROCESSO CRIMINAL > Questões e Processos Incidentes > Incidentes > Incidente de Uniformização de Jurisprudência
+436,1107,Procedimento do Juizado Especial Cível,A,4,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimento do Juizado Especial Cível
+457,215,Pedido de Uniformização de Interpretação de Lei Cível,A,4,False,PROCESSO CÍVEL E DO TRABALHO > Outros Procedimentos > Incidentes > Pedido de Uniformização de Interpretação de Lei Cível
+460,197,Recurso Inominado Cível,A,3,False,PROCESSO CÍVEL E DO TRABALHO > Recursos > Recurso Inominado Cível
+547,0,PROCEDIMENTOS DE INFÂNCIA E JUVENTUDE,A,1,True,PROCEDIMENTOS DE INFÂNCIA E JUVENTUDE
+976,1067,Ação Anulatória de Cláusulas Convencionais,A,5,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Trabalhistas > Ação Anulatória de Cláusulas Convencionais
+980,1067,Ação de Cumprimento,A,5,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Trabalhistas > Ação de Cumprimento
+985,1067,Ação Trabalhista - Rito Ordinário,A,5,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Trabalhistas > Ação Trabalhista - Rito Ordinário
+986,1067,Inquérito para Apuração de Falta Grave,A,5,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Trabalhistas > Inquérito para Apuração de Falta Grave
+987,1067,Dissídio Coletivo,A,5,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Trabalhistas > Dissídio Coletivo
+988,1067,Dissídio Coletivo de Greve,A,5,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Trabalhistas > Dissídio Coletivo de Greve
+990,1068,Execução de Título Extrajudicial,A,4,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Execução > Processo de Execução Trabalhista > Execução de Título Extrajudicial
+991,1068,Execução de Termo de Ajuste de Conduta,A,4,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Execução > Processo de Execução Trabalhista > Execução de Termo de Ajuste de Conduta
+992,1068,Execução de Termo de Conciliação de CCP,A,4,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Execução > Processo de Execução Trabalhista > Execução de Termo de Conciliação de CCP
+993,1068,Execução de Certidão de Crédito Judicial,A,4,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Execução > Processo de Execução Trabalhista > Execução de Certidão de Crédito Judicial
+994,1068,Execução Provisória em Autos Suplementares,A,4,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Execução > Processo de Execução Trabalhista > Execução Provisória em Autos Suplementares
+1000,1209,Agravo,A,5,False,PROCESSO CÍVEL E DO TRABALHO > Recursos > Recursos Trabalhistas > Agravos > Agravo
+1001,1209,Agravo de Instrumento em Agravo de Petição,A,5,False,PROCESSO CÍVEL E DO TRABALHO > Recursos > Recursos Trabalhistas > Agravos > Agravo de Instrumento em Agravo de Petição
+1002,1209,Agravo de Instrumento em Recurso de Revista,A,5,False,PROCESSO CÍVEL E DO TRABALHO > Recursos > Recursos Trabalhistas > Agravos > Agravo de Instrumento em Recurso de Revista
+1003,1209,Agravo de Instrumento em Recurso Ordinário,A,5,False,PROCESSO CÍVEL E DO TRABALHO > Recursos > Recursos Trabalhistas > Agravos > Agravo de Instrumento em Recurso Ordinário
+1004,1209,Agravo de Petição,A,5,False,PROCESSO CÍVEL E DO TRABALHO > Recursos > Recursos Trabalhistas > Agravos > Agravo de Petição
+1005,1209,Agravo Regimental Trabalhista,A,5,False,PROCESSO CÍVEL E DO TRABALHO > Recursos > Recursos Trabalhistas > Agravos > Agravo Regimental Trabalhista
+1006,1071,Embargos,A,4,False,PROCESSO CÍVEL E DO TRABALHO > Recursos > Recursos Trabalhistas > Embargos
+1007,1071,Embargos Infringentes,A,4,False,PROCESSO CÍVEL E DO TRABALHO > Recursos > Recursos Trabalhistas > Embargos Infringentes
+1008,1071,Recurso de Revista,A,4,False,PROCESSO CÍVEL E DO TRABALHO > Recursos > Recursos Trabalhistas > Recurso de Revista
+1009,1071,Recurso Ordinário Trabalhista,A,4,False,PROCESSO CÍVEL E DO TRABALHO > Recursos > Recursos Trabalhistas > Recurso Ordinário Trabalhista
+1013,5,Agravo em Recurso de Habeas Corpus,A,2,False,SUPERIOR TRIBUNAL DE JUSTIÇA > Agravo em Recurso de Habeas Corpus
+1015,5,Embargos de Divergência em Recurso de Mandado de Segurança,I,2,False,SUPERIOR TRIBUNAL DE JUSTIÇA > Embargos de Divergência em Recurso de Mandado de Segurança
+1016,5,Embargos de Divergência em Agravo Regimental,A,2,False,SUPERIOR TRIBUNAL DE JUSTIÇA > Embargos de Divergência em Agravo Regimental
+1017,5,Embargos à Execução em Mandado de Segurança,A,2,False,SUPERIOR TRIBUNAL DE JUSTIÇA > Embargos à Execução em Mandado de Segurança
+1018,5,Embargos à Execução em Ação Recisoria,A,2,False,SUPERIOR TRIBUNAL DE JUSTIÇA > Embargos à Execução em Ação Recisoria
+1019,5,Embargos à Execução em Medida Cautelar,A,2,False,SUPERIOR TRIBUNAL DE JUSTIÇA > Embargos à Execução em Medida Cautelar
+1020,5,Execução em Ação Rescisória,A,2,False,SUPERIOR TRIBUNAL DE JUSTIÇA > Execução em Ação Rescisória
+1021,5,Execução em Sentença Estrangeira,A,2,False,SUPERIOR TRIBUNAL DE JUSTIÇA > Execução em Sentença Estrangeira
+1022,5,Execução em Sentença Estrangeira Contestada,A,2,False,SUPERIOR TRIBUNAL DE JUSTIÇA > Execução em Sentença Estrangeira Contestada
+1023,5,Execução em Mandado de Segurança,A,2,False,SUPERIOR TRIBUNAL DE JUSTIÇA > Execução em Mandado de Segurança
+1024,5,Execução em Medida Cautelar,A,2,False,SUPERIOR TRIBUNAL DE JUSTIÇA > Execução em Medida Cautelar
+1025,5,Incidente de Deslocamento de Competência ,A,2,False,SUPERIOR TRIBUNAL DE JUSTIÇA > Incidente de Deslocamento de Competência 
+1026,5,Homologação de Decisão Estrangeira,A,2,False,SUPERIOR TRIBUNAL DE JUSTIÇA > Homologação de Decisão Estrangeira
+1027,5,Sentença Estrangeira Contestada,A,2,False,SUPERIOR TRIBUNAL DE JUSTIÇA > Sentença Estrangeira Contestada
+1028,5,Sindicância,A,2,False,SUPERIOR TRIBUNAL DE JUSTIÇA > Sindicância
+1029,5,Mandado de Segurança,A,2,False,SUPERIOR TRIBUNAL DE JUSTIÇA > Mandado de Segurança
+1030,5,Reclamação,A,2,False,SUPERIOR TRIBUNAL DE JUSTIÇA > Reclamação
+1031,5,Recurso Ordinário,A,2,False,SUPERIOR TRIBUNAL DE JUSTIÇA > Recurso Ordinário
+1032,5,Recurso Especial,A,2,False,SUPERIOR TRIBUNAL DE JUSTIÇA > Recurso Especial
+1033,5,Ação Penal,A,2,False,SUPERIOR TRIBUNAL DE JUSTIÇA > Ação Penal
+1034,5,Interpelação Judicial,A,2,False,SUPERIOR TRIBUNAL DE JUSTIÇA > Interpelação Judicial
+1035,5,Apelação Cível,I,2,False,SUPERIOR TRIBUNAL DE JUSTIÇA > Apelação Cível
+1036,5,Suspensão de Liminar e de Sentença,A,2,False,SUPERIOR TRIBUNAL DE JUSTIÇA > Suspensão de Liminar e de Sentença
+1037,5,Embargos Infringentes em Apelação Cível,I,2,False,SUPERIOR TRIBUNAL DE JUSTIÇA > Embargos Infringentes em Apelação Cível
+1038,5,Representação,A,2,False,SUPERIOR TRIBUNAL DE JUSTIÇA > Representação
+1040,5,Requisição de Pequeno Valor,A,2,False,SUPERIOR TRIBUNAL DE JUSTIÇA > Requisição de Pequeno Valor
+1042,5,Inquérito,A,2,False,SUPERIOR TRIBUNAL DE JUSTIÇA > Inquérito
+1044,5,Agravo de Instrumento,A,2,False,SUPERIOR TRIBUNAL DE JUSTIÇA > Agravo de Instrumento
+1045,5,Agravo em Recurso Extraordinário,A,2,False,SUPERIOR TRIBUNAL DE JUSTIÇA > Agravo em Recurso Extraordinário
+1046,5,Agravo em Recurso de Mandado de Segurança,A,2,False,SUPERIOR TRIBUNAL DE JUSTIÇA > Agravo em Recurso de Mandado de Segurança
+1047,5,Carta Rogatória,A,2,False,SUPERIOR TRIBUNAL DE JUSTIÇA > Carta Rogatória
+1049,5,Habeas Data,A,2,False,SUPERIOR TRIBUNAL DE JUSTIÇA > Habeas Data
+1053,5,Conflito de Atribuição,A,2,False,SUPERIOR TRIBUNAL DE JUSTIÇA > Conflito de Atribuição
+1054,5,Conflito de Competência,A,2,False,SUPERIOR TRIBUNAL DE JUSTIÇA > Conflito de Competência
+1057,5,Petição,A,2,False,SUPERIOR TRIBUNAL DE JUSTIÇA > Petição
+1062,5,Medida Cautelar,A,2,False,SUPERIOR TRIBUNAL DE JUSTIÇA > Medida Cautelar
+1063,5,Exceção da Verdade,A,2,False,SUPERIOR TRIBUNAL DE JUSTIÇA > Exceção da Verdade
+1064,5,Remessa Necessária em Habeas Corpus,A,2,False,SUPERIOR TRIBUNAL DE JUSTIÇA > Remessa Necessária em Habeas Corpus
+1066,5,Embargos Infringentes em Ação Rescisória,I,2,False,SUPERIOR TRIBUNAL DE JUSTIÇA > Embargos Infringentes em Ação Rescisória
+1067,1107,Procedimentos Trabalhistas,A,4,True,PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Trabalhistas
+1068,158,Processo de Execução Trabalhista,A,3,True,PROCESSO CÍVEL E DO TRABALHO > Processo de Execução > Processo de Execução Trabalhista
+1070,214,Incidentes Trabalhistas,A,3,True,PROCESSO CÍVEL E DO TRABALHO > Outros Procedimentos > Incidentes Trabalhistas
+1071,197,Recursos Trabalhistas,A,3,True,PROCESSO CÍVEL E DO TRABALHO > Recursos > Recursos Trabalhistas
+1072,1070,Pedido de Revisão do Valor da Causa,A,4,False,PROCESSO CÍVEL E DO TRABALHO > Outros Procedimentos > Incidentes Trabalhistas > Pedido de Revisão do Valor da Causa
+1106,2,Processo de Conhecimento,A,2,True,PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento
+1107,1106,Procedimento de Conhecimento,A,3,True,PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento
+1111,158,Execução de Título Judicial,I,3,True,PROCESSO CÍVEL E DO TRABALHO > Processo de Execução > Execução de Título Judicial
+1112,1111,Execução de Alimentos,I,4,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Execução > Execução de Título Judicial > Execução de Alimentos
+1114,1111,Execução Contra a Fazenda Pública,I,4,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Execução > Execução de Título Judicial > Execução Contra a Fazenda Pública
+1116,158,Execução Fiscal,A,3,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Execução > Execução Fiscal
+1117,158,Execução Hipotecária do Sistema Financeiro da Habitação,A,3,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Execução > Execução Hipotecária do Sistema Financeiro da Habitação
+1118,169,Embargos à Execução Fiscal,A,4,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Execução > Embargos > Embargos à Execução Fiscal
+1122,50,Tutela e Curatela - Remoção e Dispensa,I,6,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Especiais de Jurisdição Voluntária > Tutela e Curatela - Remoção e Dispensa
+1124,62,Justificação de Dinheiro a Risco,I,6,False,"PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Regidos por Outros Códigos, Leis Esparsas e Regimentos > Justificação de Dinheiro a Risco"
+1125,1067,Ação Trabalhista - Rito Sumaríssimo,A,5,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Trabalhistas > Ação Trabalhista - Rito Sumaríssimo
+1126,1067,Ação Trabalhista - Rito Sumário (Alçada),A,5,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Trabalhistas > Ação Trabalhista - Rito Sumário (Alçada)
+1137,5,Embargos de Divergência em Recurso Especial,A,2,False,SUPERIOR TRIBUNAL DE JUSTIÇA > Embargos de Divergência em Recurso Especial
+1145,1070,Conflito de Competência,I,4,False,PROCESSO CÍVEL E DO TRABALHO > Outros Procedimentos > Incidentes Trabalhistas > Conflito de Competência
+1178,331,Incidente de Arguição de Inconstitucionalidade Criminal,A,4,False,PROCESSO CRIMINAL > Questões e Processos Incidentes > Incidentes > Incidente de Arguição de Inconstitucionalidade Criminal
+1198,0,PROCEDIMENTOS ADMINISTRATIVOS,A,1,True,PROCEDIMENTOS ADMINISTRATIVOS
+1199,1198,Pedido de Providências,A,2,False,PROCEDIMENTOS ADMINISTRATIVOS > Pedido de Providências
+1202,1067,Reclamação,A,5,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Trabalhistas > Reclamação
+1208,200,Agravo Interno Cível,A,4,False,PROCESSO CÍVEL E DO TRABALHO > Recursos > Agravos > Agravo Interno Cível
+1209,1071,Agravos,A,4,True,PROCESSO CÍVEL E DO TRABALHO > Recursos > Recursos Trabalhistas > Agravos
+1230,224,Exceção de Impedimento,I,5,False,PROCESSO CÍVEL E DO TRABALHO > Outros Procedimentos > Incidentes > Exceções > Exceção de Impedimento
+1231,224,Exceção de Suspeição,I,5,False,PROCESSO CÍVEL E DO TRABALHO > Outros Procedimentos > Incidentes > Exceções > Exceção de Suspeição
+1232,224,Exceção de Incompetência,I,5,False,PROCESSO CÍVEL E DO TRABALHO > Outros Procedimentos > Incidentes > Exceções > Exceção de Incompetência
+1233,175,Efeito Suspensivo em Dissídio Coletivo,A,3,False,PROCESSO CÍVEL E DO TRABALHO > Processo Cautelar > Efeito Suspensivo em Dissídio Coletivo
+1262,1198,Processo Administrativo Disciplinar em face de Servidor,A,2,False,PROCEDIMENTOS ADMINISTRATIVOS > Processo Administrativo Disciplinar em face de Servidor
+1264,1198,Processo Administrativo Disciplinar em face de Magistrado,A,2,False,PROCEDIMENTOS ADMINISTRATIVOS > Processo Administrativo Disciplinar em face de Magistrado
+1265,1198,Precatório,A,2,False,PROCEDIMENTOS ADMINISTRATIVOS > Precatório
+1266,1198,Requisição de Pequeno Valor,A,2,False,PROCEDIMENTOS ADMINISTRATIVOS > Requisição de Pequeno Valor
+1267,1071,Recurso de Multa,A,4,False,PROCESSO CÍVEL E DO TRABALHO > Recursos > Recursos Trabalhistas > Recurso de Multa
+1268,308,Medidas Protetivas de Urgência (Lei Maria da Penha)  - Criminal,A,3,False,PROCESSO CRIMINAL > Medidas Cautelares > Medidas Protetivas de Urgência (Lei Maria da Penha)  - Criminal
+1269,62,Habeas Corpus Cível,A,6,False,"PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Regidos por Outros Códigos, Leis Esparsas e Regimentos > Habeas Corpus Cível"
+1271,197,Recurso de Medida Cautelar Cível,A,3,False,PROCESSO CÍVEL E DO TRABALHO > Recursos > Recurso de Medida Cautelar Cível
+1283,406,Superveniência de doença mental,I,3,False,EXECUÇÃO PENAL E DE MEDIDAS ALTERNATIVAS > Incidentes > Superveniência de doença mental
+1284,406,Unificação de penas,I,3,False,EXECUÇÃO PENAL E DE MEDIDAS ALTERNATIVAS > Incidentes > Unificação de penas
+1285,215,Conflito de atribuição,I,4,False,PROCESSO CÍVEL E DO TRABALHO > Outros Procedimentos > Incidentes > Conflito de atribuição
+1288,406,Transferência entre estabelecimentos penais,I,3,False,EXECUÇÃO PENAL E DE MEDIDAS ALTERNATIVAS > Incidentes > Transferência entre estabelecimentos penais
+1289,175,Outras medidas provisionais,I,3,False,PROCESSO CÍVEL E DO TRABALHO > Processo Cautelar > Outras medidas provisionais
+1291,331,Reabilitação,A,4,False,PROCESSO CRIMINAL > Questões e Processos Incidentes > Incidentes > Reabilitação
+1294,50,Outros procedimentos de jurisdição voluntária,A,6,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Especiais de Jurisdição Voluntária > Outros procedimentos de jurisdição voluntária
+1295,50,Alvará Judicial,I,6,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Especiais de Jurisdição Voluntária > Alvará Judicial
+1296,62,Ação Declaratória de Constitucionalidade,A,6,False,"PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Regidos por Outros Códigos, Leis Esparsas e Regimentos > Ação Declaratória de Constitucionalidade"
+1297,62,Intervenção em Município,A,6,False,"PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Regidos por Outros Códigos, Leis Esparsas e Regimentos > Intervenção em Município"
+1298,1198,Processo Administrativo,A,2,False,PROCEDIMENTOS ADMINISTRATIVOS > Processo Administrativo
+1299,1198,Recurso Administrativo,A,2,False,PROCEDIMENTOS ADMINISTRATIVOS > Recurso Administrativo
+1301,1198,Reclamação Disciplinar,A,2,False,PROCEDIMENTOS ADMINISTRATIVOS > Reclamação Disciplinar
+1303,1198,Correição Extraordinária,A,2,False,PROCEDIMENTOS ADMINISTRATIVOS > Correição Extraordinária
+1304,1198,Inspeção,A,2,False,PROCEDIMENTOS ADMINISTRATIVOS > Inspeção
+1306,1198,Recurso em Processo Administrativo Disciplinar em face de Servidor,A,2,False,PROCEDIMENTOS ADMINISTRATIVOS > Recurso em Processo Administrativo Disciplinar em face de Servidor
+1307,1198,Correição Ordinária,A,2,False,PROCEDIMENTOS ADMINISTRATIVOS > Correição Ordinária
+1308,1198,Sindicância,A,2,False,PROCEDIMENTOS ADMINISTRATIVOS > Sindicância
+1310,0,SUPREMO TRIBUNAL FEDERAL,A,1,True,SUPREMO TRIBUNAL FEDERAL
+1311,1310,Ação Cautelar,A,2,False,SUPREMO TRIBUNAL FEDERAL > Ação Cautelar
+1312,1310,Ação  Originária,A,2,False,SUPREMO TRIBUNAL FEDERAL > Ação  Originária
+1313,1310,Ação Declaratória de Constitucionalidade,A,2,False,SUPREMO TRIBUNAL FEDERAL > Ação Declaratória de Constitucionalidade
+1314,1310,Ação Direta de Inconstitucionalidade,A,2,False,SUPREMO TRIBUNAL FEDERAL > Ação Direta de Inconstitucionalidade
+1315,1310,Ação Cível Originária,A,2,False,SUPREMO TRIBUNAL FEDERAL > Ação Cível Originária
+1316,1310,Ação Originária Especial,A,2,False,SUPREMO TRIBUNAL FEDERAL > Ação Originária Especial
+1317,1310,Ação Penal,A,2,False,SUPREMO TRIBUNAL FEDERAL > Ação Penal
+1318,1310,Ação Rescisória,A,2,False,SUPREMO TRIBUNAL FEDERAL > Ação Rescisória
+1319,1310,Agravo Interno,I,2,False,SUPREMO TRIBUNAL FEDERAL > Agravo Interno
+1320,1310,Agravo de Instrumento,A,2,False,SUPREMO TRIBUNAL FEDERAL > Agravo de Instrumento
+1321,1310,Agravo Regimental,A,2,False,SUPREMO TRIBUNAL FEDERAL > Agravo Regimental
+1322,1310,Arguição de Descumprimento de Preceito Fundamental,A,2,False,SUPREMO TRIBUNAL FEDERAL > Arguição de Descumprimento de Preceito Fundamental
+1323,1310,Arguição de Suspeição,A,2,False,SUPREMO TRIBUNAL FEDERAL > Arguição de Suspeição
+1324,1310,Carta Rogatória,I,2,False,SUPREMO TRIBUNAL FEDERAL > Carta Rogatória
+1325,1310,Comunicação,A,2,False,SUPREMO TRIBUNAL FEDERAL > Comunicação
+1326,1310,Conflito de Competência,A,2,False,SUPREMO TRIBUNAL FEDERAL > Conflito de Competência
+1327,1310,Embargos de Declaração,A,2,False,SUPREMO TRIBUNAL FEDERAL > Embargos de Declaração
+1328,1310,Embargos Divergentes,A,2,False,SUPREMO TRIBUNAL FEDERAL > Embargos Divergentes
+1329,1310,Embargos Infringentes,A,2,False,SUPREMO TRIBUNAL FEDERAL > Embargos Infringentes
+1330,1310,Extradição,A,2,False,SUPREMO TRIBUNAL FEDERAL > Extradição
+1331,1310,Habeas Corpus,A,2,False,SUPREMO TRIBUNAL FEDERAL > Habeas Corpus
+1332,1310,Habeas Data,A,2,False,SUPREMO TRIBUNAL FEDERAL > Habeas Data
+1333,1310,Inquerito,A,2,False,SUPREMO TRIBUNAL FEDERAL > Inquerito
+1334,1310,Intervenção Federal,A,2,False,SUPREMO TRIBUNAL FEDERAL > Intervenção Federal
+1335,1310,Mandado de Injunção,A,2,False,SUPREMO TRIBUNAL FEDERAL > Mandado de Injunção
+1336,1310,Mandado de Segurança,A,2,False,SUPREMO TRIBUNAL FEDERAL > Mandado de Segurança
+1337,1310,Medida Cautelar,A,2,False,SUPREMO TRIBUNAL FEDERAL > Medida Cautelar
+1338,1310,Petição,A,2,False,SUPREMO TRIBUNAL FEDERAL > Petição
+1339,1310,Prisão Preventiva para Extradição,A,2,False,SUPREMO TRIBUNAL FEDERAL > Prisão Preventiva para Extradição
+1340,1310,Processo Administrativo,I,2,False,SUPREMO TRIBUNAL FEDERAL > Processo Administrativo
+1341,1310,Questão de Ordem,A,2,False,SUPREMO TRIBUNAL FEDERAL > Questão de Ordem
+1342,1310,Reclamação,A,2,False,SUPREMO TRIBUNAL FEDERAL > Reclamação
+1343,1310,Recurso Criminal,A,2,False,SUPREMO TRIBUNAL FEDERAL > Recurso Criminal
+1344,1310,Recurso em Habeas Corpus,A,2,False,SUPREMO TRIBUNAL FEDERAL > Recurso em Habeas Corpus
+1345,1310,Recurso em Habeas Data,A,2,False,SUPREMO TRIBUNAL FEDERAL > Recurso em Habeas Data
+1346,1310,Recurso em Mandado de Injunção,A,2,False,SUPREMO TRIBUNAL FEDERAL > Recurso em Mandado de Injunção
+1347,1310,Recurso em Mandado de Segurança,A,2,False,SUPREMO TRIBUNAL FEDERAL > Recurso em Mandado de Segurança
+1348,1310,Recurso Extraordinário,A,2,False,SUPREMO TRIBUNAL FEDERAL > Recurso Extraordinário
+1349,1310,Revisão Criminal,A,2,False,SUPREMO TRIBUNAL FEDERAL > Revisão Criminal
+1350,1310,Sentença Estrangeira,I,2,False,SUPREMO TRIBUNAL FEDERAL > Sentença Estrangeira
+1351,1310,Sentença Estrangeira Contestada,I,2,False,SUPREMO TRIBUNAL FEDERAL > Sentença Estrangeira Contestada
+1352,1310,Suspensão de Liminar,A,2,False,SUPREMO TRIBUNAL FEDERAL > Suspensão de Liminar
+1353,1310,Suspensão de Segurança,A,2,False,SUPREMO TRIBUNAL FEDERAL > Suspensão de Segurança
+1354,1310,Suspensão de Tutela Provisória,A,2,False,SUPREMO TRIBUNAL FEDERAL > Suspensão de Tutela Provisória
+1355,1310,Siglas dos Processos Extintos,A,2,True,SUPREMO TRIBUNAL FEDERAL > Siglas dos Processos Extintos
+1356,1355,Ação Ordinária Regressiva,A,3,False,SUPREMO TRIBUNAL FEDERAL > Siglas dos Processos Extintos > Ação Ordinária Regressiva
+1357,1355,Ação Regressiva,A,3,False,SUPREMO TRIBUNAL FEDERAL > Siglas dos Processos Extintos > Ação Regressiva
+1358,1355,Apelação Cível,A,3,False,SUPREMO TRIBUNAL FEDERAL > Siglas dos Processos Extintos > Apelação Cível
+1359,1355,Apelação Criminal,A,3,False,SUPREMO TRIBUNAL FEDERAL > Siglas dos Processos Extintos > Apelação Criminal
+1360,1355,Arguição de Relevância,A,3,False,SUPREMO TRIBUNAL FEDERAL > Siglas dos Processos Extintos > Arguição de Relevância
+1361,1355,Carta Testemunhável,A,3,False,SUPREMO TRIBUNAL FEDERAL > Siglas dos Processos Extintos > Carta Testemunhável
+1362,1355,Conflito de Atribuições,A,3,False,SUPREMO TRIBUNAL FEDERAL > Siglas dos Processos Extintos > Conflito de Atribuições
+1363,1355,Conflito de Jurisdição,A,3,False,SUPREMO TRIBUNAL FEDERAL > Siglas dos Processos Extintos > Conflito de Jurisdição
+1364,1355,Denúncia,A,3,False,SUPREMO TRIBUNAL FEDERAL > Siglas dos Processos Extintos > Denúncia
+1365,1355,Embargos Remetidos,A,3,False,SUPREMO TRIBUNAL FEDERAL > Siglas dos Processos Extintos > Embargos Remetidos
+1366,1355,Exceção da Verdade,A,3,False,SUPREMO TRIBUNAL FEDERAL > Siglas dos Processos Extintos > Exceção da Verdade
+1367,1355,Exceção de Suspeição,A,3,False,SUPREMO TRIBUNAL FEDERAL > Siglas dos Processos Extintos > Exceção de Suspeição
+1368,1355,Inquérito Administrativo,A,3,False,SUPREMO TRIBUNAL FEDERAL > Siglas dos Processos Extintos > Inquérito Administrativo
+1369,1355,Inquérito Policial,A,3,False,SUPREMO TRIBUNAL FEDERAL > Siglas dos Processos Extintos > Inquérito Policial
+1370,1355,Inquérito Policial Especial,A,3,False,SUPREMO TRIBUNAL FEDERAL > Siglas dos Processos Extintos > Inquérito Policial Especial
+1371,1355,Interpelação,A,3,False,SUPREMO TRIBUNAL FEDERAL > Siglas dos Processos Extintos > Interpelação
+1372,1355,Liquidação de Sentença,A,3,False,SUPREMO TRIBUNAL FEDERAL > Siglas dos Processos Extintos > Liquidação de Sentença
+1373,1355,Notificação,A,3,False,SUPREMO TRIBUNAL FEDERAL > Siglas dos Processos Extintos > Notificação
+1374,1355,Pedido de Avocação,A,3,False,SUPREMO TRIBUNAL FEDERAL > Siglas dos Processos Extintos > Pedido de Avocação
+1375,1355,Processo Crime,A,3,False,SUPREMO TRIBUNAL FEDERAL > Siglas dos Processos Extintos > Processo Crime
+1376,1355,Processo Judicial,A,3,False,SUPREMO TRIBUNAL FEDERAL > Siglas dos Processos Extintos > Processo Judicial
+1377,1355,Queixa Crime,A,3,False,SUPREMO TRIBUNAL FEDERAL > Siglas dos Processos Extintos > Queixa Crime
+1378,1355,Recurso de Apreensão de Livro,A,3,False,SUPREMO TRIBUNAL FEDERAL > Siglas dos Processos Extintos > Recurso de Apreensão de Livro
+1379,1355,Recurso de Liquidação de Sentença,A,3,False,SUPREMO TRIBUNAL FEDERAL > Siglas dos Processos Extintos > Recurso de Liquidação de Sentença
+1380,1355,Recurso de Revista,A,3,False,SUPREMO TRIBUNAL FEDERAL > Siglas dos Processos Extintos > Recurso de Revista
+1381,1355,Representação,A,3,False,SUPREMO TRIBUNAL FEDERAL > Siglas dos Processos Extintos > Representação
+1382,1355,Retificação de Nome Estrangeiro,A,3,False,SUPREMO TRIBUNAL FEDERAL > Siglas dos Processos Extintos > Retificação de Nome Estrangeiro
+1383,1355,Sentença Arbitral,A,3,False,SUPREMO TRIBUNAL FEDERAL > Siglas dos Processos Extintos > Sentença Arbitral
+1384,1355,Suspensão de Direitos,A,3,False,SUPREMO TRIBUNAL FEDERAL > Siglas dos Processos Extintos > Suspensão de Direitos
+1385,547,Seção Cível,A,2,True,PROCEDIMENTOS DE INFÂNCIA E JUVENTUDE > Seção Cível
+1386,1385,Processo de Conhecimento,A,3,True,PROCEDIMENTOS DE INFÂNCIA E JUVENTUDE > Seção Cível > Processo de Conhecimento
+1389,1386,Ação de Alimentos de Infância e Juventude,A,4,False,PROCEDIMENTOS DE INFÂNCIA E JUVENTUDE > Seção Cível > Processo de Conhecimento > Ação de Alimentos de Infância e Juventude
+1390,1386,Revisão Judicial de Decisão do Conselho Tutelar,A,4,False,PROCEDIMENTOS DE INFÂNCIA E JUVENTUDE > Seção Cível > Processo de Conhecimento > Revisão Judicial de Decisão do Conselho Tutelar
+1391,1386,Apuração de Irregularidades em Entidades de Atendimento,A,4,False,PROCEDIMENTOS DE INFÂNCIA E JUVENTUDE > Seção Cível > Processo de Conhecimento > Apuração de Irregularidades em Entidades de Atendimento
+1392,1386,Apuração de Infração Administrativa às Normas de Proteção à Criança ou Adolescente,A,4,False,PROCEDIMENTOS DE INFÂNCIA E JUVENTUDE > Seção Cível > Processo de Conhecimento > Apuração de Infração Administrativa às Normas de Proteção à Criança ou Adolescente
+1396,1386,Tutela Infância e Juventude,A,4,False,PROCEDIMENTOS DE INFÂNCIA E JUVENTUDE > Seção Cível > Processo de Conhecimento > Tutela Infância e Juventude
+1399,1386,Tutela c/c Destituição do Poder Familiar,A,4,False,PROCEDIMENTOS DE INFÂNCIA E JUVENTUDE > Seção Cível > Processo de Conhecimento > Tutela c/c Destituição do Poder Familiar
+1401,1386,Adoção,A,4,True,PROCEDIMENTOS DE INFÂNCIA E JUVENTUDE > Seção Cível > Processo de Conhecimento > Adoção
+1412,1386,Adoção c/c Destituição do Poder Familiar,I,4,False,PROCEDIMENTOS DE INFÂNCIA E JUVENTUDE > Seção Cível > Processo de Conhecimento > Adoção c/c Destituição do Poder Familiar
+1414,1386,Suprimento de Capacidade ou de Consentimento para Casar,A,4,False,PROCEDIMENTOS DE INFÂNCIA E JUVENTUDE > Seção Cível > Processo de Conhecimento > Suprimento de Capacidade ou de Consentimento para Casar
+1415,1386,Emancipação,A,4,False,PROCEDIMENTOS DE INFÂNCIA E JUVENTUDE > Seção Cível > Processo de Conhecimento > Emancipação
+1417,1386,Regularização de Registro Civil,A,4,False,PROCEDIMENTOS DE INFÂNCIA E JUVENTUDE > Seção Cível > Processo de Conhecimento > Regularização de Registro Civil
+1420,1386,Guarda de Infância e Juventude,A,4,False,PROCEDIMENTOS DE INFÂNCIA E JUVENTUDE > Seção Cível > Processo de Conhecimento > Guarda de Infância e Juventude
+1424,1386,Providência ,A,4,False,PROCEDIMENTOS DE INFÂNCIA E JUVENTUDE > Seção Cível > Processo de Conhecimento > Providência 
+1425,1386,Prestação de Contas Infância e Juventude,A,4,False,PROCEDIMENTOS DE INFÂNCIA E JUVENTUDE > Seção Cível > Processo de Conhecimento > Prestação de Contas Infância e Juventude
+1426,1386,Perda ou Suspensão do Poder Familiar,I,4,False,PROCEDIMENTOS DE INFÂNCIA E JUVENTUDE > Seção Cível > Processo de Conhecimento > Perda ou Suspensão do Poder Familiar
+1430,1385,Processo de Execução,A,3,True,PROCEDIMENTOS DE INFÂNCIA E JUVENTUDE > Seção Cível > Processo de Execução
+1432,1430,Execução de Alimentos Infância e Juventude,A,4,False,PROCEDIMENTOS DE INFÂNCIA E JUVENTUDE > Seção Cível > Processo de Execução > Execução de Alimentos Infância e Juventude
+1434,1430,Execução de Medida de Proteção à Criança e Adolescente,A,4,False,PROCEDIMENTOS DE INFÂNCIA E JUVENTUDE > Seção Cível > Processo de Execução > Execução de Medida de Proteção à Criança e Adolescente
+1435,1430,Execução de Multa,A,4,False,PROCEDIMENTOS DE INFÂNCIA E JUVENTUDE > Seção Cível > Processo de Execução > Execução de Multa
+1436,1385,Processos Cautelares,A,3,True,PROCEDIMENTOS DE INFÂNCIA E JUVENTUDE > Seção Cível > Processos Cautelares
+1438,1436,Busca e Apreensão Infância e Juventude,A,4,False,PROCEDIMENTOS DE INFÂNCIA E JUVENTUDE > Seção Cível > Processos Cautelares > Busca e Apreensão Infância e Juventude
+1440,1436,Cautelar Inominada Infância e Juventude,A,4,False,PROCEDIMENTOS DE INFÂNCIA E JUVENTUDE > Seção Cível > Processos Cautelares > Cautelar Inominada Infância e Juventude
+1450,1385,Cartas,A,3,True,PROCEDIMENTOS DE INFÂNCIA E JUVENTUDE > Seção Cível > Cartas
+1451,1450,Carta de Ordem Infância e Juventude,A,4,False,PROCEDIMENTOS DE INFÂNCIA E JUVENTUDE > Seção Cível > Cartas > Carta de Ordem Infância e Juventude
+1455,1450,Carta Precatória Infância e Juventude,A,4,False,PROCEDIMENTOS DE INFÂNCIA E JUVENTUDE > Seção Cível > Cartas > Carta Precatória Infância e Juventude
+1459,547,Seção Infracional,A,2,True,PROCEDIMENTOS DE INFÂNCIA E JUVENTUDE > Seção Infracional
+1460,1459,Procedimentos Investigatórios,A,3,True,PROCEDIMENTOS DE INFÂNCIA E JUVENTUDE > Seção Infracional > Procedimentos Investigatórios
+1461,1460,Auto de Apreensão em Flagrante,A,4,False,PROCEDIMENTOS DE INFÂNCIA E JUVENTUDE > Seção Infracional > Procedimentos Investigatórios > Auto de Apreensão em Flagrante
+1462,1460,Relatório de Investigações,A,4,False,PROCEDIMENTOS DE INFÂNCIA E JUVENTUDE > Seção Infracional > Procedimentos Investigatórios > Relatório de Investigações
+1463,1460,Boletim de Ocorrência Circunstanciada,A,4,False,PROCEDIMENTOS DE INFÂNCIA E JUVENTUDE > Seção Infracional > Procedimentos Investigatórios > Boletim de Ocorrência Circunstanciada
+1464,1459,Processo de Apuração de Ato Infracional,A,3,False,PROCEDIMENTOS DE INFÂNCIA E JUVENTUDE > Seção Infracional > Processo de Apuração de Ato Infracional
+1465,1459,Execução de Medidas Socioeducativas,A,3,True,PROCEDIMENTOS DE INFÂNCIA E JUVENTUDE > Seção Infracional > Execução de Medidas Socioeducativas
+1466,1465,Internação com Atividades Externas,I,4,False,PROCEDIMENTOS DE INFÂNCIA E JUVENTUDE > Seção Infracional > Execução de Medidas Socioeducativas > Internação com Atividades Externas
+1467,1465,Internação sem Atividades Externas,I,4,False,PROCEDIMENTOS DE INFÂNCIA E JUVENTUDE > Seção Infracional > Execução de Medidas Socioeducativas > Internação sem Atividades Externas
+1468,1465,Semiliberdade,I,4,False,PROCEDIMENTOS DE INFÂNCIA E JUVENTUDE > Seção Infracional > Execução de Medidas Socioeducativas > Semiliberdade
+1469,1465,Liberdade Assistida,I,4,False,PROCEDIMENTOS DE INFÂNCIA E JUVENTUDE > Seção Infracional > Execução de Medidas Socioeducativas > Liberdade Assistida
+1470,1465,Prestação de Serviços a Comunidade,I,4,False,PROCEDIMENTOS DE INFÂNCIA E JUVENTUDE > Seção Infracional > Execução de Medidas Socioeducativas > Prestação de Serviços a Comunidade
+1471,1465,Obrigação de Reparar o Dano,I,4,False,PROCEDIMENTOS DE INFÂNCIA E JUVENTUDE > Seção Infracional > Execução de Medidas Socioeducativas > Obrigação de Reparar o Dano
+1472,1465,Advertência ,I,4,False,PROCEDIMENTOS DE INFÂNCIA E JUVENTUDE > Seção Infracional > Execução de Medidas Socioeducativas > Advertência 
+1473,1459,Cartas,A,3,True,PROCEDIMENTOS DE INFÂNCIA E JUVENTUDE > Seção Infracional > Cartas
+1474,1473,Carta de Ordem Infracional,A,4,False,PROCEDIMENTOS DE INFÂNCIA E JUVENTUDE > Seção Infracional > Cartas > Carta de Ordem Infracional
+1478,1473,Carta Precatória Infracional,A,4,False,PROCEDIMENTOS DE INFÂNCIA E JUVENTUDE > Seção Infracional > Cartas > Carta Precatória Infracional
+1669,5,Ação Rescisória,A,2,False,SUPERIOR TRIBUNAL DE JUSTIÇA > Ação Rescisória
+1670,5,Ação de Improbidade Administrativa,A,2,False,SUPERIOR TRIBUNAL DE JUSTIÇA > Ação de Improbidade Administrativa
+1671,5,Comunicação,A,2,False,SUPERIOR TRIBUNAL DE JUSTIÇA > Comunicação
+1672,5,Exceção de Impedimento,A,2,False,SUPERIOR TRIBUNAL DE JUSTIÇA > Exceção de Impedimento
+1673,5,Exceção de Suspeição,A,2,False,SUPERIOR TRIBUNAL DE JUSTIÇA > Exceção de Suspeição
+1674,5,Intervenção Federal,A,2,False,SUPERIOR TRIBUNAL DE JUSTIÇA > Intervenção Federal
+1675,5,Mandado de Injunção,A,2,False,SUPERIOR TRIBUNAL DE JUSTIÇA > Mandado de Injunção
+1677,5,Precatório,A,2,False,SUPERIOR TRIBUNAL DE JUSTIÇA > Precatório
+1678,5,Revisão Criminal,A,2,False,SUPERIOR TRIBUNAL DE JUSTIÇA > Revisão Criminal
+1679,5,Suspensão de Segurança,A,2,False,SUPERIOR TRIBUNAL DE JUSTIÇA > Suspensão de Segurança
+1680,1198,Consulta Administrativa,A,2,False,PROCEDIMENTOS ADMINISTRATIVOS > Consulta Administrativa
+1682,62,Retificação ou Suprimento ou Restauração de Registro Civil,A,6,False,"PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Regidos por Outros Códigos, Leis Esparsas e Regimentos > Retificação ou Suprimento ou Restauração de Registro Civil"
+1683,62,Retificação de Registro de Imóvel,A,6,False,"PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Regidos por Outros Códigos, Leis Esparsas e Regimentos > Retificação de Registro de Imóvel"
+1685,1071,Remessa Necessária Trabalhista,A,4,False,PROCESSO CÍVEL E DO TRABALHO > Recursos > Recursos Trabalhistas > Remessa Necessária Trabalhista
+1689,207,Embargos de Declaração Cível,A,4,False,PROCESSO CÍVEL E DO TRABALHO > Recursos > Embargos > Embargos de Declaração Cível
+1690,1386,Ação Civil Pública Infância e Juventude,A,4,False,PROCEDIMENTOS DE INFÂNCIA E JUVENTUDE > Seção Cível > Processo de Conhecimento > Ação Civil Pública Infância e Juventude
+1691,1386,Mandado de Segurança Infância e Juventude Cível,A,4,False,PROCEDIMENTOS DE INFÂNCIA E JUVENTUDE > Seção Cível > Processo de Conhecimento > Mandado de Segurança Infância e Juventude Cível
+1701,237,Nomeação de Advogado,A,4,False,PROCESSO CÍVEL E DO TRABALHO > Outros Procedimentos > Atos e expedientes > Nomeação de Advogado
+1702,215,Impugnação de Assistência Judiciária,I,4,False,PROCESSO CÍVEL E DO TRABALHO > Outros Procedimentos > Incidentes > Impugnação de Assistência Judiciária
+1703,1386,Autorização judicial,A,4,False,PROCEDIMENTOS DE INFÂNCIA E JUVENTUDE > Seção Cível > Processo de Conhecimento > Autorização judicial
+1704,1386,Embargos de Terceiro Infância e Juventude,A,4,False,PROCEDIMENTOS DE INFÂNCIA E JUVENTUDE > Seção Cível > Processo de Conhecimento > Embargos de Terceiro Infância e Juventude
+1705,1386,"Remoção, modificação  e dispensa de tutor ou curador",A,4,False,"PROCEDIMENTOS DE INFÂNCIA E JUVENTUDE > Seção Cível > Processo de Conhecimento > Remoção, modificação  e dispensa de tutor ou curador"
+1706,1386,Procedimento Comum Infância e Juventude,A,4,False,PROCEDIMENTOS DE INFÂNCIA E JUVENTUDE > Seção Cível > Processo de Conhecimento > Procedimento Comum Infância e Juventude
+1707,27,Reintegração / Manutenção de Posse,A,6,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Especiais de Jurisdição Contenciosa > Reintegração / Manutenção de Posse
+1709,27,Interdito Proibitório,A,6,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Especiais de Jurisdição Contenciosa > Interdito Proibitório
+1710,292,Mandado de Segurança Criminal,A,4,False,PROCESSO CRIMINAL > Processo Especial > Processo Especial de Leis Esparsas > Mandado de Segurança Criminal
+1711,412,Agravo de Instrumento em Recurso Especial,A,3,False,PROCESSO CRIMINAL > Recursos > Agravo de Instrumento em Recurso Especial
+1712,412,Agravo de Instrumento em Recurso Extraordinário,I,3,False,PROCESSO CRIMINAL > Recursos > Agravo de Instrumento em Recurso Extraordinário
+1714,385,Execução Provisória,I,2,False,EXECUÇÃO PENAL E DE MEDIDAS ALTERNATIVAS > Execução Provisória
+1715,316,Embargos do Acusado,A,3,False,PROCESSO CRIMINAL > Questões e Processos Incidentes > Embargos do Acusado
+1717,316,Alienação de Bens do Acusado,A,3,False,PROCESSO CRIMINAL > Questões e Processos Incidentes > Alienação de Bens do Acusado
+1719,331,Avaliação para atestar dependência de drogas,A,4,False,PROCESSO CRIMINAL > Questões e Processos Incidentes > Incidentes > Avaliação para atestar dependência de drogas
+1720,5,Habeas Corpus,A,2,False,SUPERIOR TRIBUNAL DE JUSTIÇA > Habeas Corpus
+1721,5,Recurso Ordinário em Mandado de Segurança,A,2,False,SUPERIOR TRIBUNAL DE JUSTIÇA > Recurso Ordinário em Mandado de Segurança
+1722,5,Recurso Ordinário em Habeas Corpus,A,2,False,SUPERIOR TRIBUNAL DE JUSTIÇA > Recurso Ordinário em Habeas Corpus
+1723,175,Contraprotesto Judicial,I,3,False,PROCESSO CÍVEL E DO TRABALHO > Processo Cautelar > Contraprotesto Judicial
+1725,175,Notificação,I,3,False,PROCESSO CÍVEL E DO TRABALHO > Processo Cautelar > Notificação
+1726,175,Interpelação,I,3,False,PROCESSO CÍVEL E DO TRABALHO > Processo Cautelar > Interpelação
+1727,268,Petição Criminal,A,2,False,PROCESSO CRIMINAL > Petição Criminal
+1728,197,Apelação / Remessa Necessária,A,3,False,PROCESSO CÍVEL E DO TRABALHO > Recursos > Apelação / Remessa Necessária
+1729,412,Agravo Interno Criminal,A,3,False,PROCESSO CRIMINAL > Recursos > Agravo Interno Criminal
+1730,412,Recurso Ordinário Criminal,A,3,False,PROCESSO CRIMINAL > Recursos > Recurso Ordinário Criminal
+1731,277,Investigação contra magistrado,A,3,False,PROCESSO CRIMINAL > Procedimentos Investigatórios > Investigação contra magistrado
+1733,277,Procedimento Investigatório Criminal (PIC-MP) ,A,3,False,PROCESSO CRIMINAL > Procedimentos Investigatórios > Procedimento Investigatório Criminal (PIC-MP) 
+10933,1386,Habilitação para Adoção,A,4,False,PROCEDIMENTOS DE INFÂNCIA E JUVENTUDE > Seção Cível > Processo de Conhecimento > Habilitação para Adoção
+10942,197,Correição Parcial Cível,A,3,False,PROCESSO CÍVEL E DO TRABALHO > Recursos > Correição Parcial Cível
+10943,281,Ação Penal - Procedimento Sumário,A,3,False,PROCESSO CRIMINAL > Procedimento Comum > Ação Penal - Procedimento Sumário
+10944,281,Ação Penal - Procedimento Sumaríssimo,A,3,False,PROCESSO CRIMINAL > Procedimento Comum > Ação Penal - Procedimento Sumaríssimo
+10960,1459,Incidente de Sanidade Mental,A,3,False,PROCEDIMENTOS DE INFÂNCIA E JUVENTUDE > Seção Infracional > Incidente de Sanidade Mental
+10967,308,Medidas de Proteção à Pessoa Idosa - Criminal,A,3,False,PROCESSO CRIMINAL > Medidas Cautelares > Medidas de Proteção à Pessoa Idosa - Criminal
+10969,1385,Incidentes,A,3,True,PROCEDIMENTOS DE INFÂNCIA E JUVENTUDE > Seção Cível > Incidentes
+10970,10969,Conflito de Competência Infância e Juventude,A,4,False,PROCEDIMENTOS DE INFÂNCIA E JUVENTUDE > Seção Cível > Incidentes > Conflito de Competência Infância e Juventude
+10971,10969,Exceções,I,4,True,PROCEDIMENTOS DE INFÂNCIA E JUVENTUDE > Seção Cível > Incidentes > Exceções
+10972,10969,Exibição de Documento ou Coisa Infância e Juventude,A,4,False,PROCEDIMENTOS DE INFÂNCIA E JUVENTUDE > Seção Cível > Incidentes > Exibição de Documento ou Coisa Infância e Juventude
+10973,10969,Impugnação ao Valor da Causa Infância e Juventude,A,4,False,PROCEDIMENTOS DE INFÂNCIA E JUVENTUDE > Seção Cível > Incidentes > Impugnação ao Valor da Causa Infância e Juventude
+10974,10969,Incidente de Falsidade Infância e Juventude,A,4,False,PROCEDIMENTOS DE INFÂNCIA E JUVENTUDE > Seção Cível > Incidentes > Incidente de Falsidade Infância e Juventude
+10975,10971,Exceção de Impedimento Infância e Juventude,I,5,False,PROCEDIMENTOS DE INFÂNCIA E JUVENTUDE > Seção Cível > Incidentes > Exceções > Exceção de Impedimento Infância e Juventude
+10976,10971,Exceção de Incompetência Infância e Juventude,I,5,False,PROCEDIMENTOS DE INFÂNCIA E JUVENTUDE > Seção Cível > Incidentes > Exceções > Exceção de Incompetência Infância e Juventude
+10977,10971,Exceção de Suspeição Infância e Juventude,I,5,False,PROCEDIMENTOS DE INFÂNCIA E JUVENTUDE > Seção Cível > Incidentes > Exceções > Exceção de Suspeição Infância e Juventude
+10979,1459,Petição Infracional,A,3,False,PROCEDIMENTOS DE INFÂNCIA E JUVENTUDE > Seção Infracional > Petição Infracional
+10980,155,Cumprimento Provisório de Decisão,A,4,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Cumprimento de Sentença/Decisão > Cumprimento Provisório de Decisão
+10981,155,Impugnação ao Cumprimento  de Decisão,I,4,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Cumprimento de Sentença/Decisão > Impugnação ao Cumprimento  de Decisão
+11026,1385,Petição Infância e Juventude Cível,A,3,False,PROCEDIMENTOS DE INFÂNCIA E JUVENTUDE > Seção Cível > Petição Infância e Juventude Cível
+11027,1071,Remessa Necessária / Recurso Ordinário,A,4,False,PROCESSO CÍVEL E DO TRABALHO > Recursos > Recursos Trabalhistas > Remessa Necessária / Recurso Ordinário
+11028,0,PROCESSO MILITAR,A,1,True,PROCESSO MILITAR
+11029,11028,PROCEDIMENTOS ESPECIAIS PREVISTOS EM LEIS ESPARSAS,A,2,True,PROCESSO MILITAR > PROCEDIMENTOS ESPECIAIS PREVISTOS EM LEIS ESPARSAS
+11030,11028,PROCESSO CRIMINAL,A,2,True,PROCESSO MILITAR > PROCESSO CRIMINAL
+11031,11030,Procedimento Especial,A,3,True,PROCESSO MILITAR > PROCESSO CRIMINAL > Procedimento Especial
+11032,11030,Procedimentos Investigatórios,A,3,True,PROCESSO MILITAR > PROCESSO CRIMINAL > Procedimentos Investigatórios
+11033,11030,Recursos,A,3,True,PROCESSO MILITAR > PROCESSO CRIMINAL > Recursos
+11034,11029,Conselho de Justificação ,A,3,False,PROCESSO MILITAR > PROCEDIMENTOS ESPECIAIS PREVISTOS EM LEIS ESPARSAS > Conselho de Justificação 
+11035,11029,Representação p/ Declaração de Indignidade/Incompatibilidade ,A,3,False,PROCESSO MILITAR > PROCEDIMENTOS ESPECIAIS PREVISTOS EM LEIS ESPARSAS > Representação p/ Declaração de Indignidade/Incompatibilidade 
+11036,11029,Representação p/ Perda da Graduação ,A,3,False,PROCESSO MILITAR > PROCEDIMENTOS ESPECIAIS PREVISTOS EM LEIS ESPARSAS > Representação p/ Perda da Graduação 
+11037,11030,Ação Penal Militar - Procedimento Ordinário,A,3,False,PROCESSO MILITAR > PROCESSO CRIMINAL > Ação Penal Militar - Procedimento Ordinário
+11038,11033,Embargos em Ação Penal Militar,A,4,False,PROCESSO MILITAR > PROCESSO CRIMINAL > Recursos > Embargos em Ação Penal Militar
+11039,11033,Reclamação Militar,A,4,False,PROCESSO MILITAR > PROCESSO CRIMINAL > Recursos > Reclamação Militar
+11040,11033,Recurso Inominado Militar,A,4,False,PROCESSO MILITAR > PROCESSO CRIMINAL > Recursos > Recurso Inominado Militar
+11041,11032,Inquérito Policial Militar,A,4,False,PROCESSO MILITAR > PROCESSO CRIMINAL > Procedimentos Investigatórios > Inquérito Policial Militar
+11042,11031,Correição Parcial Militar,A,4,False,PROCESSO MILITAR > PROCESSO CRIMINAL > Procedimento Especial > Correição Parcial Militar
+11043,11031,Deserção,A,4,True,PROCESSO MILITAR > PROCESSO CRIMINAL > Procedimento Especial > Deserção
+11044,11031,Insubmissão,A,4,False,PROCESSO MILITAR > PROCESSO CRIMINAL > Procedimento Especial > Insubmissão
+11045,11043,Deserção de Oficial,A,5,False,PROCESSO MILITAR > PROCESSO CRIMINAL > Procedimento Especial > Deserção > Deserção de Oficial
+11046,11043,Deserção de Praça,A,5,False,PROCESSO MILITAR > PROCESSO CRIMINAL > Procedimento Especial > Deserção > Deserção de Praça
+11099,0,PROCEDIMENTOS PRÉ-PROCESSUAIS DE RESOLUÇÃO CONSENSUAL DE CONFLITOS,A,1,True,PROCEDIMENTOS PRÉ-PROCESSUAIS DE RESOLUÇÃO CONSENSUAL DE CONFLITOS
+11397,62,Extinção das obrigações do falido,A,6,False,"PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Regidos por Outros Códigos, Leis Esparsas e Regimentos > Extinção das obrigações do falido"
+11398,412,Recurso em sentido estrito/Recurso ex officio,A,3,False,PROCESSO CRIMINAL > Recursos > Recurso em sentido estrito/Recurso ex officio
+11399,385,Execução de Medida de Segurança,I,2,False,EXECUÇÃO PENAL E DE MEDIDAS ALTERNATIVAS > Execução de Medida de Segurança
+11400,1209,Agravo de Instrumento em Recurso Ordinário para o STF,A,5,False,PROCESSO CÍVEL E DO TRABALHO > Recursos > Recursos Trabalhistas > Agravos > Agravo de Instrumento em Recurso Ordinário para o STF
+11427,0,PROCESSO ELEITORAL,A,1,True,PROCESSO ELEITORAL
+11525,11427,Processos Cíveis-Eleitorais,A,2,True,PROCESSO ELEITORAL > Processos Cíveis-Eleitorais
+11526,11525,Ação de Impugnação de Mandato Eletivo,A,3,False,PROCESSO ELEITORAL > Processos Cíveis-Eleitorais > Ação de Impugnação de Mandato Eletivo
+11527,11525,Ação de Investigação Judicial Eleitoral,A,3,False,PROCESSO ELEITORAL > Processos Cíveis-Eleitorais > Ação de Investigação Judicial Eleitoral
+11528,11427,Ação Penal Eleitoral,A,2,False,PROCESSO ELEITORAL > Ação Penal Eleitoral
+11529,11427,Procedimentos Relativos a Realização de Eleição,A,2,True,PROCESSO ELEITORAL > Procedimentos Relativos a Realização de Eleição
+11530,11529,Apuração de Eleição,A,3,False,PROCESSO ELEITORAL > Procedimentos Relativos a Realização de Eleição > Apuração de Eleição
+11531,11529,Prestação de Contas,I,3,False,PROCESSO ELEITORAL > Procedimentos Relativos a Realização de Eleição > Prestação de Contas
+11532,11529,Registro de Candidatura,A,3,False,PROCESSO ELEITORAL > Procedimentos Relativos a Realização de Eleição > Registro de Candidatura
+11533,11529,Recurso contra Expedição de Diploma,A,3,False,PROCESSO ELEITORAL > Procedimentos Relativos a Realização de Eleição > Recurso contra Expedição de Diploma
+11534,11427,Procedimentos Relativos a Partidos Políticos,A,2,True,PROCESSO ELEITORAL > Procedimentos Relativos a Partidos Políticos
+11535,11534,Cancelamento de Registro de Partido Político,A,3,False,PROCESSO ELEITORAL > Procedimentos Relativos a Partidos Políticos > Cancelamento de Registro de Partido Político
+11536,11534,Propaganda Partidária,A,3,False,PROCESSO ELEITORAL > Procedimentos Relativos a Partidos Políticos > Propaganda Partidária
+11537,11534,Registro de Órgão de Partido Político em Formação,A,3,False,PROCESSO ELEITORAL > Procedimentos Relativos a Partidos Políticos > Registro de Órgão de Partido Político em Formação
+11538,11529,Registro de Comitê Financeiro,I,3,False,PROCESSO ELEITORAL > Procedimentos Relativos a Realização de Eleição > Registro de Comitê Financeiro
+11539,11534,Registro de Partido Político,A,3,False,PROCESSO ELEITORAL > Procedimentos Relativos a Partidos Políticos > Registro de Partido Político
+11540,11427,Procedimentos Administrativos da Justiça Eleitoral,A,2,True,PROCESSO ELEITORAL > Procedimentos Administrativos da Justiça Eleitoral
+11541,11529,Representação,A,3,False,PROCESSO ELEITORAL > Procedimentos Relativos a Realização de Eleição > Representação
+11542,11540,Correição de Eleitorado,A,3,False,PROCESSO ELEITORAL > Procedimentos Administrativos da Justiça Eleitoral > Correição de Eleitorado
+11543,11540,Criação de Zona Eleitoral ou Remanejamento,A,3,False,PROCESSO ELEITORAL > Procedimentos Administrativos da Justiça Eleitoral > Criação de Zona Eleitoral ou Remanejamento
+11544,11540,Instrução,A,3,False,PROCESSO ELEITORAL > Procedimentos Administrativos da Justiça Eleitoral > Instrução
+11545,11540,Lista Tríplice,A,3,False,PROCESSO ELEITORAL > Procedimentos Administrativos da Justiça Eleitoral > Lista Tríplice
+11546,11540,Revisão de Eleitorado,A,3,False,PROCESSO ELEITORAL > Procedimentos Administrativos da Justiça Eleitoral > Revisão de Eleitorado
+11547,11427,Recursos Eleitorais,A,2,True,PROCESSO ELEITORAL > Recursos Eleitorais
+11548,11547,Recurso Eleitoral,A,3,False,PROCESSO ELEITORAL > Recursos Eleitorais > Recurso Eleitoral
+11549,11547,Recurso Especial Eleitoral,A,3,False,PROCESSO ELEITORAL > Recursos Eleitorais > Recurso Especial Eleitoral
+11550,11547,Recurso Ordinário Eleitoral,A,3,False,PROCESSO ELEITORAL > Recursos Eleitorais > Recurso Ordinário Eleitoral
+11551,11427,Consulta,A,2,False,PROCESSO ELEITORAL > Consulta
+11552,11427,Pedido de Desaforamento,A,2,False,PROCESSO ELEITORAL > Pedido de Desaforamento
+11553,11043,Instrução Provisória de Deserção,I,5,False,PROCESSO MILITAR > PROCESSO CRIMINAL > Procedimento Especial > Deserção > Instrução Provisória de Deserção
+11555,62,Suspensão de Liminar e de Sentença,A,6,False,"PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Regidos por Outros Códigos, Leis Esparsas e Regimentos > Suspensão de Liminar e de Sentença"
+11556,62,Suspensão de Segurança Cível,A,6,False,"PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Regidos por Outros Códigos, Leis Esparsas e Regimentos > Suspensão de Segurança Cível"
+11787,331,Assistência Judiciária,I,4,False,PROCESSO CRIMINAL > Questões e Processos Incidentes > Incidentes > Assistência Judiciária
+11788,331,Exibição de Documento ou Coisa Criminal,A,4,False,PROCESSO CRIMINAL > Questões e Processos Incidentes > Incidentes > Exibição de Documento ou Coisa Criminal
+11789,331,Impugnação ao Valor da Causa,I,4,False,PROCESSO CRIMINAL > Questões e Processos Incidentes > Incidentes > Impugnação ao Valor da Causa
+11790,331,Impugnação de Assistência Judiciária,I,4,False,PROCESSO CRIMINAL > Questões e Processos Incidentes > Incidentes > Impugnação de Assistência Judiciária
+11791,331,Pedido de Uniformização de Interpretação de Lei Criminal,A,4,False,PROCESSO CRIMINAL > Questões e Processos Incidentes > Incidentes > Pedido de Uniformização de Interpretação de Lei Criminal
+11793,308,Produção Antecipada de Provas Criminal,A,3,False,PROCESSO CRIMINAL > Medidas Cautelares > Produção Antecipada de Provas Criminal
+11794,1459,Restituição de Coisas Apreendidas Infracional,A,3,False,PROCEDIMENTOS DE INFÂNCIA E JUVENTUDE > Seção Infracional > Restituição de Coisas Apreendidas Infracional
+11798,285,Processo de Aplicação de Medida de Segurança Por Fato Não Criminoso,A,4,False,PROCESSO CRIMINAL > Processo Especial > Processo Especial do Código de Processo Penal > Processo de Aplicação de Medida de Segurança Por Fato Não Criminoso
+11799,11032,Instrução Provisória de Insubmissão,A,4,False,PROCESSO MILITAR > PROCESSO CRIMINAL > Procedimentos Investigatórios > Instrução Provisória de Insubmissão
+11800,11032,Instrução Provisória de Deserção,A,4,False,PROCESSO MILITAR > PROCESSO CRIMINAL > Procedimentos Investigatórios > Instrução Provisória de Deserção
+11875,11099,Reclamação Pré-processual,A,2,False,PROCEDIMENTOS PRÉ-PROCESSUAIS DE RESOLUÇÃO CONSENSUAL DE CONFLITOS > Reclamação Pré-processual
+11880,1310,Recurso Extraordinário com Agravo,A,2,False,SUPREMO TRIBUNAL FEDERAL > Recurso Extraordinário com Agravo
+11881,5,Agravo em Recurso Especial,A,2,False,SUPERIOR TRIBUNAL DE JUSTIÇA > Agravo em Recurso Especial
+11882,1071,Recurso de Revista com Agravo,A,4,False,PROCESSO CÍVEL E DO TRABALHO > Recursos > Recursos Trabalhistas > Recurso de Revista com Agravo
+11886,1071,Recurso Ordinário - Rito Sumaríssimo,A,4,False,PROCESSO CÍVEL E DO TRABALHO > Recursos > Recursos Trabalhistas > Recurso Ordinário - Rito Sumaríssimo
+11887,1198,Acompanhamento de Cumprimento de Decisão,A,2,False,PROCEDIMENTOS ADMINISTRATIVOS > Acompanhamento de Cumprimento de Decisão
+11888,1198,Ato Normativo,A,2,False,PROCEDIMENTOS ADMINISTRATIVOS > Ato Normativo
+11889,1198,Nota Técnica,A,2,False,PROCEDIMENTOS ADMINISTRATIVOS > Nota Técnica
+11890,1198,Parecer de Mérito sobre Anteprojeto de Lei,A,2,False,PROCEDIMENTOS ADMINISTRATIVOS > Parecer de Mérito sobre Anteprojeto de Lei
+11891,1198,Procedimento de Controle Administrativo,A,2,False,PROCEDIMENTOS ADMINISTRATIVOS > Procedimento de Controle Administrativo
+11892,1198,Revisão Disciplinar,A,2,False,PROCEDIMENTOS ADMINISTRATIVOS > Revisão Disciplinar
+11893,1198,Reclamação para Garantia das Decisões,A,2,False,PROCEDIMENTOS ADMINISTRATIVOS > Reclamação para Garantia das Decisões
+11894,1198, Comissão,A,2,False,PROCEDIMENTOS ADMINISTRATIVOS >  Comissão
+11953,1198,Arguição de Suspeição e de Impedimento,A,2,False,PROCEDIMENTOS ADMINISTRATIVOS > Arguição de Suspeição e de Impedimento
+11955,308,Cautelar Inominada Criminal,A,3,False,PROCESSO CRIMINAL > Medidas Cautelares > Cautelar Inominada Criminal
+11956,5,Embargos de Divergência em Agravo em Recurso Especial,A,2,False,SUPERIOR TRIBUNAL DE JUSTIÇA > Embargos de Divergência em Agravo em Recurso Especial
+11957,406,Remição de Pena,I,3,False,EXECUÇÃO PENAL E DE MEDIDAS ALTERNATIVAS > Incidentes > Remição de Pena
+11976,1460,Pedido de Busca e Apreensão Infracional,I,4,False,PROCEDIMENTOS DE INFÂNCIA E JUVENTUDE > Seção Infracional > Procedimentos Investigatórios > Pedido de Busca e Apreensão Infracional
+12057,11547,Reexame Necessário Eleitoral,I,3,False,PROCESSO ELEITORAL > Recursos Eleitorais > Reexame Necessário Eleitoral
+12058,11427,Suspensão de Segurança,I,2,False,PROCESSO ELEITORAL > Suspensão de Segurança
+12059,11525,Suspensão de Segurança - Eleitoral,A,3,False,PROCESSO ELEITORAL > Processos Cíveis-Eleitorais > Suspensão de Segurança - Eleitoral
+12060,11525,Incidente de Impedimento/Suspeição,A,3,False,PROCESSO ELEITORAL > Processos Cíveis-Eleitorais > Incidente de Impedimento/Suspeição
+12061,11525,Ação Cautelar,I,3,False,PROCESSO ELEITORAL > Processos Cíveis-Eleitorais > Ação Cautelar
+12070,1386,Pedido de Medida de Proteção,A,4,False,PROCEDIMENTOS DE INFÂNCIA E JUVENTUDE > Seção Cível > Processo de Conhecimento > Pedido de Medida de Proteção
+12071,1459,Procedimentos Cautelares,A,3,True,PROCEDIMENTOS DE INFÂNCIA E JUVENTUDE > Seção Infracional > Procedimentos Cautelares
+12072,12071,Busca e Apreensão Infracional,A,4,False,PROCEDIMENTOS DE INFÂNCIA E JUVENTUDE > Seção Infracional > Procedimentos Cautelares > Busca e Apreensão Infracional
+12073,12071,Internação Provisória,A,4,False,PROCEDIMENTOS DE INFÂNCIA E JUVENTUDE > Seção Infracional > Procedimentos Cautelares > Internação Provisória
+12074,1459,Pedido De Desinternação/Reavaliação/Substituição/Suspensão da Medida,A,3,False,PROCEDIMENTOS DE INFÂNCIA E JUVENTUDE > Seção Infracional > Pedido De Desinternação/Reavaliação/Substituição/Suspensão da Medida
+12075,215,Procedimento Conciliatório,A,4,False,PROCESSO CÍVEL E DO TRABALHO > Outros Procedimentos > Incidentes > Procedimento Conciliatório
+12076,1386,Restabelecimento do Poder Familiar,A,4,False,PROCEDIMENTOS DE INFÂNCIA E JUVENTUDE > Seção Cível > Processo de Conhecimento > Restabelecimento do Poder Familiar
+12077,331,Homologação em Acordo de Colaboração Premiada,A,4,False,PROCESSO CRIMINAL > Questões e Processos Incidentes > Incidentes > Homologação em Acordo de Colaboração Premiada
+12078,155,Cumprimento de Sentença contra a Fazenda Pública,A,4,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Cumprimento de Sentença/Decisão > Cumprimento de Sentença contra a Fazenda Pública
+12079,159,Execução de Título Extrajudicial contra a Fazenda Pública,A,4,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Execução > Execução de Título Extrajudicial > Execução de Título Extrajudicial contra a Fazenda Pública
+12080,215,Incidente de Impedimento Cível,A,4,False,PROCESSO CÍVEL E DO TRABALHO > Outros Procedimentos > Incidentes > Incidente de Impedimento Cível
+12081,215,Incidente de Suspeição Cível,A,4,False,PROCESSO CÍVEL E DO TRABALHO > Outros Procedimentos > Incidentes > Incidente de Suspeição Cível
+12082,257,Carta Arbitral,A,4,False,PROCESSO CÍVEL E DO TRABALHO > Outros Procedimentos > Cartas > Carta Arbitral
+12083,175,Tutela Antecipada Antecedente,I,3,False,PROCESSO CÍVEL E DO TRABALHO > Processo Cautelar > Tutela Antecipada Antecedente
+12084,175,Tutela Cautelar Antecedente,I,3,False,PROCESSO CÍVEL E DO TRABALHO > Processo Cautelar > Tutela Cautelar Antecedente
+12085,215,Incidente de Resolução de Demandas Repetitivas,A,4,False,PROCESSO CÍVEL E DO TRABALHO > Outros Procedimentos > Incidentes > Incidente de Resolução de Demandas Repetitivas
+12086,27,Dissolução Parcial de Sociedade,A,6,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Especiais de Jurisdição Contenciosa > Dissolução Parcial de Sociedade
+12087,215,Incidente de Assunção de Competência,A,4,False,PROCESSO CÍVEL E DO TRABALHO > Outros Procedimentos > Incidentes > Incidente de Assunção de Competência
+12088,150,Liquidação Provisória de Sentença pelo Procedimento Comum,I,4,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Liquidação > Liquidação Provisória de Sentença pelo Procedimento Comum
+12089,406,Renovação de Permanência em Estabelecimento Penal Federal,I,3,False,EXECUÇÃO PENAL E DE MEDIDAS ALTERNATIVAS > Incidentes > Renovação de Permanência em Estabelecimento Penal Federal
+12117,1310,Suspensão do Incidente de Resolução de Demandas Repetitivas,I,2,False,SUPREMO TRIBUNAL FEDERAL > Suspensão do Incidente de Resolução de Demandas Repetitivas
+12118,5,Suspensão em Incidente de Resolução de Demandas Repetitivas,A,2,False,SUPERIOR TRIBUNAL DE JUSTIÇA > Suspensão em Incidente de Resolução de Demandas Repetitivas
+12119,215,Incidente de Desconsideração de Personalidade Jurídica,A,4,False,PROCESSO CÍVEL E DO TRABALHO > Outros Procedimentos > Incidentes > Incidente de Desconsideração de Personalidade Jurídica
+12120,1459,Agravo em Execução de Medidas Sócio-Educativas,I,3,False,PROCEDIMENTOS DE INFÂNCIA E JUVENTUDE > Seção Infracional > Agravo em Execução de Medidas Sócio-Educativas
+12121,277,Comunicado de Mandado de Prisão,A,3,False,PROCESSO CRIMINAL > Procedimentos Investigatórios > Comunicado de Mandado de Prisão
+12122,292,Reclamação Criminal,A,4,False,PROCESSO CRIMINAL > Processo Especial > Processo Especial de Leis Esparsas > Reclamação Criminal
+12123,406,Roteiro de Pena,I,3,False,EXECUÇÃO PENAL E DE MEDIDAS ALTERNATIVAS > Incidentes > Roteiro de Pena
+12124,406,Roteiro de Pena,I,3,False,EXECUÇÃO PENAL E DE MEDIDAS ALTERNATIVAS > Incidentes > Roteiro de Pena
+12125,406,Progressão de Regime,I,3,False,EXECUÇÃO PENAL E DE MEDIDAS ALTERNATIVAS > Incidentes > Progressão de Regime
+12126,406,Regressão de Regime,I,3,False,EXECUÇÃO PENAL E DE MEDIDAS ALTERNATIVAS > Incidentes > Regressão de Regime
+12127,406,Remição,I,3,False,EXECUÇÃO PENAL E DE MEDIDAS ALTERNATIVAS > Incidentes > Remição
+12128,406,Livramento Condicional,I,3,False,EXECUÇÃO PENAL E DE MEDIDAS ALTERNATIVAS > Incidentes > Livramento Condicional
+12129,406,Outros Incidentes de Execução Iniciados de Ofício,I,3,False,EXECUÇÃO PENAL E DE MEDIDAS ALTERNATIVAS > Incidentes > Outros Incidentes de Execução Iniciados de Ofício
+12132,1070,Incidente de Julgamento de Recurso de Revista e de Embargos Repetitivos,A,4,False,PROCESSO CÍVEL E DO TRABALHO > Outros Procedimentos > Incidentes Trabalhistas > Incidente de Julgamento de Recurso de Revista e de Embargos Repetitivos
+12133,2,Tutela Provisória de Urgência e Tutela Provisória de Evidência,A,2,True,PROCESSO CÍVEL E DO TRABALHO > Tutela Provisória de Urgência e Tutela Provisória de Evidência
+12134,12133,Tutela Cautelar Antecedente,A,3,False,PROCESSO CÍVEL E DO TRABALHO > Tutela Provisória de Urgência e Tutela Provisória de Evidência > Tutela Cautelar Antecedente
+12135,12133,Tutela Antecipada Antecedente,A,3,False,PROCESSO CÍVEL E DO TRABALHO > Tutela Provisória de Urgência e Tutela Provisória de Evidência > Tutela Antecipada Antecedente
+12136,11099,Pedido de Mediação Pré-Processual,I,2,False,PROCEDIMENTOS PRÉ-PROCESSUAIS DE RESOLUÇÃO CONSENSUAL DE CONFLITOS > Pedido de Mediação Pré-Processual
+12137,214,Requerimento de Apreensão de Veículo,A,3,False,PROCESSO CÍVEL E DO TRABALHO > Outros Procedimentos > Requerimento de Apreensão de Veículo
+12138,62,Requerimento de Reintegração de Posse,A,6,False,"PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Regidos por Outros Códigos, Leis Esparsas e Regimentos > Requerimento de Reintegração de Posse"
+12139,237,Contestação em Foro Diverso,A,4,False,PROCESSO CÍVEL E DO TRABALHO > Outros Procedimentos > Atos e expedientes > Contestação em Foro Diverso
+12153,215,Embargos Parciais à Ação Monitória,A,4,False,PROCESSO CÍVEL E DO TRABALHO > Outros Procedimentos > Incidentes > Embargos Parciais à Ação Monitória
+12154,159,Execução de Título Extrajudicial,A,4,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Execução > Execução de Título Extrajudicial > Execução de Título Extrajudicial
+12190,1310,Suspensão Nacional do Incidente de Resolução de Demandas Repetitivas,A,2,False,SUPREMO TRIBUNAL FEDERAL > Suspensão Nacional do Incidente de Resolução de Demandas Repetitivas
+12191,1310,Tutela Provisória Antecedente,A,2,False,SUPREMO TRIBUNAL FEDERAL > Tutela Provisória Antecedente
+12192,1310,Tutela Provisória Incidental,A,2,False,SUPREMO TRIBUNAL FEDERAL > Tutela Provisória Incidental
+12193,11529,Prestação de Contas Eleitorais,A,3,False,PROCESSO ELEITORAL > Procedimentos Relativos a Realização de Eleição > Prestação de Contas Eleitorais
+12226,50,Notificação,A,6,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Especiais de Jurisdição Voluntária > Notificação
+12227,50,Interpelação,A,6,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Especiais de Jurisdição Voluntária > Interpelação
+12228,50,Protesto,A,6,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Especiais de Jurisdição Voluntária > Protesto
+12229,50,Protesto formado a bordo,A,6,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Especiais de Jurisdição Voluntária > Protesto formado a bordo
+12230,1386,Guarda c/c destituição do poder familiar,A,4,False,PROCEDIMENTOS DE INFÂNCIA E JUVENTUDE > Seção Cível > Processo de Conhecimento > Guarda c/c destituição do poder familiar
+12231,155,Cumprimento de sentença - Lei Arbitral (Lei 9.307/1996),A,4,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Cumprimento de Sentença/Decisão > Cumprimento de sentença - Lei Arbitral (Lei 9.307/1996)
+12232,214,Ação de Partilha,I,3,False,PROCESSO CÍVEL E DO TRABALHO > Outros Procedimentos > Ação de Partilha
+12233,50,Tutela Cível,A,6,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Especiais de Jurisdição Voluntária > Tutela Cível
+12234,50,Curatela,I,6,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Especiais de Jurisdição Voluntária > Curatela
+12246,155,Cumprimento de Sentença de Obrigação de Prestar Alimentos,A,4,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Cumprimento de Sentença/Decisão > Cumprimento de Sentença de Obrigação de Prestar Alimentos
+12247,159,Execução Extrajudicial de Alimentos,A,4,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Execução > Execução de Título Extrajudicial > Execução Extrajudicial de Alimentos
+12248,1198,Pedido de Cooperação Judiciária,A,2,False,PROCEDIMENTOS ADMINISTRATIVOS > Pedido de Cooperação Judiciária
+12249,1310,Suspensão em IRDR,I,2,False,SUPREMO TRIBUNAL FEDERAL > Suspensão em IRDR
+12250,5,Suspensão em IRDR,I,2,False,SUPERIOR TRIBUNAL DE JUSTIÇA > Suspensão em IRDR
+12251,1111,Execução de Título Judicial - CEJUSC,I,4,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Execução > Execução de Título Judicial > Execução de Título Judicial - CEJUSC
+12357,237,Pedido de Efeito Suspensivo à Apelação,A,4,False,PROCESSO CÍVEL E DO TRABALHO > Outros Procedimentos > Atos e expedientes > Pedido de Efeito Suspensivo à Apelação
+12369,50,Tomada de Decisão Apoiada,I,6,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Especiais de Jurisdição Voluntária > Tomada de Decisão Apoiada
+12370,62,Tomada de Decisão Apoiada,A,6,False,"PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Regidos por Outros Códigos, Leis Esparsas e Regimentos > Tomada de Decisão Apoiada"
+12371,50,Alteração de Regime de Bens,A,6,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Especiais de Jurisdição Voluntária > Alteração de Regime de Bens
+12372,50,Divórcio Consensual,A,6,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Especiais de Jurisdição Voluntária > Divórcio Consensual
+12373,50,Divórcio Litigioso,I,6,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Especiais de Jurisdição Voluntária > Divórcio Litigioso
+12374,50,Homologação da Transação Extrajudicial,A,6,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Especiais de Jurisdição Voluntária > Homologação da Transação Extrajudicial
+12375,27,Reclamação,A,6,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Especiais de Jurisdição Contenciosa > Reclamação
+12376,27,Regulação de Avaria Grossa,A,6,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Especiais de Jurisdição Contenciosa > Regulação de Avaria Grossa
+12377,11534,Prestação de Contas Anual,A,3,False,PROCESSO ELEITORAL > Procedimentos Relativos a Partidos Políticos > Prestação de Contas Anual
+12386,10969,Incidente de Impedimento Infância e Juventude,A,4,False,PROCEDIMENTOS DE INFÂNCIA E JUVENTUDE > Seção Cível > Incidentes > Incidente de Impedimento Infância e Juventude
+12388,10969,Incidente de Suspeição Infância e Juventude,A,4,False,PROCEDIMENTOS DE INFÂNCIA E JUVENTUDE > Seção Cível > Incidentes > Incidente de Suspeição Infância e Juventude
+12389,62,Ação de Partilha,A,6,False,"PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Regidos por Outros Códigos, Leis Esparsas e Regimentos > Ação de Partilha"
+12390,62,ação de partilha,I,6,False,"PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Regidos por Outros Códigos, Leis Esparsas e Regimentos > ação de partilha"
+12391,1070,Incidente de Uniformização de Jurisprudência,A,4,False,PROCESSO CÍVEL E DO TRABALHO > Outros Procedimentos > Incidentes Trabalhistas > Incidente de Uniformização de Jurisprudência
+12394,285,Revisão Criminal,A,4,False,PROCESSO CRIMINAL > Processo Especial > Processo Especial do Código de Processo Penal > Revisão Criminal
+12423,12071,Medidas Protetivas de Urgência (Lei Maria da Penha) - Infracional,A,4,False,PROCEDIMENTOS DE INFÂNCIA E JUVENTUDE > Seção Infracional > Procedimentos Cautelares > Medidas Protetivas de Urgência (Lei Maria da Penha) - Infracional
+12424,12071,Medidas de Proteção à Pessoa Idosa - Infracional,A,4,False,PROCEDIMENTOS DE INFÂNCIA E JUVENTUDE > Seção Infracional > Procedimentos Cautelares > Medidas de Proteção à Pessoa Idosa - Infracional
+12464,11427,Corregedoria Eleitoral,A,2,True,PROCESSO ELEITORAL > Corregedoria Eleitoral
+12465,12464,Petição Corregedoria,A,3,False,PROCESSO ELEITORAL > Corregedoria Eleitoral > Petição Corregedoria
+12466,12464,Inquérito Administrativo,A,3,False,PROCESSO ELEITORAL > Corregedoria Eleitoral > Inquérito Administrativo
+12541,27,Divórcio Litigioso,A,6,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Especiais de Jurisdição Contenciosa > Divórcio Litigioso
+12549,11540,Cancelamento de Inscrição Eleitoral (CIE),A,3,False,PROCESSO ELEITORAL > Procedimentos Administrativos da Justiça Eleitoral > Cancelamento de Inscrição Eleitoral (CIE)
+12550,11529,Composição de Mesa Receptora,A,3,False,PROCESSO ELEITORAL > Procedimentos Relativos a Realização de Eleição > Composição de Mesa Receptora
+12551,11540,Descarte de Material,I,3,False,PROCESSO ELEITORAL > Procedimentos Administrativos da Justiça Eleitoral > Descarte de Material
+12552,11427,Direitos Políticos,A,2,False,PROCESSO ELEITORAL > Direitos Políticos
+12553,11540,Duplicidade/Pluralidade de Inscrições - Coincidências,A,3,False,PROCESSO ELEITORAL > Procedimentos Administrativos da Justiça Eleitoral > Duplicidade/Pluralidade de Inscrições - Coincidências
+12554,11534,Filiação Partidária,A,3,False,PROCESSO ELEITORAL > Procedimentos Relativos a Partidos Políticos > Filiação Partidária
+12555,11529,Impugnação à Composição de Junta Eleitoral,A,3,False,PROCESSO ELEITORAL > Procedimentos Relativos a Realização de Eleição > Impugnação à Composição de Junta Eleitoral
+12556,11529,Impugnação Perante as Juntas Eleitorais,A,3,False,PROCESSO ELEITORAL > Procedimentos Relativos a Realização de Eleição > Impugnação Perante as Juntas Eleitorais
+12557,11540,Recurso/Impugnação de Alistamento Eleitoral,A,3,False,PROCESSO ELEITORAL > Procedimentos Administrativos da Justiça Eleitoral > Recurso/Impugnação de Alistamento Eleitoral
+12558,11529,Registro de Debates,I,3,False,PROCESSO ELEITORAL > Procedimentos Relativos a Realização de Eleição > Registro de Debates
+12559,11540,Regularização de Situação do Eleitor,A,3,False,PROCESSO ELEITORAL > Procedimentos Administrativos da Justiça Eleitoral > Regularização de Situação do Eleitor
+12560,11534,Lista de Apoiamento para Criação de Partido Político,A,3,False,PROCESSO ELEITORAL > Procedimentos Relativos a Partidos Políticos > Lista de Apoiamento para Criação de Partido Político
+12561,11529,Notícia de Irregularidade em Propaganda Eleitoral,A,3,False,PROCESSO ELEITORAL > Procedimentos Relativos a Realização de Eleição > Notícia de Irregularidade em Propaganda Eleitoral
+12562,11540,PET-ADM,A,3,False,PROCESSO ELEITORAL > Procedimentos Administrativos da Justiça Eleitoral > PET-ADM
+12613,11099,Pedido de Conciliação Pré-Processual,I,2,False,PROCEDIMENTOS PRÉ-PROCESSUAIS DE RESOLUÇÃO CONSENSUAL DE CONFLITOS > Pedido de Conciliação Pré-Processual
+12625,11529,Direito de Resposta,A,3,False,PROCESSO ELEITORAL > Procedimentos Relativos a Realização de Eleição > Direito de Resposta
+12626,11547,Agravo em Recurso Especial Eleitoral,A,3,False,PROCESSO ELEITORAL > Recursos Eleitorais > Agravo em Recurso Especial Eleitoral
+12627,11525,Ação Rescisória Eleitoral,A,3,False,PROCESSO ELEITORAL > Processos Cíveis-Eleitorais > Ação Rescisória Eleitoral
+12628,11534,Ação de Justificação de Desfiliação Partidária/Perda de Cargo Eletivo,A,3,False,PROCESSO ELEITORAL > Procedimentos Relativos a Partidos Políticos > Ação de Justificação de Desfiliação Partidária/Perda de Cargo Eletivo
+12629,11534,Pedido de Novas Eleições,A,3,False,PROCESSO ELEITORAL > Procedimentos Relativos a Partidos Políticos > Pedido de Novas Eleições
+12630,11529,Representação Especial,A,3,False,PROCESSO ELEITORAL > Procedimentos Relativos a Realização de Eleição > Representação Especial
+12631,11534,Requerimento de Regularização de Omissão de Prestação de Contas Anual,A,3,False,PROCESSO ELEITORAL > Procedimentos Relativos a Partidos Políticos > Requerimento de Regularização de Omissão de Prestação de Contas Anual
+12632,11534,Requerimento de Regularização de Omissão de Prestação de Contas Anual,I,3,False,PROCESSO ELEITORAL > Procedimentos Relativos a Partidos Políticos > Requerimento de Regularização de Omissão de Prestação de Contas Anual
+12633,11529,Requerimento de Regularização de Omissão de Prestação de Contas Eleitorais,A,3,False,PROCESSO ELEITORAL > Procedimentos Relativos a Realização de Eleição > Requerimento de Regularização de Omissão de Prestação de Contas Eleitorais
+12727,385,Execução de Pena de Multa,A,2,False,EXECUÇÃO PENAL E DE MEDIDAS ALTERNATIVAS > Execução de Pena de Multa
+12728,385,Transferência Entre Estabelecimentos Penais,A,2,False,EXECUÇÃO PENAL E DE MEDIDAS ALTERNATIVAS > Transferência Entre Estabelecimentos Penais
+12729,385,Execução de Medidas Alternativas no Juízo Comum,A,2,False,EXECUÇÃO PENAL E DE MEDIDAS ALTERNATIVAS > Execução de Medidas Alternativas no Juízo Comum
+12760,1071,Recurso de Julgamento Parcial ,A,4,False,PROCESSO CÍVEL E DO TRABALHO > Recursos > Recursos Trabalhistas > Recurso de Julgamento Parcial 
+12761,27,Homologação do Penhor Legal,A,6,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Especiais de Jurisdição Contenciosa > Homologação do Penhor Legal
+12762,50,Extinção Consensual de União Estável,A,6,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Especiais de Jurisdição Voluntária > Extinção Consensual de União Estável
+12763,27,Reconhecimento e Extinção de União Estável,A,6,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Especiais de Jurisdição Contenciosa > Reconhecimento e Extinção de União Estável
+12764,27,Separação Contenciosa,A,6,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Especiais de Jurisdição Contenciosa > Separação Contenciosa
+12775,1310,Ação Direta de Inconstitucionalidade por Omissão,A,2,False,SUPREMO TRIBUNAL FEDERAL > Ação Direta de Inconstitucionalidade por Omissão
+12776,1310,Arguição de Impedimento,A,2,False,SUPREMO TRIBUNAL FEDERAL > Arguição de Impedimento
+12777,1310,Exceção de Incompetência,A,2,False,SUPREMO TRIBUNAL FEDERAL > Exceção de Incompetência
+12778,1310,Exceção de Litispendência,A,2,False,SUPREMO TRIBUNAL FEDERAL > Exceção de Litispendência
+12779,1310,Proposta de Súmula Vinculante,A,2,False,SUPREMO TRIBUNAL FEDERAL > Proposta de Súmula Vinculante
+12780,1310,Admissão de Assistente,A,2,False,SUPREMO TRIBUNAL FEDERAL > Admissão de Assistente
+12781,1310,Impugnação ao Valor da Causa,A,2,False,SUPREMO TRIBUNAL FEDERAL > Impugnação ao Valor da Causa
+12782,1310,Incidente de Falsidade,A,2,False,SUPREMO TRIBUNAL FEDERAL > Incidente de Falsidade
+12783,1310,Oposição,A,2,False,SUPREMO TRIBUNAL FEDERAL > Oposição
+12784,1310,Suspeição de Perito,A,2,False,SUPREMO TRIBUNAL FEDERAL > Suspeição de Perito
+12785,1310,Embargos à Execução,A,2,False,SUPREMO TRIBUNAL FEDERAL > Embargos à Execução
+12786,1310,Cumprimento de Sentença,A,2,True,SUPREMO TRIBUNAL FEDERAL > Cumprimento de Sentença
+12787,12786,Execução contra a Fazenda Pública,I,3,False,SUPREMO TRIBUNAL FEDERAL > Cumprimento de Sentença > Execução contra a Fazenda Pública
+12788,1310,Execução contra a Fazenda Pública,A,2,False,SUPREMO TRIBUNAL FEDERAL > Execução contra a Fazenda Pública
+12789,1310,Execução de Pena,A,2,False,SUPREMO TRIBUNAL FEDERAL > Execução de Pena
+12790,1310,Extensão,A,2,False,SUPREMO TRIBUNAL FEDERAL > Extensão
+12791,1310,Incidente de Assunção de Competência,A,2,False,SUPREMO TRIBUNAL FEDERAL > Incidente de Assunção de Competência
+14123,316,Destinação de Bens Apreendidos,A,3,False,PROCESSO CRIMINAL > Questões e Processos Incidentes > Destinação de Bens Apreendidos
+14208,11534,Suspensão de Órgão Partidário,A,3,False,PROCESSO ELEITORAL > Procedimentos Relativos a Partidos Políticos > Suspensão de Órgão Partidário
+14209,11547,Recurso Criminal Eleitoral,A,3,False,PROCESSO ELEITORAL > Recursos Eleitorais > Recurso Criminal Eleitoral
+14671,62,Guarda de Família,A,6,False,"PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Regidos por Outros Códigos, Leis Esparsas e Regimentos > Guarda de Família"
+14676,15195,Pedido de Inclusão no Cadastro de Programa de Apadrinhamento,A,3,False,PROCEDIMENTOS DE INFÂNCIA E JUVENTUDE > Seção Administrativa > Pedido de Inclusão no Cadastro de Programa de Apadrinhamento
+14677,27,Regulamentação da Convivência Familiar,A,6,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Especiais de Jurisdição Contenciosa > Regulamentação da Convivência Familiar
+14678,331,Acordo de Não Persecução Penal,A,4,False,PROCESSO CRIMINAL > Questões e Processos Incidentes > Incidentes > Acordo de Não Persecução Penal
+14695,1107,Procedimento do Juizado Especial da Fazenda Pública,A,4,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimento do Juizado Especial da Fazenda Pública
+14696,385,Execução de Medidas Alternativas nos Juizados Especiais,A,2,False,EXECUÇÃO PENAL E DE MEDIDAS ALTERNATIVAS > Execução de Medidas Alternativas nos Juizados Especiais
+14701,292,Habeas Data Criminal,A,4,False,PROCESSO CRIMINAL > Processo Especial > Processo Especial de Leis Esparsas > Habeas Data Criminal
+14734,308,Medidas de Proteção - Criança e Adolescente (Lei 13.431) Criminais,A,3,False,PROCESSO CRIMINAL > Medidas Cautelares > Medidas de Proteção - Criança e Adolescente (Lei 13.431) Criminais
+14774,200,Agravo de Instrumento em Mandado de Segurança,I,4,False,PROCESSO CÍVEL E DO TRABALHO > Recursos > Agravos > Agravo de Instrumento em Mandado de Segurança
+14775,1209,Agravo de Instrumento em Mandado de Segurança,A,5,False,PROCESSO CÍVEL E DO TRABALHO > Recursos > Recursos Trabalhistas > Agravos > Agravo de Instrumento em Mandado de Segurança
+14990,62,Classificação de Crédito Público,I,6,False,"PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Regidos por Outros Códigos, Leis Esparsas e Regimentos > Classificação de Crédito Público"
+14991,215,Classificação de Crédito Público,A,4,False,PROCESSO CÍVEL E DO TRABALHO > Outros Procedimentos > Incidentes > Classificação de Crédito Público
+15011,11534,Registro de Federação Partidária,A,3,False,PROCESSO ELEITORAL > Procedimentos Relativos a Partidos Políticos > Registro de Federação Partidária
+15090,11547,Recurso,A,3,False,PROCESSO ELEITORAL > Recursos Eleitorais > Recurso
+15140,1386,Entrega Voluntária,A,4,False,PROCEDIMENTOS DE INFÂNCIA E JUVENTUDE > Seção Cível > Processo de Conhecimento > Entrega Voluntária
+15159,62,Regime Centralizado de Execuções,A,6,False,"PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Regidos por Outros Códigos, Leis Esparsas e Regimentos > Regime Centralizado de Execuções"
+15160,155,Cumprimento Individual de Sentença de Ações Coletivas,A,4,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Cumprimento de Sentença/Decisão > Cumprimento Individual de Sentença de Ações Coletivas
+15161,155,Cumprimento Individual Provisório de Sentença de Ações Coletivas,A,4,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Cumprimento de Sentença/Decisão > Cumprimento Individual Provisório de Sentença de Ações Coletivas
+15167,214,Acordo de Não Persecução Cível,A,3,False,PROCESSO CÍVEL E DO TRABALHO > Outros Procedimentos > Acordo de Não Persecução Cível
+15170,308,Medidas Protetivas de Urgência - Crianças e Adolescentes (Lei Henry Borel - Lei 14.344/2022) Criminais,A,3,False,PROCESSO CRIMINAL > Medidas Cautelares > Medidas Protetivas de Urgência - Crianças e Adolescentes (Lei Henry Borel - Lei 14.344/2022) Criminais
+15171,12071,Medidas Protetivas de Urgência - Crianças e Adolescentes (Lei Henry Borel - Lei 14.344/2022) Infracionais,A,4,False,PROCEDIMENTOS DE INFÂNCIA E JUVENTUDE > Seção Infracional > Procedimentos Cautelares > Medidas Protetivas de Urgência - Crianças e Adolescentes (Lei Henry Borel - Lei 14.344/2022) Infracionais
+15172,12071,Medidas de Proteção - Criança e Adolescente (Lei 13.431) Infracionais,A,4,False,PROCEDIMENTOS DE INFÂNCIA E JUVENTUDE > Seção Infracional > Procedimentos Cautelares > Medidas de Proteção - Criança e Adolescente (Lei 13.431) Infracionais
+15187,1068,Plano Especial de Pagamento Trabalhista,A,4,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Execução > Processo de Execução Trabalhista > Plano Especial de Pagamento Trabalhista
+15190,1386,Destituição do Poder Familiar,A,4,False,PROCEDIMENTOS DE INFÂNCIA E JUVENTUDE > Seção Cível > Processo de Conhecimento > Destituição do Poder Familiar
+15191,1401,Adoção pelo Cadastro,A,5,False,PROCEDIMENTOS DE INFÂNCIA E JUVENTUDE > Seção Cível > Processo de Conhecimento > Adoção > Adoção pelo Cadastro
+15192,1401,Adoção Fora do Cadastro,A,5,False,PROCEDIMENTOS DE INFÂNCIA E JUVENTUDE > Seção Cível > Processo de Conhecimento > Adoção > Adoção Fora do Cadastro
+15193,1401,Adoção Fora do Cadastro c/c Destituição do Poder Familiar,A,5,False,PROCEDIMENTOS DE INFÂNCIA E JUVENTUDE > Seção Cível > Processo de Conhecimento > Adoção > Adoção Fora do Cadastro c/c Destituição do Poder Familiar
+15194,1386,Suspensão do Poder Familiar,A,4,False,PROCEDIMENTOS DE INFÂNCIA E JUVENTUDE > Seção Cível > Processo de Conhecimento > Suspensão do Poder Familiar
+15195,547,Seção Administrativa,A,2,True,PROCEDIMENTOS DE INFÂNCIA E JUVENTUDE > Seção Administrativa
+15196,15195,Inspeção,A,3,False,PROCEDIMENTOS DE INFÂNCIA E JUVENTUDE > Seção Administrativa > Inspeção
+15215,155,Cumprimento de Sentença contra a Fazenda Pública Mediante Execução Invertida,A,4,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Cumprimento de Sentença/Decisão > Cumprimento de Sentença contra a Fazenda Pública Mediante Execução Invertida
+15217,62,Procedimento de Repactuação de Dívidas (Superendividamento),A,6,False,"PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Regidos por Outros Códigos, Leis Esparsas e Regimentos > Procedimento de Repactuação de Dívidas (Superendividamento)"
+15224,5,Habeas Corpus Coletivo,A,2,False,SUPERIOR TRIBUNAL DE JUSTIÇA > Habeas Corpus Coletivo
+15228,5,Queixa-Crime,A,2,False,SUPERIOR TRIBUNAL DE JUSTIÇA > Queixa-Crime
+15239,1198,Proposta de Anteprojeto de Lei,A,2,False,PROCEDIMENTOS ADMINISTRATIVOS > Proposta de Anteprojeto de Lei
+15240,1198,Auditoria,A,2,False,PROCEDIMENTOS ADMINISTRATIVOS > Auditoria
+15241,1198,Avaliação de Obras,A,2,False,PROCEDIMENTOS ADMINISTRATIVOS > Avaliação de Obras
+15242,1198,Pedido de Esclarecimento,A,2,False,PROCEDIMENTOS ADMINISTRATIVOS > Pedido de Esclarecimento
+15243,1198,Monitoramento de Auditorias e Obras,A,2,False,PROCEDIMENTOS ADMINISTRATIVOS > Monitoramento de Auditorias e Obras
+15303,11525,Representação em Propaganda Partidária,A,3,False,PROCESSO ELEITORAL > Processos Cíveis-Eleitorais > Representação em Propaganda Partidária
+15309,214,Medidas Protetivas de Urgência (Lei Maria da Penha) - Cível,A,3,False,PROCESSO CÍVEL E DO TRABALHO > Outros Procedimentos > Medidas Protetivas de Urgência (Lei Maria da Penha) - Cível
+15321,11028,Revisão Judicial - RDII,A,2,False,PROCESSO MILITAR > Revisão Judicial - RDII
+15323,11529,Reclamação Administrativa Eleitoral,A,3,False,PROCESSO ELEITORAL > Procedimentos Relativos a Realização de Eleição > Reclamação Administrativa Eleitoral
+15423,11028,Revisão Judicial - Conselho de Justificação,A,2,False,PROCESSO MILITAR > Revisão Judicial - Conselho de Justificação
+15430,155,Cumprimento de Sentença - Reclamação Pré-processual,A,4,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Cumprimento de Sentença/Decisão > Cumprimento de Sentença - Reclamação Pré-processual
+15532,1070,Incidentes de Superação e Revisão de Precedentes Qualificados,A,4,True,PROCESSO CÍVEL E DO TRABALHO > Outros Procedimentos > Incidentes Trabalhistas > Incidentes de Superação e Revisão de Precedentes Qualificados
+15533,15532,Incidente de Superação e Revisão de Precedentes em Recurso de Revista e Embargos Repetitivos,A,5,False,PROCESSO CÍVEL E DO TRABALHO > Outros Procedimentos > Incidentes Trabalhistas > Incidentes de Superação e Revisão de Precedentes Qualificados > Incidente de Superação e Revisão de Precedentes em Recurso de Revista e Embargos Repetitivos
+15534,15532,Incidente de Superação e Revisão de Precedentes em Incidente de Assunção de Competência,A,5,False,PROCESSO CÍVEL E DO TRABALHO > Outros Procedimentos > Incidentes Trabalhistas > Incidentes de Superação e Revisão de Precedentes Qualificados > Incidente de Superação e Revisão de Precedentes em Incidente de Assunção de Competência
+15535,15532,Incidente de Superação e Revisão de Precedente em Incidente de Resolução de Demandas Repetitivas,A,5,False,PROCESSO CÍVEL E DO TRABALHO > Outros Procedimentos > Incidentes Trabalhistas > Incidentes de Superação e Revisão de Precedentes Qualificados > Incidente de Superação e Revisão de Precedente em Incidente de Resolução de Demandas Repetitivas
+15543,62,Arguição de Descumprimento de Preceito Fundamento Previsto em Constituição Estadual,A,6,False,"PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Procedimentos Especiais > Procedimentos Regidos por Outros Códigos, Leis Esparsas e Regimentos > Arguição de Descumprimento de Preceito Fundamento Previsto em Constituição Estadual"
+15545,1198,Procedimento Relativo à Posse de Maconha para Consumo Pessoal,A,2,False,PROCEDIMENTOS ADMINISTRATIVOS > Procedimento Relativo à Posse de Maconha para Consumo Pessoal
+15620,1107,Produção Antecipada de Provas,A,4,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Conhecimento > Produção Antecipada de Provas
+15694,11529,Requerimento de Declaração de Elegibilidade,A,3,False,PROCESSO ELEITORAL > Procedimentos Relativos a Realização de Eleição > Requerimento de Declaração de Elegibilidade
+15708,1198,Procedimento de Justiça Restaurativa Administrativo,A,2,False,PROCEDIMENTOS ADMINISTRATIVOS > Procedimento de Justiça Restaurativa Administrativo
+15709,11099,Procedimento de Justiça Restaurativa Pré-Processual,A,2,False,PROCEDIMENTOS PRÉ-PROCESSUAIS DE RESOLUÇÃO CONSENSUAL DE CONFLITOS > Procedimento de Justiça Restaurativa Pré-Processual
+15710,385,Procedimento de Justiça Restaurativa em Execução Penal,A,2,False,EXECUÇÃO PENAL E DE MEDIDAS ALTERNATIVAS > Procedimento de Justiça Restaurativa em Execução Penal
+15731,155,Cumprimento Coletivo de Sentença em Ações Coletivas,A,4,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Cumprimento de Sentença/Decisão > Cumprimento Coletivo de Sentença em Ações Coletivas
+15732,155,Cumprimento Coletivo Provisório de Sentença em Ações Coletivas,A,4,False,PROCESSO CÍVEL E DO TRABALHO > Processo de Conhecimento > Procedimento de Cumprimento de Sentença/Decisão > Cumprimento Coletivo Provisório de Sentença em Ações Coletivas

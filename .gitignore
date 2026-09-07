@@ -1,0 +1,21 @@
+# dados brutos e processados não versionados (hashes em data/raw/**/SHA256SUMS.txt)
+data/raw/datajud/
+data/raw/datajud_probe/random_samples/
+data/raw/datajud_probe/coverage/
+data/processed/
+*.duckdb
+*.duckdb.wal
+logs/*.csv
+logs/*.log
+outputs/**/*.png
+outputs/**/*.pdf
+renv/library/
+renv/staging/
+.Rhistory
+.RData
+.Rproj.user/
+_targets/
+article/*_files/
+article/*.html
+.Renviron
+.env

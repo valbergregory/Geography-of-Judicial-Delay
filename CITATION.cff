@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+title: "The Geography of Judicial Delay: Spatial Inequality and Procedural Trajectories in Brazil (research code)"
+message: "If you use this code, please cite it."
+type: software
+authors:
+  - family-names: Gregory
+    given-names: Valber
+version: 0.1.0
+date-released: 2026-09-07
+license: MIT
+repository-code: "https://github.com/valbergregory/Geography-of-Judicial-Delay"
