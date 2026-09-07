@@ -1,9 +1,8 @@
-# Relatório de viabilidade — Primeira Tarefa (versão preliminar, 2026-09-07)
+# Relatório de viabilidade — Primeira Tarefa (2026-09-07)
 
-Estado: **sondagem concluída; relatório em rascunho**. Itens 1–4 da Primeira Tarefa estão
-executados e reproduzíveis; itens 5–9 (classes viáveis, três recortes, riscos, critérios
-de continuidade, arquitetura/plano) estão esboçados na seção 7 e serão fechados na próxima
-sessão. **Nenhuma coleta ampla foi iniciada.**
+Estado: **sondagem concluída**. Itens 1–4 da Primeira Tarefa estão
+executados e reproduzíveis; itens 5–9 (classes viáveis, três recortes, riscos, critérios de continuidade, arquitetura/plano)
+estão nas seções 6–7. **Nenhuma coleta ampla foi iniciada.**
 
 ## 1. Fontes verificadas (acesso em 2026-09-04/05)
 
@@ -86,11 +85,44 @@ Resultados em `outputs/probe/auditoria_trajetorias.csv` (por tribunal × classe,
 6. Sem PIT na API → coleta longa pode perder/duplicar docs; mitigar com dedupe e re-varredura incremental.
 7. Causalidade: nenhuma política datada foi ainda escolhida; candidatas: Juízo 100 % Digital (movimento 14736 observado no TJCE), Núcleos de Justiça 4.0, migração SAJ→PJe/eproc por comarca (motivo de remessa 380).
 
-## 7. Próximos passos (a fechar na próxima sessão)
+## 7. Classes viáveis, três recortes e critérios de continuidade
 
-- Propor as classes viáveis (7 e 436 confirmadas como mensuráveis) e os **três recortes**:
-  (A) TJCE + TJPE, PJe, classes 7 e 436, coortes 2019–2022; (B) TJGO + TJPR + TJSC, eproc/Projudi;
-  (C) TJRS/TJBA como contraste de sistema. Comparar por completude de citação/defesa/sentença, IBGE e horizonte.
-- Critérios de continuidade (propostos): ≥90 % docs com IBGE, ≥85 % com sentença ou baixa nas coortes ≤2021, ≤2 % movimentos sem código, defesa tipada ≥30 %, ≤5 % datas impossíveis, e ≥1 política datada com grupo de controle defensável.
-- Arquitetura/plano: `targets` + DuckDB (→ PostGIS quando >5 M movimentos), runbook, export Overleaf, renv.lock — conforme diretriz transversal de 05/09 (`docs/AI_POLICY_AND_REPRODUCIBILITY.md`).
-- Testar download e chave municipal do Módulo de Produtividade Mensal e da Anatel.
+**Classes**: 7 (Procedimento Comum Cível) e 436 (Procedimento do Juizado Especial Cível) são
+mensuráveis: distribuição, citação, conclusão para julgamento, sentença (subárvore *Julgamento*)
+e baixa aparecem com dados nos tribunais PJe/eproc; "defesa" só onde a petição é tipada.
+Classes de execução (1116, 12154) ficam fora da fase 1 (estados diferentes: penhora, não sentença).
+
+**Três recortes** (`scripts/03_compare_cuts.R`; `outputs/probe/recortes_ABC_*.csv`):
+
+| Recorte | Tribunais | Sistema dominante | Docs estimados coortes 2018–22 (7+436) | IBGE mín. | Mov. sem código máx. | Última atualização (mediana mín.) |
+|---|---|---|---|---|---|---|
+| A | TJCE + TJPE | PJe | ≈ 0,98 M | 0,92 | 0 % | 2025-04 |
+| B | TJGO + TJPR + TJSC | eproc / Projudi | ≈ 2,1 M | 0,98 | 0,2 % | 2025-06 |
+| C | TJRS + TJBA | Projudi/Themis/eproc + PJe/eproc | ≈ 2,8 M | 1,00 | 0,07 % | 2025-06 |
+
+Recomendação: **começar pelo recorte A** (PJe puro: citação e contestação tipadas, IBGE quase
+completo, menor latência, Juízo 100 % Digital observável), usar **B** como réplica em outro
+sistema (eproc) e **C** como contraste de heterogeneidade de sistema. TJSP e TJAL ficam fora
+da análise espacial até existir cadastro externo de unidades → município.
+
+**Critérios de continuidade** (só ampliar a coleta se todos forem atendidos numa amostra piloto
+de ≥ 5 000 docs por tribunal do recorte escolhido):
+1. ≥ 90 % dos documentos com `codigoMunicipioIBGE` válido (ou resolvido por cadastro de unidades);
+2. ≥ 85 % das coortes 2018–2021 com sentença **ou** baixa identificada; ≤ 5 % com múltiplas sentenças não explicadas por embargos;
+3. ≤ 2 % de movimentos sem código e ≤ 1 % sem data; ≤ 5 % de documentos com datas impossíveis;
+4. defesa tipada em ≥ 30 % dos docs de classe 7 (senão a etapa "defesa" sai do modelo multiestado);
+5. duração mediana até sentença, por tribunal, dentro de ±30 % do "tempo médio até sentença" do
+   Justiça em Números para o mesmo ano e ramo (auditoria de comparação com agregados);
+6. pelo menos uma política datada com grupos tratados/controle e tendências pré-tratamento paralelas
+   (candidata: inclusão no Juízo 100 % Digital, movimento 14736; alternativa: migração SAJ→PJe por comarca).
+
+**Arquitetura e plano** (runbook completo em `docs/RUNBOOK.md`): coleta retomável (`dj_collect_class`,
+1 req/s, 1 000 docs/página, checkpoint por tribunal × classe, ~10–14 h para o recorte A a 30 s/página),
+DuckDB até ~5 M movimentos e PostGIS a partir daí; `targets` orquestra parse → reconstrução → modelos;
+Quarto/LaTeX recebe só tabelas, figuras e `numbers.tex` (o texto é do autor). Ordem: piloto do recorte A
+(5 000 docs/tribunal) → auditorias → decisão de continuidade → coleta completa A → B → C.
+
+## 8. Pendências
+- Testar download e chave municipal do Módulo de Produtividade Mensal (unidade × mês) e da Anatel.
+- Cadastro de unidades → município para TJSP/TJAL (se quisermos incluí-los depois).
+- `renv.lock` (após `R/00_setup.R --full`), esqueleto `targets`, script 10 de coleta (não rodar sem autorização).

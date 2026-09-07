@@ -63,4 +63,4 @@ Divergência registrada: o CLAUDE.md já existia quando a diretriz chegou (07/09
 
 ## Estado do projeto
 Ver `docs/01_feasibility_report.md` (fase 1: sondagem concluída; coleta ampla ainda NÃO
-autorizada — depende dos critérios de continuidade da seção 8).
+autorizada — depende dos critérios de continuidade da seção 7).

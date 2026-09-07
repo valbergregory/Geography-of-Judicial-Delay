@@ -17,13 +17,15 @@ Phase 1 — feasibility probe — completed:
 - transparent movement→state dictionary (`config/state_mapping.csv`) and trajectory reconstruction
   validated on 80 real cases (`outputs/probe/trajetorias_resumo.csv`, `episodios.csv`, `auditoria_trajetorias.csv`).
 
-Large-scale collection has **not** started; it is gated by the continuation criteria in the report (§8).
+Large-scale collection has **not** started; it is gated by the continuation criteria in the report (§7). Step-by-step execution: `docs/RUNBOOK.md`.
 
 ## Reproduce the probe
 ```bash
 "C:/Program Files/R/R-4.4.3/bin/Rscript.exe" R/00_setup.R
 "C:/Program Files/R/R-4.4.3/bin/Rscript.exe" scripts/01_probe_datajud.R          # add --live for a short real API call
 "C:/Program Files/R/R-4.4.3/bin/Rscript.exe" scripts/02_reconstruct_sample.R
+"C:/Program Files/R/R-4.4.3/bin/Rscript.exe" scripts/03_compare_cuts.R          # sample cuts A/B/C
+"C:/Program Files/R/R-4.4.3/bin/Rscript.exe" scripts/90_export_overleaf.R       # booktabs tables + numbers.tex
 "C:/Program Files/R/R-4.4.3/bin/Rscript.exe" -e "testthat::test_dir('tests/testthat')"
 ```
 Raw probe files are hash-listed in `data/raw/datajud_probe/SHA256SUMS.txt`.
@@ -34,7 +36,7 @@ https://datajud-wiki.cnj.jus.br/api-publica/acesso/ into `~/.Renviron` as
 ## Layout
 `R/` functions · `scripts/` numbered entry points · `sql/` DuckDB schema · `config/` scope and
 state dictionary · `data/` raw/reference/processed · `outputs/` tables and figures ·
-`docs/` reports and data catalog · `tests/` testthat · `article/` Quarto manuscript (English) · `app/` dashboard.
+`docs/` feasibility report, runbook, data catalog, AI/reproducibility policy · `tests/` testthat · `article/` LaTeX skeleton (prose written by the author in Overleaf; tables/numbers generated) · `app/` dashboard (planned).
 
 ## Data sources (verified access dates in `docs/data_catalog.md`)
 - DataJud public API — https://datajud-wiki.cnj.jus.br/api-publica/

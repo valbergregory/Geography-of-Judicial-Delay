@@ -1,0 +1,6 @@
+* text=auto eol=lf
+*.csv text eol=lf
+*.json -text
+*.duckdb binary
+*.png binary
+*.pdf binary
