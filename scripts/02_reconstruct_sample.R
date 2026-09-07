@@ -41,8 +41,7 @@ dir.create(dirname(PATHS$duckdb), showWarnings = FALSE, recursive = TRUE)
 con <- dbConnect(duckdb::duckdb(), PATHS$duckdb)
 on.exit(dbDisconnect(con, shutdown = TRUE), add = TRUE)
 sql_lines <- sub("--.*$", "", readLines(file.path(PATHS$sql, "01_schema.sql"), encoding = "UTF-8"))
-for (stmt in strsplit(paste(sql_lines, collapse = "
-"), ";")[[1]]) if (nzchar(trimws(stmt))) dbExecute(con, stmt)
+for (stmt in strsplit(paste(sql_lines, collapse = "\n"), ";")[[1]]) if (nzchar(trimws(stmt))) dbExecute(con, stmt)
 write_replace <- function(name, dt) { dbExecute(con, sprintf("DELETE FROM %s", name)); dbWriteTable(con, name, as.data.frame(dt), append = TRUE) }
 write_replace("processos", proc[, names(proc)[names(proc) %in% dbListFields(con, "processos")], with = FALSE])
 write_replace("movimentos", mov[, .(doc_id, seq_origem, seq_crono, mov_codigo, mov_nome, mov_datahora_raw, mov_datahora, mov_oj_codigo, n_complementos, complementos_json)])
