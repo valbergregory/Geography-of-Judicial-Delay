@@ -1,0 +1,25 @@
+mov_codigo,tpu_nome,tpu_caminho,N
+581,Documento,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Juntada > Documento,488
+85,Petição,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Juntada > Petição,482
+,,,278
+982,Remessa,Serventuário > Distribuidor > Remessa,42
+12291,Movimentação processual,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Cancelamento > Movimentação processual,11
+106,Mandado,Serventuário > Oficial de Justiça > Devolução > Mandado,7
+493,Entrega em carga/vista,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Entrega em carga/vista,6
+417,Inclusão em pauta,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Inclusão em pauta,6
+12214,Processo Encaminhado,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Processo Encaminhado,6
+985,Mandado,Serventuário > Oficial de Justiça > Recebimento > Mandado,6
+981,Recebimento,Serventuário > Distribuidor > Recebimento,6
+135,Apensamento,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Apensamento,4
+12143,Mudança de Assunto Processual,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Mudança de Assunto Processual,4
+12619,Recebimento do CEJUSC ou Centros de Conciliação/Mediação,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Recebimento do CEJUSC ou Centros de Conciliação/Mediação,4
+14736,Inclusão no Juízo 100% Digital,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Inclusão no Juízo 100% Digital,3
+12532,Infrutífera,Serventuário > Auxiliar da Justiça > Conciliador > Conciliação > Infrutífera,3
+12614,Remessa para o CEJUSC ou Centros de Conciliação/Mediação,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Remessa para o CEJUSC ou Centros de Conciliação/Mediação,3
+105,Devolução,Serventuário > Oficial de Justiça > Devolução,2
+14738,Retificação de Classe Processual,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Retificação de Classe Processual,2
+137,Desapensamento,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Desapensamento,1
+479,Custas,Serventuário > Contador > Cálculo > Custas,1
+12265,Expedida/certificada,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Intimação > Eletrônica > Expedida/certificada,1
+12270,Documento,Serventuário > Escrivão/Diretor de Secretaria/Secretário Jurídico > Desentranhamento > Documento,1
+478,Cálculo de Liquidação,Serventuário > Contador > Cálculo > Cálculo de Liquidação,1

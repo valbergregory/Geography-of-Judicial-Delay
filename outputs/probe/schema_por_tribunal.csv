@@ -1,0 +1,9 @@
+arquivo,tribunal,n,campos_processo,campos_movimento
+tjal_436_num.json,TJAL,10,"@timestamp,assuntos,classe,dataAjuizamento,dataHoraUltimaAtualizacao,formato,grau,id,movimentos,nivelSigilo,numeroProcesso,orgaoJulgador,sistema,tribunal","codigo,complementosTabelados,dataHora,nome,orgaoJulgador"
+tjal_7_num.json,TJAL,10,"@timestamp,assuntos,classe,dataAjuizamento,dataHoraUltimaAtualizacao,formato,grau,id,movimentos,nivelSigilo,numeroProcesso,orgaoJulgador,sistema,tribunal","codigo,complementosTabelados,dataHora,nome,orgaoJulgador"
+tjce_436_num.json,TJCE,10,"@timestamp,assuntos,classe,dataAjuizamento,dataHoraUltimaAtualizacao,formato,grau,id,movimentos,nivelSigilo,numeroProcesso,orgaoJulgador,sistema,tribunal","codigo,complementosTabelados,dataHora,nome,orgaoJulgador"
+tjce_7_num.json,TJCE,10,"@timestamp,assuntos,classe,dataAjuizamento,dataHoraUltimaAtualizacao,formato,grau,id,movimentos,nivelSigilo,numeroProcesso,orgaoJulgador,sistema,tribunal","codigo,complementosTabelados,dataHora,nome,orgaoJulgador"
+tjmg_436.json,TJMG,10,"@timestamp,assuntos,classe,dataAjuizamento,dataHoraUltimaAtualizacao,grau,id,movimentos,nivelSigilo,numeroProcesso,orgaoJulgador,tribunal","codigo,dataHora,nome"
+tjmg_7.json,TJMG,10,"@timestamp,assuntos,classe,dataAjuizamento,dataHoraUltimaAtualizacao,grau,id,movimentos,nivelSigilo,numeroProcesso,orgaoJulgador,tribunal","codigo,dataHora,nome"
+tjsp_436.json,TJSP,10,"@timestamp,assuntos,classe,dataAjuizamento,dataHoraUltimaAtualizacao,formato,grau,id,movimentos,nivelSigilo,numeroProcesso,orgaoJulgador,sistema,tribunal","codigo,complementosTabelados,dataHora,nome"
+tjsp_7.json,TJSP,10,"@timestamp,assuntos,classe,dataAjuizamento,dataHoraUltimaAtualizacao,formato,grau,id,movimentos,nivelSigilo,numeroProcesso,orgaoJulgador,sistema,tribunal","codigo,complementosTabelados,dataHora,nome"

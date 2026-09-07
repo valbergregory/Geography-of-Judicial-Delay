@@ -1,0 +1,89 @@
+mov_codigo,comp_codigo,comp_descricao,comp_valor,comp_nome
+85,4,tipo_de_documento,,(texto livre)
+60,4,tipo_de_documento,,(texto livre)
+581,4,tipo_de_documento,,(texto livre)
+106,6,resultado,7,entregue ao destinatário
+106,6,resultado,8,não entregue ao destinatário
+970,12,data_hora,,(texto livre)
+970,36,dirigida_por,188,Conciliador(a)
+970,36,dirigida_por,366,Facilitador
+970,36,dirigida_por,185,Juiz(a)
+970,36,dirigida_por,186,Juiz(a) leigo(a)
+970,36,dirigida_por,187,Mediador(a)
+970,21,local,,(texto livre)
+970,15,situacao_da_audiencia,12,antecipada
+970,15,situacao_da_audiencia,11,cancelada
+970,15,situacao_da_audiencia,15,convertida em diligência
+970,15,situacao_da_audiencia,9,designada
+970,15,situacao_da_audiencia,365,Em continuação
+970,15,situacao_da_audiencia,14,não-realizada
+970,15,situacao_da_audiencia,13,realizada
+970,15,situacao_da_audiencia,10,redesignada
+970,16,tipo_de_audiencia,16,admonitória
+970,16,tipo_de_audiencia,17,conciliação
+970,16,tipo_de_audiencia,184,de acolhimento
+970,16,tipo_de_audiencia,193,de custódia
+970,16,tipo_de_audiencia,18,de interrogatório
+970,16,tipo_de_audiencia,19,de justificação
+970,16,tipo_de_audiencia,91,do art. 16 da Lei 11.340
+970,16,tipo_de_audiencia,20,em execução
+970,16,tipo_de_audiencia,21,inicial
+970,16,tipo_de_audiencia,22,instrução
+970,16,tipo_de_audiencia,23,instrução e julgamento
+970,16,tipo_de_audiencia,24,julgamento
+970,16,tipo_de_audiencia,92,mediação
+970,16,tipo_de_audiencia,25,preliminar
+970,16,tipo_de_audiencia,228,Pública
+123,7,destino,,(texto livre)
+123,18,motivo_da_remessa,393,ao Juiz da Instrução
+123,18,motivo_da_remessa,392,ao Juiz de Garantias
+123,18,motivo_da_remessa,108,cumpridos
+123,18,motivo_da_remessa,110,cumpridos parcialmente
+123,18,motivo_da_remessa,90,declaração de competência para órgão vinculado a Tribunal diferente
+123,18,motivo_da_remessa,37,em diligência
+123,18,motivo_da_remessa,38,em grau de recurso
+123,18,motivo_da_remessa,367,Em razão de criação de novo Tribunal
+123,18,motivo_da_remessa,380,em razão de migração para outro sistema processual
+123,18,motivo_da_remessa,190,encerradas atribuições CEJUSC
+123,18,motivo_da_remessa,386,itinerância
+123,18,motivo_da_remessa,109,não cumpridos
+123,18,motivo_da_remessa,40,outros motivos
+123,18,motivo_da_remessa,267,por declínio de competência entre instâncias do mesmo tribunal
+123,18,motivo_da_remessa,39,por devolução ao deprecante
+123,18,motivo_da_remessa,194,por julgamento definitivo do recurso
+51,3,tipo_de_conclusao,377,ao revisor
+51,3,tipo_de_conclusao,189,para admissibilidade recursal
+51,3,tipo_de_conclusao,6,para decisão
+51,3,tipo_de_conclusao,5,para despacho
+51,3,tipo_de_conclusao,36,para julgamento
+51,3,tipo_de_conclusao,378,para voto vista
+26,2,tipo_de_distribuicao_redistribuicao,1,competência exclusiva
+26,2,tipo_de_distribuicao_redistribuicao,4,dependência
+26,2,tipo_de_distribuicao_redistribuicao,385,itinerância
+26,2,tipo_de_distribuicao_redistribuicao,3,prevenção
+26,2,tipo_de_distribuicao_redistribuicao,383,Previsão ou Encaminhamento Eleitoral
+26,2,tipo_de_distribuicao_redistribuicao,2,sorteio
+26,2,tipo_de_distribuicao_redistribuicao,85,sorteio manual
+36,17,motivo_da_redistribuicao,84,alteração de competência do órgão
+36,17,motivo_da_redistribuicao,391,ao Juiz da Instrução
+36,17,motivo_da_redistribuicao,390,ao Juiz de Garantias
+36,17,motivo_da_redistribuicao,35,criação de unidade judiciária
+36,17,motivo_da_redistribuicao,28,desaforamento
+36,17,motivo_da_redistribuicao,29,erro material
+36,17,motivo_da_redistribuicao,89,extinção de unidade judiciária
+36,17,motivo_da_redistribuicao,30,impedimento
+36,17,motivo_da_redistribuicao,83,incompetência
+36,17,motivo_da_redistribuicao,384,Previsão Normativa Eleitoral
+36,17,motivo_da_redistribuicao,87,recusa de prevenção/dependência
+36,17,motivo_da_redistribuicao,88,"remessa de execução cível (CPC, 475-P, par. ún.)"
+36,17,motivo_da_redistribuicao,86,reunião de execuções
+36,17,motivo_da_redistribuicao,34,sucessão
+36,17,motivo_da_redistribuicao,31,suspeição
+36,2,tipo_de_distribuicao_redistribuicao,1,competência exclusiva
+36,2,tipo_de_distribuicao_redistribuicao,4,dependência
+36,2,tipo_de_distribuicao_redistribuicao,385,itinerância
+36,2,tipo_de_distribuicao_redistribuicao,3,prevenção
+36,2,tipo_de_distribuicao_redistribuicao,383,Previsão ou Encaminhamento Eleitoral
+36,2,tipo_de_distribuicao_redistribuicao,2,sorteio
+36,2,tipo_de_distribuicao_redistribuicao,85,sorteio manual
+848,14,data,,(texto livre)
