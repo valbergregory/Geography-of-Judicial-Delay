@@ -46,5 +46,7 @@ state dictionary · `data/` raw/reference/processed · `outputs/` tables and fig
 - Anatel open data (fixed broadband accesses by municipality) — https://dados.gov.br/dados/conjuntos-dados/acessos---banda-larga-fixa
 
 ## License and ethics
+
+Code: MIT ([LICENSE](LICENSE)). Text, documentation and data: see [LICENSING.md](LICENSING.md).
 Public metadata only (DataJud public API respects secrecy levels; no party data is collected).
 Code: MIT. Cite the CNJ as data source (Portaria CNJ 160/2020).
